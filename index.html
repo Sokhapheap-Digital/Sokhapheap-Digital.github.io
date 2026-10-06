@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KOMA is a child health companion helping Cambodian parents track vaccinations, reminders, growth and development.">
+  <title>KOMA | Child Health Companion</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#home" aria-label="KOMA home">
+      <span class="logo-mark">K</span>
+      <span>KOMA</span>
+    </a>
+
+    <nav id="navLinks">
+      <a href="#about">About Us</a>
+      <a href="#features">Features</a>
+      <a href="#why">Why KOMA?</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="nav-button" href="#features">Explore KOMA</a>
+    <button class="menu-button" id="menuButton" aria-label="Open menu">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="eyebrow"><span>♥</span> Growing healthy families together</div>
+        <h1>Care today.<br><span>Grow tomorrow.</span></h1>
+        <p class="hero-text">
+          KOMA is a simple child health companion designed to help parents in Cambodia
+          keep track of vaccinations, reminders, growth, and development.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#features">Discover KOMA <span>→</span></a>
+          <a class="secondary-button" href="#about">Our story</a>
+        </div>
+        <div class="trust-row">
+          <div><strong>Simple</strong><span>Easy to use</span></div>
+          <div><strong>Organized</strong><span>Everything in one place</span></div>
+          <div><strong>Cambodia</strong><span>Built with families in mind</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="blob"></div>
+        <div class="phone">
+          <div class="phone-top"></div>
+          <div class="app-screen">
+            <div class="app-header">
+              <div>
+                <small>Hello, Parent 👋</small>
+                <h3>Your child's health</h3>
+              </div>
+              <div class="avatar">♡</div>
+            </div>
+
+            <div class="child-card">
+              <div class="child-avatar">👧</div>
+              <div>
+                <strong>Sokha</strong>
+                <span>3 years old</span>
+              </div>
+              <span class="status">Healthy</span>
+            </div>
+
+            <div class="mini-title">Upcoming</div>
+            <div class="reminder-card">
+              <div class="calendar">14</div>
+              <div>
+                <strong>Vaccination reminder</strong>
+                <span>MMR • October 14</span>
+              </div>
+              <span>›</span>
+            </div>
+
+            <div class="mini-title">Quick view</div>
+            <div class="stats">
+              <div><span>💉</span><strong>8</strong><small>Vaccines</small></div>
+              <div><span>📏</span><strong>95</strong><small>Height (cm)</small></div>
+              <div><span>⚖️</span><strong>14</strong><small>Weight (kg)</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="floating-card floating-one">💉 <span>Vaccination<br><b>Up to date</b></span></div>
+        <div class="floating-card floating-two">🔔 <span>Next reminder<br><b>In 8 days</b></span></div>
+      </div>
+    </section>
+
+    <section class="intro" id="about">
+      <div class="section-label">ABOUT KOMA</div>
+      <div class="intro-grid">
+        <h2>Making child health<br><span>easier to manage.</span></h2>
+        <div>
+          <p>
+            We created KOMA because keeping track of a child's health can become difficult
+            when important records, dates, and milestones are spread across different places.
+          </p>
+          <p>
+            Our goal is simple: give parents one friendly place to stay organized,
+            remember important vaccinations, and follow their child's journey as they grow.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="features-section" id="features">
+      <div class="section-heading">
+        <div>
+          <div class="section-label">WHAT KOMA OFFERS</div>
+          <h2>Everything parents need,<br><span>in one place.</span></h2>
+        </div>
+        <p>Designed to be simple enough for everyday use, while keeping the information that matters close at hand.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card featured">
+          <div class="icon">💉</div>
+          <div class="number">01</div>
+          <h3>Vaccination Tracking</h3>
+          <p>Keep your child's vaccination history organized and easy to check whenever you need it.</p>
+          <a href="#contact">Learn more →</a>
+        </article>
+
+        <article class="feature-card">
+          <div class="icon">🔔</div>
+          <div class="number">02</div>
+          <h3>Smart Reminders</h3>
+          <p>Stay aware of upcoming vaccinations with timely reminders for important dates.</p>
+          <a href="#contact">Learn more →</a>
+        </article>
+
+        <article class="feature-card">
+          <div class="icon">📈</div>
+          <div class="number">03</div>
+          <h3>Growth & Development</h3>
+          <p>Follow important growth and development information as your child reaches new milestones.</p>
+          <a href="#contact">Learn more →</a>
+        </article>
+
+        <article class="feature-card">
+          <div class="icon">🇰🇭</div>
+          <div class="number">04</div>
+          <h3>Made for Cambodia</h3>
+          <p>Built around the needs of Cambodian families, with a focus on accessibility and simplicity.</p>
+          <a href="#contact">Learn more →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="why-section" id="why">
+      <div class="why-visual">
+        <div class="sun"></div>
+        <div class="illustration-card">
+          <div class="heart">♥</div>
+          <div class="family">👨‍👩‍👧</div>
+          <span>Growing together</span>
+        </div>
+      </div>
+      <div class="why-copy">
+        <div class="section-label">WHY KOMA?</div>
+        <h2>Because every little milestone <span>matters.</span></h2>
+        <p>
+          Parenting comes with many things to remember. KOMA helps reduce the mental load
+          by bringing important child health information together in a clear and friendly experience.
+        </p>
+        <div class="check-list">
+          <div><span>✓</span> Keep important health information organized</div>
+          <div><span>✓</span> Reduce the chance of missing vaccination dates</div>
+          <div><span>✓</span> Follow your child's growth journey</div>
+          <div><span>✓</span> Make health tracking less complicated</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="vision-section">
+      <div class="section-label">OUR VISION</div>
+      <h2>A healthier start for<br><span>every child in Cambodia.</span></h2>
+      <p>
+        We envision a future where every parent can easily access, understand,
+        and manage their child's health information.
+      </p>
+    </section>
+
+    <section class="cta" id="contact">
+      <div>
+        <div class="section-label">LET'S GROW TOGETHER</div>
+        <h2>Start your child's<br><span>health journey with KOMA.</span></h2>
+      </div>
+      <a class="primary-button light-button" href="mailto:hello@koma.kh">Get in touch <span>→</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <div class="logo"><span class="logo-mark">K</span><span>KOMA</span></div>
+      <p>Helping parents keep track, stay informed, and care with confidence.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#why">Why KOMA?</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="copyright">© 2026 KOMA. Built for Cambodian families.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
