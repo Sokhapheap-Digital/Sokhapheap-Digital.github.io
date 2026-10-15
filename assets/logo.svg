@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 112" fill="none">
+  <!-- 1. Growth Ruler (Sky Blue) -->
+  <g id="ruler" fill="#5AA3E6" stroke="#5AA3E6">
+    <!-- Arrow Head and Stem -->
+    <path d="M 69.5 7 L 64.5 17.5 L 68.2 17.5 L 68.2 62 L 71.2 62 L 71.2 17.5 L 74.8 17.5 Z" fill="#5AA3E6" stroke="none" />
+    <!-- Graduation ticks on right -->
+    <line x1="71.2" y1="23" x2="75.5" y2="23" stroke-width="1.8" stroke-linecap="round" />
+    <line x1="71.2" y1="28" x2="74.2" y2="28" stroke-width="1.5" stroke-linecap="round" />
+    <line x1="71.2" y1="33" x2="76" y2="33" stroke-width="1.8" stroke-linecap="round" />
+    <line x1="71.2" y1="38" x2="74.2" y2="38" stroke-width="1.5" stroke-linecap="round" />
+    <line x1="71.2" y1="43" x2="75.5" y2="43" stroke-width="1.8" stroke-linecap="round" />
+    <line x1="71.2" y1="48" x2="74.2" y2="48" stroke-width="1.5" stroke-linecap="round" />
+    <line x1="71.2" y1="53" x2="75.5" y2="53" stroke-width="1.8" stroke-linecap="round" />
+  </g>
+
+  <!-- 2. Notification Bell (Golden Mango) -->
+  <g id="bell">
+    <!-- Bell Top Loop -->
+    <path d="M 87.5 21 C 86.5 21 85.8 21.8 85.8 22.8 C 85.8 23.8 86.5 24.5 87.5 24.5 C 88.5 24.5 89.2 23.8 89.2 22.8 C 89.2 21.8 88.5 21 87.5 21 Z" fill="#FEA203" />
+    <!-- Bell Body -->
+    <path d="M 87.5 23 C 84.5 23 83.2 25.5 83 29 C 82.8 32 80.8 33.8 80.5 35 C 80.2 36.2 81 37.2 82.5 37.2 L 92.5 37.2 C 94 37.2 94.8 36.2 94.5 35 C 94.2 33.8 92.2 32 92 29 C 91.8 25.5 90.5 23 87.5 23 Z" fill="#FEA203" />
+    <!-- Bell Clapper -->
+    <circle cx="87.5" cy="38.5" r="1.6" fill="#E68A00" />
+    <!-- Sound Waves / Alert Rays -->
+    <path d="M 95 24.5 C 96.2 25.2 97.2 26.2 97.8 27.5" stroke="#FEA203" stroke-width="1.6" stroke-linecap="round" fill="none" />
+    <path d="M 98 22 C 99.8 23.2 101.2 24.8 102 26.8" stroke="#FEA203" stroke-width="1.6" stroke-linecap="round" fill="none" />
+    <path d="M 93.5 21 C 94.2 20.2 95.2 19.5 96.5 19.2" stroke="#FEA203" stroke-width="1.6" stroke-linecap="round" fill="none" />
+  </g>
+
+  <!-- 3. Medical Protection Shield (Sky Blue) -->
+  <g id="shield">
+    <!-- Shield Outer Body -->
+    <path d="M 87.5 45 C 93.5 45 99 46.5 99.5 48 C 100 52 100.2 60 97.5 66 C 94.8 72 89.2 76.8 87.5 78 C 85.8 76.8 80.2 72 77.5 66 C 74.8 60 75 52 75.5 48 C 76 46.5 81.5 45 87.5 45 Z" fill="#5AA3E6" />
+    <!-- White Medical Cross -->
+    <path d="M 85.5 54 L 89.5 54 L 89.5 58.5 L 94 58.5 L 94 62.5 L 89.5 62.5 L 89.5 67 L 85.5 67 L 85.5 62.5 L 81 62.5 L 81 58.5 L 85.5 58.5 Z" fill="#FFFFFF" />
+  </g>
+
+  <!-- 4. Boy / Child -->
+  <g id="child">
+    <!-- Blue Shirt -->
+    <path d="M 33 76 C 36 73 42 71.5 48 71.5 C 54 71.5 60 73 63 76 L 68 88 C 65 91 58 93.5 48 93.5 C 38 93.5 31 91 28 88 Z" fill="#5AA3E6" />
+    <!-- Shirt Collar / Neck Trim -->
+    <path d="M 42 72 C 45 75 51 75 54 72" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" fill="none" />
+
+    <!-- Face / Head (Peach Skin) -->
+    <path d="M 30 57 C 28 47 34 38 45 37 C 56 36 64 43 64 54 C 64 64 56 71 46 71 C 36 71 30 65 30 57 Z" fill="#FCE5CF" />
+
+    <!-- Rosy Blushing Cheeks -->
+    <ellipse cx="36" cy="59" rx="3.2" ry="2.2" fill="#FBA692" opacity="0.85" />
+    <ellipse cx="54" cy="56" rx="3.2" ry="2.2" fill="#FBA692" opacity="0.85" />
+
+    <!-- Smiling Curved Eyes -->
+    <path d="M 38 52 C 39.5 49.5 42.5 49.5 44 52" stroke="#4A3728" stroke-width="2" stroke-linecap="round" fill="none" />
+    <path d="M 49 50 C 50.5 47.5 53.5 47.5 55 50" stroke="#4A3728" stroke-width="2" stroke-linecap="round" fill="none" />
+
+    <!-- Cheerful Open Smile -->
+    <path d="M 43 59 C 45 62 48 62 50 59" stroke="#4A3728" stroke-width="1.8" stroke-linecap="round" fill="none" />
+
+    <!-- Brown Hair -->
+    <path d="M 28 54 C 26 51 25 46 27 41 C 29 35 34 31 41 30 C 47 29 53 32 56 36 C 58 35 60 36 61 38 C 62 40 61 43 62 45 C 63 48 62 51 61 53 C 60 48 59 44 56 42 C 53 40 48 40 45 42 C 43 40 38 39 34 42 C 32 44 32 47 33 50 C 31 49 29 50 28 54 Z" fill="#4A3728" />
+    <!-- Extra cute side hair locks -->
+    <path d="M 23 50 C 21 47 22 43 25 41 C 24 43 23 46 24 49 Z" fill="#4A3728" />
+    <path d="M 27 58 C 24 57 23 54 24 51 C 25 53 26 55 28 56 Z" fill="#4A3728" />
+  </g>
+
+  <!-- 5. Heart-Shaped Green Encirclement & Leaf -->
+  <g id="green-vine">
+    <!-- Heart-shaped encircling stem -->
+    <path d="M 64 21 C 42 20 18 32 12 55 C 6 78 20 98 48 103 C 54 104 60 102.5 66 98.5 C 57 97 32 94 24 78 C 17 64 20 46 34 33 C 44 24 56 22 64 21 Z" fill="#60AC93" />
+    <!-- Bottom Right Leaf -->
+    <path d="M 52 101 C 62 102 78 98 90 88 C 96 83 100 77 101 73 C 98 78 88 88 78 91 C 68 94 58 97 52 101 Z" fill="#60AC93" />
+    <!-- Leaf Body with smooth bulge -->
+    <path d="M 58 100 C 68 100 82 94 92 84 C 98 78 101 72 101 73 C 99 82 90 92 80 96 C 70 100 62 101 58 100 Z" fill="#4E9980" />
+  </g>
+</svg>

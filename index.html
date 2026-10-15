@@ -3,215 +3,1051 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="KOMA is a child health companion helping Cambodian parents track vaccinations, reminders, growth and development.">
-  <title>KOMA | Child Health Companion</title>
-  <link rel="icon" href="assets/favicon.ico">
+  <title>KOMA | Cambodian Child Health & Vaccination Companion</title>
+  <meta name="description" content="KOMA is the joyful, digitized child health record book built for Cambodian families. Track vaccinations, WHO growth, reminders, and your official Ministry of Health yellow booklet.">
+  <meta name="theme-color" content="#FABE2C">
+  
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+  
+  <!-- Google Fonts: Plus Jakarta Sans (English) & Kantumruy Pro (Khmer) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,800&display=swap" rel="stylesheet">
+  
+  <!-- Neo-Brutalist Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="navbar">
-    <a class="logo" href="#home" aria-label="KOMA home">
-      <span class="logo-mark">K</span>
-      <span>KOMA</span>
-    </a>
 
-    <nav id="navLinks">
-      <a href="#about">About Us</a>
-      <a href="#features">Features</a>
-      <a href="#why">Why KOMA?</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <!-- ========================================================
+       1. GLOBAL STICKY NAVIGATION HEADER
+       ======================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Left: Logo & Wordmark -->
+      <a href="#home" class="logo-brand" aria-label="KOMA Home">
+        <img src="assets/logo.png" alt="KOMA Mascot Logo" class="logo-icon-img">
+        <img src="assets/koma-text.svg" alt="KOMA" class="logo-text-img">
+      </a>
 
-    <a class="nav-button" href="#features">Explore KOMA</a>
-    <button class="menu-button" id="menuButton" aria-label="Open menu">☰</button>
+      <!-- Center: Navigation Links -->
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        <a href="#features" class="nav-link" data-i18n="navFeatures">Features</a>
+        <a href="#booklet" class="nav-link" data-i18n="navBooklet">MOH Booklet</a>
+        <a href="#growth" class="nav-link" data-i18n="navGrowth">Growth Charts</a>
+        <a href="#hospitals" class="nav-link" data-i18n="navHospitals">Hospital Guide</a>
+        <a href="#playground" class="nav-link" data-i18n="navPlayground">Playground</a>
+      </nav>
+
+      <!-- Right Controls: Language Dropdown & Demo CTA -->
+      <div class="header-actions">
+        <!-- Interactive Language Switcher (Replica of Demo App) -->
+        <div class="lang-dropdown-wrapper">
+          <button id="lang-dropdown-btn" class="lang-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Select Language">
+            <img id="active-lang-flag" src="assets/flag-en.png" alt="English" class="flag-icon">
+            <span id="active-lang-text">English</span>
+            <svg id="lang-chevron" class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <!-- Dropdown Options Menu -->
+          <div id="lang-menu" class="lang-menu">
+            <button type="button" class="lang-option" data-lang="kh">
+              <span style="display: flex; align-items: center; gap: 0.5rem;">
+                <img src="assets/flag-kh.png" alt="Cambodia" class="flag-icon">
+                <span>ភាសាខ្មែរ</span>
+              </span>
+            </button>
+            <button type="button" class="lang-option active" data-lang="en">
+              <span style="display: flex; align-items: center; gap: 0.5rem;">
+                <img src="assets/flag-en.png" alt="English" class="flag-icon">
+                <span>English</span>
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Primary CTA to Live Demo -->
+        <a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer" class="neo-btn neo-btn-primary" data-i18n="tryDemoBtn">
+          Try Live Demo
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="hamburger-btn" class="hamburger-btn" type="button" aria-label="Open mobile menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#18181B" stroke-width="2.5" stroke-linecap="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-content">
-        <div class="eyebrow"><span>♥</span> Growing healthy families together</div>
-        <h1>Care today.<br><span>Grow tomorrow.</span></h1>
-        <p class="hero-text">
-          KOMA is a simple child health companion designed to help parents in Cambodia
-          keep track of vaccinations, reminders, growth, and development.
-        </p>
-        <div class="hero-actions">
-          <a class="primary-button" href="#features">Discover KOMA <span>→</span></a>
-          <a class="secondary-button" href="#about">Our story</a>
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-drawer" class="mobile-drawer">
+    <div class="mobile-drawer-content">
+      <div class="drawer-header">
+        <div class="logo-brand">
+          <img src="assets/logo.png" alt="KOMA" style="width: 32px; height: 32px;">
+          <img src="assets/koma-text.svg" alt="KOMA" style="height: 22px;">
         </div>
-        <div class="trust-row">
-          <div><strong>Simple</strong><span>Easy to use</span></div>
-          <div><strong>Organized</strong><span>Everything in one place</span></div>
-          <div><strong>Cambodia</strong><span>Built with families in mind</span></div>
-        </div>
+        <button id="close-drawer-btn" class="modal-close-btn" style="position: static;" aria-label="Close menu">✕</button>
       </div>
 
-      <div class="hero-visual">
-        <div class="blob"></div>
-        <div class="phone">
-          <div class="phone-top"></div>
-          <div class="app-screen">
-            <div class="app-header">
-              <div>
-                <small>Hello, Parent 👋</small>
-                <h3>Your child's health</h3>
-              </div>
-              <div class="avatar">♡</div>
-            </div>
+      <div class="drawer-links">
+        <a href="#features" class="drawer-link" data-i18n="navFeatures">Features</a>
+        <a href="#booklet" class="drawer-link" data-i18n="navBooklet">MOH Booklet</a>
+        <a href="#growth" class="drawer-link" data-i18n="navGrowth">Growth Charts</a>
+        <a href="#hospitals" class="drawer-link" data-i18n="navHospitals">Hospital Guide</a>
+        <a href="#playground" class="drawer-link" data-i18n="navPlayground">Playground</a>
+      </div>
 
-            <div class="child-card">
-              <div class="child-avatar">👧</div>
-              <div>
-                <strong>Sokha</strong>
-                <span>3 years old</span>
-              </div>
-              <span class="status">Healthy</span>
-            </div>
+      <div style="margin-top: auto; display: flex; flex-direction: column; gap: 0.85rem;">
+        <a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer" class="neo-btn neo-btn-primary" style="width: 100%;" data-i18n="launchApp">
+          Launch Demo
+        </a>
+      </div>
+    </div>
+  </div>
 
-            <div class="mini-title">Upcoming</div>
-            <div class="reminder-card">
-              <div class="calendar">14</div>
-              <div>
-                <strong>Vaccination reminder</strong>
-                <span>MMR • October 14</span>
-              </div>
-              <span>›</span>
-            </div>
+  <main id="home">
 
-            <div class="mini-title">Quick view</div>
-            <div class="stats">
-              <div><span>💉</span><strong>8</strong><small>Vaccines</small></div>
-              <div><span>📏</span><strong>95</strong><small>Height (cm)</small></div>
-              <div><span>⚖️</span><strong>14</strong><small>Weight (kg)</small></div>
+    <!-- ========================================================
+         2. HERO SECTION WITH INTERACTIVE PHONE MOCKUP
+         ======================================================== -->
+    <section class="section hero-section">
+      <div class="container hero-grid">
+        <!-- Left: Copy & Actions -->
+        <div class="hero-copy">
+          <div class="section-label" data-i18n="heroEyebrow">
+            🇰🇭 100% Cambodian NIP Digital Record • Official Healthcare Replica
+          </div>
+
+          <h1>
+            <span data-i18n="heroHeadline1">Care today.</span><br>
+            <span class="highlight-text" data-i18n="heroHeadline2">Grow tomorrow.</span>
+          </h1>
+
+          <p class="hero-subhead" data-i18n="heroSubhead">
+            The joyful, digitized child health record book built for Cambodian families. Never lose a vaccination record or miss an appointment again.
+          </p>
+
+          <div class="hero-actions">
+            <a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer" class="neo-btn neo-btn-primary" style="font-size: 1.05rem; padding: 0.85rem 1.75rem;" data-i18n="btnLaunchDemo">
+              ✨ Launch Interactive Demo →
+            </a>
+            <a href="#booklet" class="neo-btn neo-btn-white" style="font-size: 1.05rem; padding: 0.85rem 1.5rem;" data-i18n="btnSeeBooklet">
+              📖 See Digital Yellow Book
+            </a>
+          </div>
+
+          <!-- Trust Row -->
+          <div class="hero-trust-bar">
+            <div class="trust-item">
+              <strong data-i18n="statFree">100% Free</strong>
+              <span data-i18n="statFreeSub">For all Cambodian families</span>
+            </div>
+            <div class="trust-item">
+              <strong data-i18n="statVaccines">11 Core Vaccines</strong>
+              <span data-i18n="statVaccinesSub">Pre-loaded MOH Schedule</span>
+            </div>
+            <div class="trust-item">
+              <strong data-i18n="statPrivate">100% Private</strong>
+              <span data-i18n="statPrivateSub">Offline-ready & secure</span>
             </div>
           </div>
         </div>
-        <div class="floating-card floating-one">💉 <span>Vaccination<br><b>Up to date</b></span></div>
-        <div class="floating-card floating-two">🔔 <span>Next reminder<br><b>In 8 days</b></span></div>
+
+        <!-- Right: The Hero Phone Mockup Stage -->
+        <div class="hero-visual-stage">
+          <!-- Mascot Peeking Left (Oliver Boy) -->
+          <div class="mascot-peeking-left">
+            <svg viewBox="0 0 160 220" fill="none" class="w-full h-full select-none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="80" cy="68" r="35" fill="#FFF3E3" stroke="#18181B" stroke-width="2.8" />
+              <circle cx="47" cy="70" r="7" fill="#FFF3E3" stroke="#18181B" stroke-width="2.5" />
+              <circle cx="113" cy="70" r="7" fill="#FFF3E3" stroke="#18181B" stroke-width="2.5" />
+              <path d="M48 68 C44 42, 60 32, 80 32 C100 32, 116 42, 112 68 C104 60, 94 62, 80 63 C66 62, 56 60, 48 68 Z" fill="#262626" stroke="#18181B" stroke-width="2.8" />
+              <path d="M47 52 C58 45, 102 45, 113 52 L113 63 C102 56, 58 56, 47 63 Z" fill="#18181B" stroke="#18181B" stroke-width="2.8" />
+              <path d="M48 55 C58 49, 102 49, 112 55" stroke="#FABE2C" stroke-width="2.2" stroke-linecap="round" />
+              <path d="M48 59 C58 53, 102 53, 112 59" stroke="#FABE2C" stroke-width="2.2" stroke-linecap="round" />
+              <circle cx="58" cy="76" r="7.5" fill="#FFAAA6" opacity="0.85" />
+              <circle cx="102" cy="76" r="7.5" fill="#FFAAA6" opacity="0.85" />
+              <path d="M60 67 Q67 59 74 67" stroke="#18181B" stroke-width="3.2" stroke-linecap="round" fill="none" />
+              <path d="M86 67 Q93 59 100 67" stroke="#18181B" stroke-width="3.2" stroke-linecap="round" fill="none" />
+              <circle cx="80" cy="71" r="2.5" fill="#FABE2C" />
+              <path d="M74 78 Q80 84 86 78" stroke="#18181B" stroke-width="2.8" stroke-linecap="round" fill="none" />
+              <!-- Hand Waving -->
+              <path d="M110 110 C125 90, 138 75, 142 90 C138 105, 122 118, 112 125" fill="#FFF3E3" stroke="#18181B" stroke-width="2.8" />
+              <path d="M56 104 L104 104 L110 146 L50 146 Z" fill="#FABE2C" stroke="#18181B" stroke-width="2.8" stroke-linejoin="round" />
+              <rect x="67" y="115" width="26" height="20" rx="3" fill="#FFFFFF" stroke="#18181B" stroke-width="2.2" />
+              <text x="80" y="130" text-anchor="middle" font-size="12" font-weight="900" fill="#18181B">01</text>
+            </svg>
+          </div>
+
+          <!-- Mascot Peeking Right (Luna Girl) -->
+          <div class="mascot-peeking-right">
+            <svg viewBox="0 0 160 220" fill="none" class="w-full h-full select-none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="34" cy="52" r="16" fill="#262626" stroke="#18181B" stroke-width="2.8" />
+              <circle cx="38" cy="52" r="7" fill="#EE6748" stroke="#18181B" stroke-width="2" />
+              <circle cx="126" cy="52" r="16" fill="#262626" stroke="#18181B" stroke-width="2.8" />
+              <circle cx="122" cy="52" r="7" fill="#EE6748" stroke="#18181B" stroke-width="2" />
+              <circle cx="80" cy="68" r="35" fill="#FFF3E3" stroke="#18181B" stroke-width="2.8" />
+              <path d="M48 68 C44 42, 60 32, 80 32 C100 32, 116 42, 112 68 C104 60, 94 62, 80 63 C66 62, 56 60, 48 68 Z" fill="#262626" stroke="#18181B" stroke-width="2.8" />
+              <path d="M47 52 C58 45, 102 45, 113 52 L113 61 C102 54, 58 54, 47 61 Z" fill="#36B37E" stroke="#18181B" stroke-width="2.8" />
+              <circle cx="58" cy="76" r="7.5" fill="#FFAAA6" opacity="0.85" />
+              <circle cx="102" cy="76" r="7.5" fill="#FFAAA6" opacity="0.85" />
+              <ellipse cx="66" cy="67" rx="6.5" ry="7.5" fill="#18181B" />
+              <ellipse cx="94" cy="67" rx="6.5" ry="7.5" fill="#18181B" />
+              <circle cx="68" cy="64" r="2.8" fill="#FFFFFF" />
+              <circle cx="96" cy="64" r="2.8" fill="#FFFFFF" />
+              <circle cx="80" cy="71" r="2.5" fill="#FABE2C" />
+              <path d="M74 78 Q80 84 86 78" stroke="#18181B" stroke-width="2.8" stroke-linecap="round" fill="none" />
+              <path d="M56 104 L104 104 L110 146 L50 146 Z" fill="#36B37E" stroke="#18181B" stroke-width="2.8" stroke-linejoin="round" />
+            </svg>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="floating-badge badge-nip">
+            <span>💉</span> <span data-i18n="badgeNip">100% Cambodian NIP Schedule</span>
+          </div>
+          <div class="floating-badge badge-birthday btn-trigger-birthday" title="Tap to test birthday confetti!">
+            <span>🎂</span> <span data-i18n="badgeBday">Built-in Birthday Celebrations</span>
+          </div>
+
+          <!-- Real Phone Mockup -->
+          <div class="phone-mockup">
+            <div class="phone-screen">
+              <!-- Status Bar -->
+              <div class="phone-status-bar">
+                <span>9:41</span>
+                <div class="phone-notch"></div>
+                <span>5G 🔋</span>
+              </div>
+
+              <!-- Parent Greeting Card -->
+              <div class="phone-parent-card">
+                <div class="parent-avatar-circle">
+                  <img src="assets/soucheav-avatar.png" alt="Parent Avatar" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="parent-info">
+                  <h4><span data-i18n="greetingPrefix">Greeting,</span> Soucheav 👋</h4>
+                  <span data-i18n="parentRole">Parent • Phnom Penh</span>
+                </div>
+              </div>
+
+              <!-- Child Switcher Tabs (Dara Chan vs Bopha Chan) -->
+              <div class="phone-child-switcher">
+                <button id="tab-child-dara" class="child-tab-btn active" type="button">
+                  <span style="font-size: 1rem;">👦</span>
+                  <span data-i18n="daraName">Dara Chan</span>
+                </button>
+                <button id="tab-child-bopha" class="child-tab-btn" type="button">
+                  <span style="font-size: 1rem;">👧</span>
+                  <span data-i18n="bophaName">Bopha Chan</span>
+                </button>
+              </div>
+
+              <!-- Active Child Profile Card inside Phone -->
+              <div style="background-color: #FFFFFF; border: 2px solid var(--color-border); border-radius: 18px; padding: 0.65rem 0.75rem; display: flex; align-items: center; gap: 0.65rem; box-shadow: var(--shadow-sm);">
+                <div id="phone-child-avatar" style="width: 38px; height: 38px; flex-shrink: 0;">
+                  <!-- Dynamic SVG Avatar -->
+                </div>
+                <div>
+                  <h4 id="phone-child-name" style="font-size: 0.88rem; font-weight: 900; line-height: 1.1;">Dara Chan</h4>
+                  <span id="phone-child-age" style="font-size: 0.72rem; font-weight: 700; color: var(--color-text-muted);">1 year old</span>
+                </div>
+                <span class="neo-badge" style="margin-left: auto; background-color: var(--color-status-green-bg); color: #176B46;">
+                  Healthy
+                </span>
+              </div>
+
+              <!-- Due Vaccine Reminder Card -->
+              <div class="phone-due-card">
+                <span id="phone-due-days" class="due-badge-pill">Due in 3 days</span>
+                <div id="phone-due-title" class="due-title">Pentavalent 2 (DTP-HepB-Hib)</div>
+                <div id="phone-due-hosp" class="due-hospital">National Pediatric Hospital • Phnom Penh</div>
+              </div>
+
+              <!-- Quick Stats Grid inside Phone -->
+              <div class="phone-stats-grid">
+                <div class="phone-stat-box">
+                  <div class="icon">💉</div>
+                  <strong id="phone-stat-vaccines">8 / 12</strong>
+                  <small data-i18n="statVaccinesLabel">Vaccines</small>
+                </div>
+                <div class="phone-stat-box">
+                  <div class="icon">📏</div>
+                  <strong id="phone-stat-height">74 cm</strong>
+                  <small data-i18n="statHeightLabel">Height</small>
+                </div>
+                <div class="phone-stat-box">
+                  <div class="icon">⚖️</div>
+                  <strong id="phone-stat-weight">9.6 kg</strong>
+                  <small data-i18n="statWeightLabel">Weight</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="intro" id="about">
-      <div class="section-label">ABOUT KOMA</div>
-      <div class="intro-grid">
-        <h2>Making child health<br><span>easier to manage.</span></h2>
-        <div>
-          <p>
-            We created KOMA because keeping track of a child's health can become difficult
-            when important records, dates, and milestones are spread across different places.
+    <!-- ========================================================
+         3. CULTURAL HOOK: "YOUR YELLOW BOOKLET, REIMAGINED"
+         ======================================================== -->
+    <section id="booklet" class="section yellow-booklet-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label" data-i18n="bookletAnchorTag">THE EMOTIONAL ANCHOR</div>
+          <h2 data-i18n="bookletSectionTitle">Your Yellow Booklet, Reimagined.</h2>
+          <p data-i18n="bookletSectionDesc">
+            In Cambodia, every mother receives a physical yellow card at birth. But paper tears, gets water-damaged, and gets left behind. KOMA gives every mother and child an indestructible digital twin.
           </p>
-          <p>
-            Our goal is simple: give parents one friendly place to stay organized,
-            remember important vaccinations, and follow their child's journey as they grow.
+        </div>
+
+        <!-- Split Comparison -->
+        <div class="comparison-grid">
+          <!-- Left: The Paper Booklet (The Frustration) -->
+          <div class="paper-card">
+            <div class="paper-badge">⚠️ THE REALITY OF PAPER</div>
+            <h3 data-i18n="paperCardTitle">Traditional Paper Booklet</h3>
+            <p data-i18n="paperCardDesc">The fragile yellow paper booklet given at birth centers across Cambodia.</p>
+
+            <div class="paper-flaws-list">
+              <div class="paper-flaw-item" data-i18n="paperFlaw1">
+                💧 Water-damaged easily during monsoon season
+              </div>
+              <div class="paper-flaw-item" data-i18n="paperFlaw2">
+                ✍️ Faded ink & illegible doctor handwriting
+              </div>
+              <div class="paper-flaw-item" data-i18n="paperFlaw3">
+                🏠 Forgotten at home during clinic checkups
+              </div>
+              <div class="paper-flaw-item" data-i18n="paperFlaw4">
+                ⏳ Zero automated due date reminders
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: The KOMA Solution - Digital Twin -->
+          <div class="digital-twin-card">
+            <div class="digital-twin-header">
+              <div class="moh-emblem-group">
+                <div class="moh-emblem-badge">MOH KH</div>
+                <div class="moh-title-block">
+                  <h3 data-i18n="digitalCardTitle">KOMA Digital Twin (MOH Standard)</h3>
+                  <span data-i18n="digitalCardSubtitle">Kingdom of Cambodia • Ministry of Health Official Schedule</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab Switcher (Infancy 0-9m vs Toddler 9-18m) -->
+            <div class="booklet-tabs-row">
+              <button id="booklet-tab-infancy" class="booklet-tab-btn active" type="button" data-i18n="tabInfancy">
+                Infancy (0–9 Months)
+              </button>
+              <button id="booklet-tab-toddler" class="booklet-tab-btn" type="button" data-i18n="tabToddler">
+                Toddler (9–18 Months)
+              </button>
+            </div>
+
+            <!-- Replica Table -->
+            <div class="booklet-table-wrapper">
+              <table class="booklet-table">
+                <thead>
+                  <tr>
+                    <th data-i18n="thVaccine">Vaccine</th>
+                    <th data-i18n="thDueAge">Due Age</th>
+                    <th data-i18n="thDateGiven">Date Given</th>
+                    <th data-i18n="thHospital">Hospital / Health Center</th>
+                    <th data-i18n="thStatus">Status</th>
+                  </tr>
+                </thead>
+                <tbody id="booklet-table-body">
+                  <!-- Rendered dynamically by script.js -->
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Action Controls -->
+            <div class="booklet-actions-row">
+              <button class="neo-btn neo-btn-sm neo-btn-white btn-trigger-print" type="button" data-i18n="btnPrintPdf">
+                🖨️ Print / Export A4 PDF
+              </button>
+              <button class="neo-btn neo-btn-sm neo-btn-primary btn-open-booklet-modal" type="button" data-i18n="btnOpenFullBooklet">
+                📖 View Full MOH Booklet Modal
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         4. CORE FEATURE SHOWCASE (4 NEO-BRUTALIST PILLARS)
+         ======================================================== -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label" data-i18n="pillarsTag">CORE PILLARS</div>
+          <h2 data-i18n="pillarsTitle">Everything Parents Need, In One Place</h2>
+          <p data-i18n="pillarsDesc">
+            Built around the real everyday healthcare journey of Cambodian mothers and fathers.
           </p>
         </div>
-      </div>
-    </section>
 
-    <section class="features-section" id="features">
-      <div class="section-heading">
-        <div>
-          <div class="section-label">WHAT KOMA OFFERS</div>
-          <h2>Everything parents need,<br><span>in one place.</span></h2>
+        <div class="features-grid">
+          <!-- Pillar 1: National Immunization Schedule -->
+          <article class="neo-card feature-pillar-card">
+            <div class="feature-card-top">
+              <div class="pillar-icon-box" style="background-color: var(--color-status-green-bg); color: #176B46;">
+                💉
+              </div>
+              <div class="pillar-number">01</div>
+            </div>
+
+            <h3 data-i18n="pillar1Title">National Immunization Schedule</h3>
+            <p data-i18n="pillar1Desc">
+              Pre-loaded with Cambodia’s complete NIP protocol (BCG, HepB, OPV, Pentavalent, PCV, MR, JE). Always aligned with the Ministry of Health.
+            </p>
+
+            <!-- Interactive Timeline Explorer Demo -->
+            <div class="pillar-demo-box">
+              <div class="timeline-pill-group">
+                <button class="dose-chip active" type="button">At Birth</button>
+                <button class="dose-chip" type="button">6 Weeks</button>
+                <button class="dose-chip" type="button">10 Weeks</button>
+                <button class="dose-chip" type="button">14 Weeks</button>
+                <button class="dose-chip" type="button">9 Months</button>
+                <button class="dose-chip" type="button">18 Months</button>
+              </div>
+
+              <div class="timeline-result-card">
+                <div>
+                  <strong id="pillar1-dose-title" style="font-size: 0.88rem; display: block; color: var(--color-text-dark);">
+                    BCG (Tuberculosis)
+                  </strong>
+                  <span id="pillar1-dose-age" style="font-size: 0.75rem; color: var(--color-text-muted); font-weight: 700;">
+                    At Birth (within 24h)
+                  </span>
+                </div>
+                <span id="pillar1-dose-hosp" class="neo-badge" style="background: #E8F8F0; color: #176B46;">
+                  🏥 Kantha Bopha
+                </span>
+              </div>
+              <div id="pillar1-dose-desc" style="font-size: 0.75rem; color: var(--color-text-muted); margin-top: 0.5rem; font-weight: 600;">
+                Protects newborns from severe tuberculosis and tuberculous meningitis.
+              </div>
+            </div>
+          </article>
+
+          <!-- Pillar 2: Smart Reminders & Overdue Alerts -->
+          <article class="neo-card feature-pillar-card">
+            <div class="feature-card-top">
+              <div class="pillar-icon-box" style="background-color: var(--color-status-coral-bg); color: #AF371C;">
+                🔔
+              </div>
+              <div class="pillar-number">02</div>
+            </div>
+
+            <h3 data-i18n="pillar2Title">Smart Reminders & Due Dates</h3>
+            <p data-i18n="pillar2Desc">
+              Calculates exact vaccination dates from your baby’s birth date. Receive timely countdowns so booster shots are never forgotten.
+            </p>
+
+            <!-- Interactive Reminder Simulator Demo -->
+            <div class="pillar-demo-box" id="reminder-sim-box">
+              <div class="reminder-sim-row">
+                <div>
+                  <strong id="reminder-sim-title" style="font-size: 0.88rem; display: block;" data-i18n="reminderSimTitle">
+                    Pentavalent 2 (DTP-HepB-Hib)
+                  </strong>
+                  <span class="reminder-timer-pill" style="margin-top: 0.35rem;">
+                    ⏰ <span id="reminder-sim-days" data-i18n="reminderSimDays">3 days left</span>
+                  </span>
+                </div>
+                <button id="btn-mark-reminder-done" class="neo-btn neo-btn-sm neo-btn-primary" type="button" data-i18n="reminderSimMarkBtn">
+                  Mark as Given ✅
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Pillar 3: WHO Growth Monitoring -->
+          <article id="growth" class="neo-card feature-pillar-card">
+            <div class="feature-card-top">
+              <div class="pillar-icon-box" style="background-color: var(--color-status-blue-bg); color: #12639E;">
+                📈
+              </div>
+              <div class="pillar-number">03</div>
+            </div>
+
+            <h3 data-i18n="pillar3Title">WHO Growth Monitoring</h3>
+            <p data-i18n="pillar3Desc">
+              Track your child’s height and weight plotted against World Health Organization percentiles (P3 to P97). Spot healthy growth trends easily.
+            </p>
+
+            <!-- Interactive Growth Toggle & Mini SVG Chart -->
+            <div class="pillar-demo-box">
+              <div class="growth-toggle-row">
+                <span style="font-size: 0.78rem; font-weight: 800; color: var(--color-text-dark);">
+                  WHO Standard Percentile (P50)
+                </span>
+                <div style="display: flex; gap: 0.35rem;">
+                  <button id="growth-tab-weight" class="growth-tab-btn active" type="button" data-i18n="tabWeight">
+                    Weight (kg)
+                  </button>
+                  <button id="growth-tab-height" class="growth-tab-btn" type="button" data-i18n="tabHeight">
+                    Height (cm)
+                  </button>
+                </div>
+              </div>
+
+              <!-- SVG Interactive Canvas Box -->
+              <div id="growth-svg-stage" class="growth-svg-container">
+                <!-- Rendered dynamically by script.js -->
+              </div>
+            </div>
+          </article>
+
+          <!-- Pillar 4: Made for Cambodia & Offline-First -->
+          <article class="neo-card feature-pillar-card">
+            <div class="feature-card-top">
+              <div class="pillar-icon-box" style="background-color: var(--color-card-soft); color: #8C5300;">
+                🇰🇭
+              </div>
+              <div class="pillar-number">04</div>
+            </div>
+
+            <h3 data-i18n="pillar4Title">Made for Cambodia & Offline-First</h3>
+            <p data-i18n="pillar4Desc">
+              Quick hospital selection (Kantha Bopha, Calmette, NPH, commune centers), complete Khmer font support, and 100% offline local storage.
+            </p>
+
+            <!-- Interactive Hospital Picker Demo -->
+            <div class="pillar-demo-box">
+              <label for="hospital-select-dropdown" style="font-size: 0.75rem; font-weight: 800; display: block; margin-bottom: 0.4rem;" data-i18n="hospSelectPrompt">
+                Select Referral Hospital:
+              </label>
+              <select id="hospital-select-dropdown" class="hospital-select-box">
+                <option value="kantha-bopha">Kantha Bopha Hospital (គន្ធបុប្ផា)</option>
+                <option value="nph">National Pediatric Hospital (កុមារជាតិ)</option>
+                <option value="calmette">Calmette Hospital (កាល់ម៉ែត)</option>
+                <option value="ahc">Angkor Hospital for Children (កុមារអង្គរ)</option>
+                <option value="commune">Commune Health Center (មណ្ឌលសុខភាព)</option>
+              </select>
+
+              <div class="hospital-info-snippet">
+                <div id="selected-hospital-address">📍 St. 47, Sangkat Wat Phnom, Phnom Penh</div>
+                <div id="selected-hospital-phone" style="margin-top: 0.2rem;">📞 +855 23 722 020</div>
+                <div id="selected-hospital-status" style="margin-top: 0.2rem; color: #166534;">
+                  ℹ️ Free NIP vaccines available daily (7:00 AM - 5:00 PM)
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
-        <p>Designed to be simple enough for everyday use, while keeping the information that matters close at hand.</p>
-      </div>
-
-      <div class="feature-grid">
-        <article class="feature-card featured">
-          <div class="icon">💉</div>
-          <div class="number">01</div>
-          <h3>Vaccination Tracking</h3>
-          <p>Keep your child's vaccination history organized and easy to check whenever you need it.</p>
-          <a href="#contact">Learn more →</a>
-        </article>
-
-        <article class="feature-card">
-          <div class="icon">🔔</div>
-          <div class="number">02</div>
-          <h3>Smart Reminders</h3>
-          <p>Stay aware of upcoming vaccinations with timely reminders for important dates.</p>
-          <a href="#contact">Learn more →</a>
-        </article>
-
-        <article class="feature-card">
-          <div class="icon">📈</div>
-          <div class="number">03</div>
-          <h3>Growth & Development</h3>
-          <p>Follow important growth and development information as your child reaches new milestones.</p>
-          <a href="#contact">Learn more →</a>
-        </article>
-
-        <article class="feature-card">
-          <div class="icon">🇰🇭</div>
-          <div class="number">04</div>
-          <h3>Made for Cambodia</h3>
-          <p>Built around the needs of Cambodian families, with a focus on accessibility and simplicity.</p>
-          <a href="#contact">Learn more →</a>
-        </article>
       </div>
     </section>
 
-    <section class="why-section" id="why">
-      <div class="why-visual">
-        <div class="sun"></div>
-        <div class="illustration-card">
-          <div class="heart">♥</div>
-          <div class="family">👨‍👩‍👧</div>
-          <span>Growing together</span>
+    <!-- ========================================================
+         5. INTERACTIVE MINI-PLAYGROUND (CALCULATOR & BIRTHDAY)
+         ======================================================== -->
+    <section id="playground" class="section playground-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label" data-i18n="playgroundTag">INTERACTIVE PLAYGROUND</div>
+          <h2 data-i18n="playgroundTitle">Try KOMA Features Live</h2>
+          <p data-i18n="playgroundDesc">
+            Experience the tools designed to make child health tracking joyful and effortless.
+          </p>
+        </div>
+
+        <div class="playground-grid">
+          <!-- Playground Widget 1: Vaccine Calculator -->
+          <div class="calculator-card">
+            <div style="display: flex; align-items: center; gap: 0.65rem; margin-bottom: 0.65rem;">
+              <span style="font-size: 1.5rem;">🧮</span>
+              <h3 data-i18n="calcTitle">Vaccine Schedule Calculator</h3>
+            </div>
+            <p style="font-size: 0.88rem; margin-bottom: 1.25rem;" data-i18n="calcDesc">
+              Enter your child’s birth date to calculate their exact age and next 3 scheduled vaccinations in Cambodia.
+            </p>
+
+            <div class="calc-date-input-group">
+              <label for="calc-birth-input" data-i18n="calcInputLabel">Child’s Birth Date:</label>
+              <input type="date" id="calc-birth-input" class="calc-date-input">
+              
+              <!-- Quick Preset Buttons -->
+              <div class="calc-presets-row">
+                <button class="preset-chip" type="button" data-preset="newborn" data-i18n="presetNewborn">Newborn</button>
+                <button class="preset-chip" type="button" data-preset="2m" data-i18n="preset2m">2 Months</button>
+                <button class="preset-chip" type="button" data-preset="6m" data-i18n="preset6m">6 Months</button>
+                <button class="preset-chip" type="button" data-preset="1y" data-i18n="preset1y">1 Year</button>
+              </div>
+            </div>
+
+            <!-- Dynamic Child Age Computed Banner -->
+            <div id="calc-child-age-display" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+              <!-- Computed Age string -->
+            </div>
+
+            <div class="calc-results-block">
+              <h4 style="font-size: 0.95rem; font-weight: 900;" data-i18n="calcUpcomingTitle">
+                Next 3 Recommended Vaccinations:
+              </h4>
+              <div id="calc-results-list">
+                <!-- Injected dynamically by script.js -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Playground Widget 2: Birthday Celebration Preview -->
+          <div class="birthday-teaser-card">
+            <div>
+              <div style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.25rem 0.65rem; background: #FABE2C; border: 1.5px solid #18181B; border-radius: 9999px; font-size: 0.75rem; font-weight: 900;">
+                🎂 CELEBRATION ENGINE
+              </div>
+              <h3 style="margin-top: 0.75rem; font-size: 1.45rem;" data-i18n="bdayTeaserTitle">
+                Joyful Birthday Celebrations
+              </h3>
+              <p style="font-size: 0.88rem; margin-top: 0.4rem;" data-i18n="bdayTeaserDesc">
+                Every child deserves to feel celebrated! KOMA has built-in celebratory confetti explosions and heartfelt health blessings on their special day.
+              </p>
+            </div>
+
+            <!-- Interactive Cake Illustration -->
+            <div id="birthday-teaser-cake" class="birthday-cake-illustration" title="Tap to celebrate!">
+              <svg viewBox="0 0 160 160" width="100%" height="100%">
+                <ellipse cx="80" cy="142" rx="68" ry="12" fill="#FFFFFF" stroke="#18181B" stroke-width="2.5" />
+                <ellipse cx="80" cy="140" rx="60" ry="9" fill="#FAF7EE" />
+                <rect x="30" y="98" width="100" height="38" rx="8" fill="#EE6748" stroke="#18181B" stroke-width="2.5" />
+                <path d="M30 110 Q40 118 50 110 Q60 118 70 110 Q80 118 90 110 Q100 118 110 110 Q120 118 130 110 L130 98 L30 98 Z" fill="#FFFFFF" stroke="#18181B" stroke-width="2" />
+                <rect x="45" y="65" width="70" height="34" rx="6" fill="#FABE2C" stroke="#18181B" stroke-width="2.5" />
+                <path d="M45 76 Q55 83 65 76 Q75 83 80 76 Q85 83 95 76 Q105 83 115 76 L115 65 L45 65 Z" fill="#FFFFFF" stroke="#18181B" stroke-width="2" />
+                <!-- Candles -->
+                <rect x="58" y="42" width="6" height="24" rx="2" fill="#4AAEE8" stroke="#18181B" stroke-width="1.5" />
+                <path d="M61 42 Q58 33 61 28 Q64 33 61 42" fill="#EE6748" />
+                <rect x="77" y="38" width="6" height="28" rx="2" fill="#36B37E" stroke="#18181B" stroke-width="1.5" />
+                <path d="M80 38 Q77 26 80 20 Q83 26 80 38" fill="#FABE2C" />
+                <rect x="96" y="42" width="6" height="24" rx="2" fill="#EE6748" stroke="#18181B" stroke-width="1.5" />
+                <path d="M99 42 Q96 33 99 28 Q102 33 99 42" fill="#FABE2C" />
+              </svg>
+            </div>
+
+            <div style="font-size: 0.78rem; font-weight: 800; color: #8C5300; margin-bottom: 1rem;" data-i18n="bdayTapHint">
+              Tap cake to blow candles & launch confetti!
+            </div>
+
+            <button class="neo-btn neo-btn-primary btn-trigger-birthday" type="button" style="width: 100%;" data-i18n="btnTestBirthday">
+              🎉 Test Birthday Wish & Confetti
+            </button>
+          </div>
         </div>
       </div>
-      <div class="why-copy">
-        <div class="section-label">WHY KOMA?</div>
-        <h2>Because every little milestone <span>matters.</span></h2>
-        <p>
-          Parenting comes with many things to remember. KOMA helps reduce the mental load
-          by bringing important child health information together in a clear and friendly experience.
-        </p>
-        <div class="check-list">
-          <div><span>✓</span> Keep important health information organized</div>
-          <div><span>✓</span> Reduce the chance of missing vaccination dates</div>
-          <div><span>✓</span> Follow your child's growth journey</div>
-          <div><span>✓</span> Make health tracking less complicated</div>
+    </section>
+
+    <!-- ========================================================
+         6. CAMBODIAN HEALTHCARE ECOSYSTEM & INSTITUTIONAL TRUST
+         ======================================================== -->
+    <section id="hospitals" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label" data-i18n="trustTag">CAMBODIAN HEALTHCARE ECOSYSTEM</div>
+          <h2 data-i18n="trustTitle">Partnering in Cambodian Child Health</h2>
+          <p data-i18n="trustDesc">
+            Compatible with major pediatric referral hospitals and over 1,200 local commune health centers nationwide.
+          </p>
+        </div>
+
+        <!-- 4 Hospital Cards Grid -->
+        <div class="hospitals-grid">
+          <div class="hospital-card">
+            <span class="hospital-badge-top">Pediatric Hospital</span>
+            <h4 data-i18n="hospKBName">Kantha Bopha Hospital</h4>
+            <span data-i18n="hospKBLoc">Phnom Penh & Siem Reap</span>
+            <div class="hospital-feature-tag" data-i18n="hospKBTag">
+              Free Pediatric Care & Vaccinations
+            </div>
+          </div>
+
+          <div class="hospital-card">
+            <span class="hospital-badge-top">National Center</span>
+            <h4 data-i18n="hospNPHName">National Pediatric Hospital</h4>
+            <span data-i18n="hospNPHLoc">Russian Blvd, Phnom Penh</span>
+            <div class="hospital-feature-tag" data-i18n="hospNPHTag">
+              National Immunization Center
+            </div>
+          </div>
+
+          <div class="hospital-card">
+            <span class="hospital-badge-top">Northern Referral</span>
+            <h4 data-i18n="hospAHCName">Angkor Hospital for Children</h4>
+            <span data-i18n="hospAHCLoc">Siem Reap</span>
+            <div class="hospital-feature-tag" data-i18n="hospAHCTag">
+              Northern Cambodia Referral Center
+            </div>
+          </div>
+
+          <div class="hospital-card">
+            <span class="hospital-badge-top">National Hospital</span>
+            <h4 data-i18n="hospCalmetteName">Calmette Hospital</h4>
+            <span data-i18n="hospCalmetteLoc">Monivong Blvd, Phnom Penh</span>
+            <div class="hospital-feature-tag" data-i18n="hospCalmetteTag">
+              Maternity & Child Health Unit
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Trust Pillars Strip -->
+        <div class="trust-banner-strip">
+          <div class="trust-pillar">
+            <div class="trust-pillar-icon">🔒</div>
+            <div>
+              <h4 data-i18n="trustPillar1Title">Zero Data Selling</h4>
+              <p data-i18n="trustPillar1Desc">
+                Your child’s medical records stay private on your device. We never sell health data to third parties.
+              </p>
+            </div>
+          </div>
+
+          <div class="trust-pillar">
+            <div class="trust-pillar-icon">🇰🇭</div>
+            <div>
+              <h4 data-i18n="trustPillar2Title">MOH NIP Standardized</h4>
+              <p data-i18n="trustPillar2Desc">
+                100% aligned with the official Cambodian Ministry of Health National Immunization Program protocols.
+              </p>
+            </div>
+          </div>
+
+          <div class="trust-pillar">
+            <div class="trust-pillar-icon">🆓</div>
+            <div>
+              <h4 data-i18n="trustPillar3Title">Always Free for Parents</h4>
+              <p data-i18n="trustPillar3Desc">
+                No subscriptions, no ads, no paywalls. Built for every Cambodian mother, father, and caregiver.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="vision-section">
-      <div class="section-label">OUR VISION</div>
-      <h2>A healthier start for<br><span>every child in Cambodia.</span></h2>
-      <p>
-        We envision a future where every parent can easily access, understand,
-        and manage their child's health information.
-      </p>
+    <!-- ========================================================
+         7. FINAL CONVERSION BANNER (TRY DEMO / WAITLIST)
+         ======================================================== -->
+    <section class="section cta-banner-section">
+      <div class="container">
+        <div class="cta-banner-card">
+          <h2 data-i18n="ctaBannerTitle">Start your child’s digital health journey today.</h2>
+          <p data-i18n="ctaBannerDesc">
+            Join hundreds of Cambodian parents who care with confidence, peace of mind, and joy.
+          </p>
+
+          <div class="cta-banner-actions">
+            <a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer" class="neo-btn neo-btn-white" style="font-size: 1.1rem; padding: 0.9rem 2rem;" data-i18n="btnTryWebDemo">
+              🚀 Try Web Demo Now
+            </a>
+            <button class="neo-btn neo-btn-primary btn-trigger-waitlist" type="button" style="font-size: 1.1rem; padding: 0.9rem 2rem; background-color: #FFFFFF;" data-i18n="btnRequestMobile">
+              📱 Request Mobile App Invite
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="cta" id="contact">
-      <div>
-        <div class="section-label">LET'S GROW TOGETHER</div>
-        <h2>Start your child's<br><span>health journey with KOMA.</span></h2>
-      </div>
-      <a class="primary-button light-button" href="mailto:hello@koma.kh">Get in touch <span>→</span></a>
-    </section>
   </main>
 
-  <footer>
-    <div class="footer-brand">
-      <div class="logo"><span class="logo-mark">K</span><span>KOMA</span></div>
-      <p>Helping parents keep track, stay informed, and care with confidence.</p>
+  <!-- ========================================================
+       8. FOOTER
+       ======================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand-col">
+          <div class="logo-brand">
+            <img src="assets/logo.png" alt="KOMA Logo" class="logo-icon-img">
+            <img src="assets/koma-text.svg" alt="KOMA" class="logo-text-img">
+          </div>
+          <p data-i18n="footerSlogan">
+            Helping Cambodian parents care with confidence, stay informed, and celebrate every milestone.
+          </p>
+        </div>
+
+        <!-- Links Col 1: Product -->
+        <div class="footer-col">
+          <h5 data-i18n="footerColProduct">Product</h5>
+          <ul>
+            <li><a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer" data-i18n="linkDemo">Live Web Demo</a></li>
+            <li><a href="#booklet" data-i18n="linkYellowBook">Digital Yellow Book</a></li>
+            <li><a href="#growth" data-i18n="linkGrowth">Growth Charts</a></li>
+            <li><a href="#hospitals" data-i18n="linkHospitals">Hospital Directory</a></li>
+          </ul>
+        </div>
+
+        <!-- Links Col 2: Health Resources -->
+        <div class="footer-col">
+          <h5 data-i18n="footerColResources">Resources</h5>
+          <ul>
+            <li><a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer" data-i18n="linkMOH">MOH Cambodia NIP</a></li>
+            <li><a href="https://t.me" target="_blank" rel="noopener noreferrer" data-i18n="linkTelegram">Telegram Parent Community</a></li>
+            <li><a href="#playground" data-i18n="linkFAQ">Vaccine FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Links Col 3: Legal & Trust -->
+        <div class="footer-col">
+          <h5 data-i18n="footerColLegal">Trust & Legal</h5>
+          <ul>
+            <li><a href="#home" data-i18n="linkPrivacy">Privacy Policy</a></li>
+            <li><a href="#home" data-i18n="linkTerms">Terms of Use</a></li>
+            <li><a href="#home" data-i18n="linkSecurity">Offline Security</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div class="cambodia-love-badge" data-i18n="footerBuiltIn">
+          Built with ❤️ in Phnom Penh, Cambodia 🇰🇭
+        </div>
+        <div data-i18n="footerCopyright">
+          © 2026 KOMA. All rights reserved.
+        </div>
+      </div>
     </div>
-    <div class="footer-links">
-      <a href="#about">About</a>
-      <a href="#features">Features</a>
-      <a href="#why">Why KOMA?</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <div class="copyright">© 2026 KOMA. Built for Cambodian families.</div>
   </footer>
 
+  <!-- ========================================================
+       9. MODALS: BIRTHDAY MODAL, WAITLIST MODAL, FULL BOOKLET MODAL
+       ======================================================== -->
+
+  <!-- Birthday Celebration Modal (Exact Replica of BirthdayModal.tsx) -->
+  <div id="birthday-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="bday-modal-title">
+    <div class="modal-container text-center">
+      <button id="btn-close-birthday-modal" class="modal-close-btn" type="button" aria-label="Close modal">✕</button>
+
+      <div class="neo-badge" style="background:#FABE2C; margin-bottom: 0.5rem;" data-i18n="bdayModalHeading">
+        ✨ HAPPY BIRTHDAY ✨
+      </div>
+
+      <h2 id="bday-modal-title" style="font-size: 1.85rem; margin-bottom: 0.75rem;">
+        Dara Chan (ចាន់ តារា)
+      </h2>
+
+      <!-- Tap to blow candles cake -->
+      <div id="modal-birthday-cake" class="neo-card-soft" style="padding: 1.25rem; margin-bottom: 1.25rem; cursor: pointer;" title="Tap to blow candles and pop confetti!">
+        <div style="width: 140px; height: 140px; margin: 0 auto;">
+          <svg viewBox="0 0 160 160" width="100%" height="100%">
+            <ellipse cx="80" cy="142" rx="68" ry="12" fill="#FFFFFF" stroke="#18181B" stroke-width="2.5" />
+            <ellipse cx="80" cy="140" rx="60" ry="9" fill="#FAF7EE" />
+            <rect x="30" y="98" width="100" height="38" rx="8" fill="#EE6748" stroke="#18181B" stroke-width="2.5" />
+            <path d="M30 110 Q40 118 50 110 Q60 118 70 110 Q80 118 90 110 Q100 118 110 110 Q120 118 130 110 L130 98 L30 98 Z" fill="#FFFFFF" stroke="#18181B" stroke-width="2" />
+            <rect x="45" y="65" width="70" height="34" rx="6" fill="#FABE2C" stroke="#18181B" stroke-width="2.5" />
+            <path d="M45 76 Q55 83 65 76 Q75 83 80 76 Q85 83 95 76 Q105 83 115 76 L115 65 L45 65 Z" fill="#FFFFFF" stroke="#18181B" stroke-width="2" />
+            <rect x="58" y="42" width="6" height="24" rx="2" fill="#4AAEE8" stroke="#18181B" stroke-width="1.5" />
+            <path d="M61 42 Q58 33 61 28 Q64 33 61 42" fill="#EE6748" />
+            <rect x="77" y="38" width="6" height="28" rx="2" fill="#36B37E" stroke="#18181B" stroke-width="1.5" />
+            <path d="M80 38 Q77 26 80 20 Q83 26 80 38" fill="#FABE2C" />
+            <rect x="96" y="42" width="6" height="24" rx="2" fill="#EE6748" stroke="#18181B" stroke-width="1.5" />
+            <path d="M99 42 Q96 33 99 28 Q102 33 99 42" fill="#FABE2C" />
+          </svg>
+        </div>
+        <p style="font-size: 0.8rem; font-weight: 800; color: #8C5300; margin-top: 0.5rem;" data-i18n="bdayTapHint">
+          🎂 Tap cake to blow candles & launch confetti!
+        </p>
+      </div>
+
+      <!-- Health Blessing Note -->
+      <div class="neo-card" style="padding: 1rem 1.25rem; text-align: left; margin-bottom: 1.5rem; background: #FAF7EE;">
+        <div style="font-size: 0.88rem; font-weight: 900; margin-bottom: 0.35rem; color: #EE6748;">
+          ❤️ KOMA Health Wishes
+        </div>
+        <p style="font-size: 0.82rem; font-weight: 700; color: #18181B; line-height: 1.5;" data-i18n="bdayModalWish">
+          KOMA warmly wishes you robust health, protection, sharp wisdom, and a bright future!
+        </p>
+        <div style="display: flex; gap: 0.75rem; margin-top: 0.75rem; font-size: 0.75rem; font-weight: 800; color: #52525B;">
+          <span>🛡️ <span data-i18n="bdayModalSafe">Safe & Protected</span></span>
+          <span>📈 <span data-i18n="bdayModalGrowth">Healthy Growth</span></span>
+        </div>
+      </div>
+
+      <button id="btn-celebrate-done" class="neo-btn neo-btn-primary" type="button" style="width: 100%;" data-i18n="bdayModalCelebrate">
+        Celebrate! 🎉
+      </button>
+    </div>
+  </div>
+
+  <!-- Full MOH Booklet Modal -->
+  <div id="booklet-modal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-container large-modal">
+      <button id="btn-close-booklet-modal" class="modal-close-btn" type="button" aria-label="Close modal">✕</button>
+
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 0.75rem;">
+        <div>
+          <span class="neo-badge" style="background: var(--color-primary);">MOH CAMBODIA NIP</span>
+          <h2 style="font-size: 1.6rem; margin-top: 0.35rem;" data-i18n="digitalCardTitle">
+            KOMA Digital Twin (MOH Standard)
+          </h2>
+        </div>
+        <button class="neo-btn neo-btn-sm neo-btn-white btn-trigger-print" type="button" data-i18n="modalPrint">
+          🖨️ Print / Save PDF
+        </button>
+      </div>
+
+      <div class="booklet-table-wrapper">
+        <table class="booklet-table">
+          <thead>
+            <tr>
+              <th data-i18n="thVaccine">Vaccine</th>
+              <th data-i18n="thDueAge">Due Age</th>
+              <th data-i18n="thDateGiven">Date Given</th>
+              <th data-i18n="thHospital">Hospital / Health Center</th>
+              <th data-i18n="thStatus">Status</th>
+            </tr>
+          </thead>
+          <tbody id="modal-booklet-table-body">
+            <!-- Dynamically populated -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile App Waitlist Modal -->
+  <div id="waitlist-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="waitlist-modal-title">
+    <div class="modal-container">
+      <button id="btn-close-waitlist-modal" class="modal-close-btn" type="button" aria-label="Close modal">✕</button>
+
+      <div class="neo-badge" style="background: #EBF5FC; color: #12639E; margin-bottom: 0.5rem;">
+        📱 EARLY ACCESS
+      </div>
+
+      <h2 id="waitlist-modal-title" style="font-size: 1.7rem; margin-bottom: 0.5rem;" data-i18n="waitlistTitle">
+        Request Mobile App Invite
+      </h2>
+      <p style="font-size: 0.9rem;" data-i18n="waitlistDesc">
+        Be the first to access KOMA on iOS and Android when public beta opens in Phnom Penh.
+      </p>
+
+      <div id="waitlist-success-msg" class="neo-card" style="display: none; background: #E8F8F0; border-color: #36B37E; color: #176B46; padding: 1rem; margin-top: 1rem; font-weight: 800; font-size: 0.9rem;" data-i18n="waitlistSuccess">
+        🎉 You are on the waitlist! We will notify you via Telegram/SMS.
+      </div>
+
+      <form id="waitlist-form" class="waitlist-form">
+        <div class="form-group">
+          <label for="wl-name" data-i18n="labelParentName">Parent / Caregiver Name</label>
+          <input type="text" id="wl-name" class="form-input" placeholder="e.g. Sokha Chan" required>
+        </div>
+
+        <div class="form-group">
+          <label for="wl-contact" data-i18n="labelContact">Phone or Telegram Number</label>
+          <input type="tel" id="wl-contact" class="form-input" placeholder="+855 12 345 678" required>
+        </div>
+
+        <div class="form-group">
+          <label for="wl-age" data-i18n="labelKidAge">Child’s Current Age</label>
+          <input type="text" id="wl-age" class="form-input" placeholder="e.g. 6 months old" required>
+        </div>
+
+        <button type="submit" class="neo-btn neo-btn-primary" style="margin-top: 0.5rem;" data-i18n="btnSubmitWaitlist">
+          Join Priority Waitlist 🚀
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Hidden Print Container for Official A4 Printable Yellow Booklet -->
+  <div id="printable-yellow-booklet" class="no-screen" style="display: none;">
+    <div style="padding: 20px; font-family: sans-serif;">
+      <div style="text-align: center; border-bottom: 2px solid black; padding-bottom: 12px; margin-bottom: 16px;">
+        <h2 style="margin: 0; font-size: 18px; text-transform: uppercase;">KINGDOM OF CAMBODIA • MINISTRY OF HEALTH</h2>
+        <h3 style="margin: 4px 0 0 0; font-size: 15px;">NATIONAL IMMUNIZATION PROGRAM (NIP) - YELLOW HEALTH BOOKLET</h3>
+        <p style="margin: 4px 0 0 0; font-size: 12px; color: #333;">Child: Dara Chan (ចាន់ តារា) • DOB: June 15, 2025 • Record ID: KH-MOH-2025-0812</p>
+      </div>
+      <table style="width: 100%; border-collapse: collapse; font-size: 11px;">
+        <thead>
+          <tr style="background: #eee; border-bottom: 2px solid black;">
+            <th style="border: 1px solid black; padding: 6px;">Vaccine</th>
+            <th style="border: 1px solid black; padding: 6px;">Due Age</th>
+            <th style="border: 1px solid black; padding: 6px;">Date Administered</th>
+            <th style="border: 1px solid black; padding: 6px;">Hospital / Clinic</th>
+            <th style="border: 1px solid black; padding: 6px;">Status / Lot</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="border: 1px solid black; padding: 6px;"><strong>BCG (Tuberculosis)</strong></td>
+            <td style="border: 1px solid black; padding: 6px;">At Birth</td>
+            <td style="border: 1px solid black; padding: 6px;">June 15, 2025</td>
+            <td style="border: 1px solid black; padding: 6px;">Kantha Bopha Hospital</td>
+            <td style="border: 1px solid black; padding: 6px;">Completed (Lot: BCG-2025-08)</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; padding: 6px;"><strong>HepB Birth Dose</strong></td>
+            <td style="border: 1px solid black; padding: 6px;">At Birth</td>
+            <td style="border: 1px solid black; padding: 6px;">June 15, 2025</td>
+            <td style="border: 1px solid black; padding: 6px;">Kantha Bopha Hospital</td>
+            <td style="border: 1px solid black; padding: 6px;">Completed (Lot: HEP-9941)</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; padding: 6px;"><strong>Pentavalent 1 (DTP-HepB-Hib)</strong></td>
+            <td style="border: 1px solid black; padding: 6px;">6 Weeks</td>
+            <td style="border: 1px solid black; padding: 6px;">July 28, 2025</td>
+            <td style="border: 1px solid black; padding: 6px;">Calmette Hospital</td>
+            <td style="border: 1px solid black; padding: 6px;">Completed (Lot: PEN-4401)</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; padding: 6px;"><strong>OPV 1 (Polio Drops)</strong></td>
+            <td style="border: 1px solid black; padding: 6px;">6 Weeks</td>
+            <td style="border: 1px solid black; padding: 6px;">July 28, 2025</td>
+            <td style="border: 1px solid black; padding: 6px;">Calmette Hospital</td>
+            <td style="border: 1px solid black; padding: 6px;">Completed (Lot: POL-1120)</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; padding: 6px;"><strong>PCV 1 (Pneumococcal)</strong></td>
+            <td style="border: 1px solid black; padding: 6px;">6 Weeks</td>
+            <td style="border: 1px solid black; padding: 6px;">July 28, 2025</td>
+            <td style="border: 1px solid black; padding: 6px;">Calmette Hospital</td>
+            <td style="border: 1px solid black; padding: 6px;">Completed (Lot: PCV-8083)</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; padding: 6px;"><strong>Pentavalent 2 (DTP-HepB-Hib)</strong></td>
+            <td style="border: 1px solid black; padding: 6px;">10 Weeks</td>
+            <td style="border: 1px solid black; padding: 6px;">Due: Oct 18, 2026</td>
+            <td style="border: 1px solid black; padding: 6px;">National Pediatric Hospital</td>
+            <td style="border: 1px solid black; padding: 6px;">Scheduled</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; padding: 6px;"><strong>OPV 2 (Polio Drops)</strong></td>
+            <td style="border: 1px solid black; padding: 6px;">10 Weeks</td>
+            <td style="border: 1px solid black; padding: 6px;">Due: Oct 18, 2026</td>
+            <td style="border: 1px solid black; padding: 6px;">National Pediatric Hospital</td>
+            <td style="border: 1px solid black; padding: 6px;">Scheduled</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid black; padding: 6px;"><strong>Measles-Rubella 1 (MR 1)</strong></td>
+            <td style="border: 1px solid black; padding: 6px;">9 Months</td>
+            <td style="border: 1px solid black; padding: 6px;">Due: March 15, 2027</td>
+            <td style="border: 1px solid black; padding: 6px;">Kantha Bopha Hospital</td>
+            <td style="border: 1px solid black; padding: 6px;">Scheduled</td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="margin-top: 24px; display: flex; justify-content: space-between; font-size: 11px;">
+        <div>Parent Signature: _______________________</div>
+        <div>MOH Physician / Stamp: _______________________</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
