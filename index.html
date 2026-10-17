@@ -36,8 +36,6 @@
       <nav class="nav-desktop" aria-label="Primary Navigation">
         <a href="#features" class="nav-link" data-i18n="navFeatures">Features</a>
         <a href="#booklet" class="nav-link" data-i18n="navBooklet">MOH Booklet</a>
-        <a href="#growth" class="nav-link" data-i18n="navGrowth">Growth Charts</a>
-        <a href="#hospitals" class="nav-link" data-i18n="navHospitals">Hospital Guide</a>
         <a href="#playground" class="nav-link" data-i18n="navPlayground">Playground</a>
       </nav>
 
@@ -54,30 +52,25 @@
           </button>
 
           <!-- Dropdown Options Menu -->
-          <div id="lang-menu" class="lang-menu">
-            <button type="button" class="lang-option" data-lang="kh">
-              <span style="display: flex; align-items: center; gap: 0.5rem;">
-                <img src="assets/flag-kh.png" alt="Cambodia" class="flag-icon">
+          <div id="lang-menu" class="lang-menu" role="menu" aria-labelledby="lang-dropdown-btn">
+            <button type="button" class="lang-option" data-lang="kh" role="menuitem">
+              <span class="lang-option-content">
+                <img src="assets/flag-kh.png" alt="" aria-hidden="true" class="flag-icon">
                 <span>ភាសាខ្មែរ</span>
               </span>
             </button>
-            <button type="button" class="lang-option active" data-lang="en">
-              <span style="display: flex; align-items: center; gap: 0.5rem;">
-                <img src="assets/flag-en.png" alt="English" class="flag-icon">
+            <button type="button" class="lang-option active" data-lang="en" role="menuitem">
+              <span class="lang-option-content">
+                <img src="assets/flag-en.png" alt="" aria-hidden="true" class="flag-icon">
                 <span>English</span>
               </span>
             </button>
           </div>
         </div>
 
-        <!-- Primary CTA to Live Demo -->
-        <a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer" class="neo-btn neo-btn-primary" data-i18n="tryDemoBtn">
-          Try Live Demo
-        </a>
-
         <!-- Mobile Hamburger Toggle -->
-        <button id="hamburger-btn" class="hamburger-btn" type="button" aria-label="Open mobile menu">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#18181B" stroke-width="2.5" stroke-linecap="round">
+        <button id="hamburger-btn" class="hamburger-btn" type="button" aria-label="Open mobile menu" aria-controls="mobile-drawer" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
             <line x1="3" y1="12" x2="21" y2="12"></line>
             <line x1="3" y1="6" x2="21" y2="6"></line>
             <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -88,22 +81,35 @@
   </header>
 
   <!-- Mobile Drawer Menu -->
-  <div id="mobile-drawer" class="mobile-drawer">
+  <div id="mobile-drawer" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
     <div class="mobile-drawer-content">
       <div class="drawer-header">
         <div class="logo-brand">
           <img src="assets/logo.png" alt="KOMA" style="width: 32px; height: 32px;">
           <img src="assets/koma-text.svg" alt="KOMA" style="height: 22px;">
         </div>
-        <button id="close-drawer-btn" class="modal-close-btn" style="position: static;" aria-label="Close menu">✕</button>
+        <button id="close-drawer-btn" class="modal-close-btn" style="position: static;" aria-label="Close mobile menu">✕</button>
       </div>
 
       <div class="drawer-links">
         <a href="#features" class="drawer-link" data-i18n="navFeatures">Features</a>
         <a href="#booklet" class="drawer-link" data-i18n="navBooklet">MOH Booklet</a>
-        <a href="#growth" class="drawer-link" data-i18n="navGrowth">Growth Charts</a>
-        <a href="#hospitals" class="drawer-link" data-i18n="navHospitals">Hospital Guide</a>
         <a href="#playground" class="drawer-link" data-i18n="navPlayground">Playground</a>
+      </div>
+
+      <!-- Mobile Language Switcher Inside Drawer -->
+      <div class="drawer-lang-section">
+        <span class="drawer-lang-label" data-i18n="drawerLangLabel">Language / ភាសា</span>
+        <div class="drawer-lang-btns">
+          <button type="button" class="drawer-lang-btn active" data-lang="en">
+            <img src="assets/flag-en.png" alt="English" class="flag-icon">
+            <span>English</span>
+          </button>
+          <button type="button" class="drawer-lang-btn" data-lang="kh">
+            <img src="assets/flag-kh.png" alt="Cambodia" class="flag-icon">
+            <span>ភាសាខ្មែរ</span>
+          </button>
+        </div>
       </div>
 
       <div style="margin-top: auto; display: flex; flex-direction: column; gap: 0.85rem;">
@@ -123,13 +129,9 @@
       <div class="container hero-grid">
         <!-- Left: Copy & Actions -->
         <div class="hero-copy">
-          <div class="section-label" data-i18n="heroEyebrow">
-            🇰🇭 100% Cambodian NIP Digital Record • Official Healthcare Replica
-          </div>
-
           <h1>
-            <span data-i18n="heroHeadline1">Care today.</span><br>
-            <span class="highlight-text" data-i18n="heroHeadline2">Grow tomorrow.</span>
+            <span data-i18n="heroHeadline1">Care today</span><br>
+            <span class="highlight-text" data-i18n="heroHeadline2">Grow tomorrow</span>
           </h1>
 
           <p class="hero-subhead" data-i18n="heroSubhead">
@@ -140,25 +142,6 @@
             <a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer" class="neo-btn neo-btn-primary" style="font-size: 1.05rem; padding: 0.85rem 1.75rem;" data-i18n="btnLaunchDemo">
               ✨ Launch Interactive Demo →
             </a>
-            <a href="#booklet" class="neo-btn neo-btn-white" style="font-size: 1.05rem; padding: 0.85rem 1.5rem;" data-i18n="btnSeeBooklet">
-              📖 See Digital Yellow Book
-            </a>
-          </div>
-
-          <!-- Trust Row -->
-          <div class="hero-trust-bar">
-            <div class="trust-item">
-              <strong data-i18n="statFree">100% Free</strong>
-              <span data-i18n="statFreeSub">For all Cambodian families</span>
-            </div>
-            <div class="trust-item">
-              <strong data-i18n="statVaccines">11 Core Vaccines</strong>
-              <span data-i18n="statVaccinesSub">Pre-loaded MOH Schedule</span>
-            </div>
-            <div class="trust-item">
-              <strong data-i18n="statPrivate">100% Private</strong>
-              <span data-i18n="statPrivateSub">Offline-ready & secure</span>
-            </div>
           </div>
         </div>
 
@@ -223,18 +206,26 @@
             <div class="phone-screen">
               <!-- Status Bar -->
               <div class="phone-status-bar">
-                <span>9:41</span>
+                <span></span>
                 <div class="phone-notch"></div>
-                <span>5G 🔋</span>
+                <span>🔋</span>
               </div>
 
               <!-- Parent Greeting Card -->
               <div class="phone-parent-card">
-                <div class="parent-avatar-circle">
-                  <img src="assets/soucheav-avatar.png" alt="Parent Avatar" style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="parent-avatar-circle" title="Parent Avatar">
+                  <svg viewBox="0 0 36 36" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="36" height="36" fill="#4AAEE8"/>
+                    <circle cx="18" cy="14" r="7" fill="#FFE5C4" stroke="#18181B" stroke-width="1.8"/>
+                    <path d="M11 13 C11 8 14 6 18 6 C22 6 25 8 25 13 C23 11 20 10 18 10 C16 10 13 11 11 13 Z" fill="#18181B"/>
+                    <circle cx="15.5" cy="14" r="1" fill="#18181B"/>
+                    <circle cx="20.5" cy="14" r="1" fill="#18181B"/>
+                    <path d="M16 17 Q18 19 20 17" stroke="#18181B" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+                    <path d="M8 32 C8 25 12 23 18 23 C24 23 28 25 28 32 Z" fill="#FABE2C" stroke="#18181B" stroke-width="1.8"/>
+                  </svg>
                 </div>
                 <div class="parent-info">
-                  <h4><span data-i18n="greetingPrefix">Greeting,</span> Soucheav 👋</h4>
+                  <h4><span data-i18n="greetingPrefix">Greeting,</span> User 👋</h4>
                   <span data-i18n="parentRole">Parent • Phnom Penh</span>
                 </div>
               </div>
@@ -302,18 +293,44 @@
     <section id="booklet" class="section yellow-booklet-section">
       <div class="container">
         <div class="section-header">
-          <div class="section-label" data-i18n="bookletAnchorTag">THE EMOTIONAL ANCHOR</div>
+          <div class="section-label" data-i18n="bookletAnchorTag">Digitalize MOH Booklet</div>
           <h2 data-i18n="bookletSectionTitle">Your Yellow Booklet, Reimagined.</h2>
           <p data-i18n="bookletSectionDesc">
             In Cambodia, every mother receives a physical yellow card at birth. But paper tears, gets water-damaged, and gets left behind. KOMA gives every mother and child an indestructible digital twin.
           </p>
         </div>
 
+        <!-- Transformation Flow Banner -->
+        <div class="transformation-flow-banner">
+          <div class="trans-flow-step trans-paper-step">
+            <span class="trans-flow-icon">📄</span>
+            <div class="trans-flow-info">
+              <strong>IRL Yellow Paper Booklet</strong>
+              <small>Fragile • Easily Torn • Monsoon Prone</small>
+            </div>
+          </div>
+          <div class="trans-flow-connector">
+            <div class="trans-connector-badge">
+              <span class="trans-sparkle">✨</span>
+              <span>DIGITIZED TRANSFORMATION</span>
+              <span class="trans-arrow">➔</span>
+            </div>
+            <div class="trans-beam-line"></div>
+          </div>
+          <div class="trans-flow-step trans-digital-step">
+            <span class="trans-flow-icon">📱</span>
+            <div class="trans-flow-info">
+              <strong>KOMA Indestructible Digital Twin</strong>
+              <small>MOH Standard • Forever Safe • Smart Alerts</small>
+            </div>
+          </div>
+        </div>
+
         <!-- Split Comparison -->
         <div class="comparison-grid">
           <!-- Left: The Paper Booklet (The Frustration) -->
           <div class="paper-card">
-            <div class="paper-badge">⚠️ THE REALITY OF PAPER</div>
+            <div class="paper-badge">⚠️ IRL PHYSICAL BOOKLET (PAPER)</div>
             <h3 data-i18n="paperCardTitle">Traditional Paper Booklet</h3>
             <p data-i18n="paperCardDesc">The fragile yellow paper booklet given at birth centers across Cambodia.</p>
 
@@ -355,6 +372,12 @@
               </button>
             </div>
 
+            <!-- Mobile Swipe Hint -->
+            <div class="mobile-table-scroll-hint">
+              <span>👉 <span data-i18n="tableScrollHint">Swipe horizontally to view full MOH record</span></span>
+              <span class="scroll-arrow-anim">→</span>
+            </div>
+
             <!-- Replica Table -->
             <div class="booklet-table-wrapper">
               <table class="booklet-table">
@@ -393,7 +416,7 @@
     <section id="features" class="section">
       <div class="container">
         <div class="section-header">
-          <div class="section-label" data-i18n="pillarsTag">CORE PILLARS</div>
+          <div class="section-label" data-i18n="pillarsTag">Core Features</div>
           <h2 data-i18n="pillarsTitle">Everything Parents Need, In One Place</h2>
           <p data-i18n="pillarsDesc">
             Built around the real everyday healthcare journey of Cambodian mothers and fathers.
@@ -412,16 +435,13 @@
 
             <h3 data-i18n="pillar1Title">National Immunization Schedule</h3>
             <p data-i18n="pillar1Desc">
-              Pre-loaded with Cambodia’s complete NIP protocol (BCG, HepB, OPV, Pentavalent, PCV, MR, JE). Always aligned with the Ministry of Health.
+              Pre-loaded with Cambodia’s complete NIP protocol aligned with the Ministry of Health.
             </p>
 
-            <!-- Interactive Timeline Explorer Demo -->
             <div class="pillar-demo-box">
               <div class="timeline-pill-group">
                 <button class="dose-chip active" type="button">At Birth</button>
                 <button class="dose-chip" type="button">6 Weeks</button>
-                <button class="dose-chip" type="button">10 Weeks</button>
-                <button class="dose-chip" type="button">14 Weeks</button>
                 <button class="dose-chip" type="button">9 Months</button>
                 <button class="dose-chip" type="button">18 Months</button>
               </div>
@@ -439,9 +459,6 @@
                   🏥 Kantha Bopha
                 </span>
               </div>
-              <div id="pillar1-dose-desc" style="font-size: 0.75rem; color: var(--color-text-muted); margin-top: 0.5rem; font-weight: 600;">
-                Protects newborns from severe tuberculosis and tuberculous meningitis.
-              </div>
             </div>
           </article>
 
@@ -456,10 +473,9 @@
 
             <h3 data-i18n="pillar2Title">Smart Reminders & Due Dates</h3>
             <p data-i18n="pillar2Desc">
-              Calculates exact vaccination dates from your baby’s birth date. Receive timely countdowns so booster shots are never forgotten.
+              Automated countdowns calculated from your baby’s birth date so booster shots are never forgotten.
             </p>
 
-            <!-- Interactive Reminder Simulator Demo -->
             <div class="pillar-demo-box" id="reminder-sim-box">
               <div class="reminder-sim-row">
                 <div>
@@ -488,21 +504,20 @@
 
             <h3 data-i18n="pillar3Title">WHO Growth Monitoring</h3>
             <p data-i18n="pillar3Desc">
-              Track your child’s height and weight plotted against World Health Organization percentiles (P3 to P97). Spot healthy growth trends easily.
+              Track height & weight plotted against official World Health Organization percentiles (P3 to P97).
             </p>
 
-            <!-- Interactive Growth Toggle & Mini SVG Chart -->
             <div class="pillar-demo-box">
               <div class="growth-toggle-row">
                 <span style="font-size: 0.78rem; font-weight: 800; color: var(--color-text-dark);">
-                  WHO Standard Percentile (P50)
+                  WHO Standard (P50)
                 </span>
                 <div style="display: flex; gap: 0.35rem;">
                   <button id="growth-tab-weight" class="growth-tab-btn active" type="button" data-i18n="tabWeight">
-                    Weight (kg)
+                    Weight
                   </button>
                   <button id="growth-tab-height" class="growth-tab-btn" type="button" data-i18n="tabHeight">
-                    Height (cm)
+                    Height
                   </button>
                 </div>
               </div>
@@ -510,43 +525,6 @@
               <!-- SVG Interactive Canvas Box -->
               <div id="growth-svg-stage" class="growth-svg-container">
                 <!-- Rendered dynamically by script.js -->
-              </div>
-            </div>
-          </article>
-
-          <!-- Pillar 4: Made for Cambodia & Offline-First -->
-          <article class="neo-card feature-pillar-card">
-            <div class="feature-card-top">
-              <div class="pillar-icon-box" style="background-color: var(--color-card-soft); color: #8C5300;">
-                🇰🇭
-              </div>
-              <div class="pillar-number">04</div>
-            </div>
-
-            <h3 data-i18n="pillar4Title">Made for Cambodia & Offline-First</h3>
-            <p data-i18n="pillar4Desc">
-              Quick hospital selection (Kantha Bopha, Calmette, NPH, commune centers), complete Khmer font support, and 100% offline local storage.
-            </p>
-
-            <!-- Interactive Hospital Picker Demo -->
-            <div class="pillar-demo-box">
-              <label for="hospital-select-dropdown" style="font-size: 0.75rem; font-weight: 800; display: block; margin-bottom: 0.4rem;" data-i18n="hospSelectPrompt">
-                Select Referral Hospital:
-              </label>
-              <select id="hospital-select-dropdown" class="hospital-select-box">
-                <option value="kantha-bopha">Kantha Bopha Hospital (គន្ធបុប្ផា)</option>
-                <option value="nph">National Pediatric Hospital (កុមារជាតិ)</option>
-                <option value="calmette">Calmette Hospital (កាល់ម៉ែត)</option>
-                <option value="ahc">Angkor Hospital for Children (កុមារអង្គរ)</option>
-                <option value="commune">Commune Health Center (មណ្ឌលសុខភាព)</option>
-              </select>
-
-              <div class="hospital-info-snippet">
-                <div id="selected-hospital-address">📍 St. 47, Sangkat Wat Phnom, Phnom Penh</div>
-                <div id="selected-hospital-phone" style="margin-top: 0.2rem;">📞 +855 23 722 020</div>
-                <div id="selected-hospital-status" style="margin-top: 0.2rem; color: #166534;">
-                  ℹ️ Free NIP vaccines available daily (7:00 AM - 5:00 PM)
-                </div>
               </div>
             </div>
           </article>
@@ -568,41 +546,164 @@
         </div>
 
         <div class="playground-grid">
-          <!-- Playground Widget 1: Vaccine Calculator -->
-          <div class="calculator-card">
-            <div style="display: flex; align-items: center; gap: 0.65rem; margin-bottom: 0.65rem;">
-              <span style="font-size: 1.5rem;">🧮</span>
-              <h3 data-i18n="calcTitle">Vaccine Schedule Calculator</h3>
-            </div>
-            <p style="font-size: 0.88rem; margin-bottom: 1.25rem;" data-i18n="calcDesc">
-              Enter your child’s birth date to calculate their exact age and next 3 scheduled vaccinations in Cambodia.
-            </p>
-
-            <div class="calc-date-input-group">
-              <label for="calc-birth-input" data-i18n="calcInputLabel">Child’s Birth Date:</label>
-              <input type="date" id="calc-birth-input" class="calc-date-input">
-              
-              <!-- Quick Preset Buttons -->
-              <div class="calc-presets-row">
-                <button class="preset-chip" type="button" data-preset="newborn" data-i18n="presetNewborn">Newborn</button>
-                <button class="preset-chip" type="button" data-preset="2m" data-i18n="preset2m">2 Months</button>
-                <button class="preset-chip" type="button" data-preset="6m" data-i18n="preset6m">6 Months</button>
-                <button class="preset-chip" type="button" data-preset="1y" data-i18n="preset1y">1 Year</button>
+          <!-- Playground Widget 1: Animated Interactive Mascots -->
+          <div class="mascot-interactive-card neo-card" id="mascot-card">
+            <!-- "Wait for it" above the mascots -->
+            <div class="mascot-header-bar">
+              <div class="mascot-wait-badge">
+                <span class="wait-icon">⏳</span>
+                <span data-i18n="waitLabel">Wait for it...</span>
+              </div>
+              <div id="mascot-action-pill" class="mascot-action-pill">
+                ✨ Sparkling Eyes
               </div>
             </div>
 
-            <!-- Dynamic Child Age Computed Banner -->
-            <div id="calc-child-age-display" style="font-size: 0.85rem; margin-bottom: 0.5rem;">
-              <!-- Computed Age string -->
+            <!-- Mascots Animated Interactive Stage -->
+            <div class="mascot-stage" id="mascot-stage" title="Click on Dara or Bopha to say hello!">
+              <!-- Speech Bubble on click -->
+              <div id="mascot-speech-bubble" class="mascot-speech-bubble">
+                <span class="bubble-arrow"></span>
+                <span id="mascot-speech-text">👋 Hello! We love staying healthy & happy!</span>
+              </div>
+
+              <!-- Floating Visual FX Stage -->
+              <div class="mascot-stage-fx">
+                <div class="fx-item fx-syringe" id="fx-syringe">💉</div>
+                <div class="fx-item fx-heart-left" id="fx-heart-left">❤️</div>
+                <div class="fx-item fx-heart-center" id="fx-heart-center">💖</div>
+                <div class="fx-item fx-heart-right" id="fx-heart-right">💕</div>
+                <div class="fx-item fx-sparkle-1" id="fx-sparkle-1">✨</div>
+                <div class="fx-item fx-sparkle-2" id="fx-sparkle-2">✨</div>
+                <div class="fx-item fx-sweat-boy" id="fx-sweat-boy">💦</div>
+                <div class="fx-item fx-sweat-girl" id="fx-sweat-girl">💦</div>
+              </div>
+
+              <!-- Boy & Girl Characters Container -->
+              <div class="mascots-wrap action-sparkling-eyes" id="mascots-wrap">
+                <!-- Boy Mascot (Dara) -->
+                <div class="mascot-figure mascot-boy" id="interactive-mascot-boy" role="button" tabindex="0" aria-label="Boy Mascot Dara">
+                  <svg viewBox="0 0 160 200" class="mascot-char-svg">
+                    <!-- Ears -->
+                    <circle cx="47" cy="70" r="7" fill="#FFF3E3" stroke="#18181B" stroke-width="2.5" />
+                    <circle cx="113" cy="70" r="7" fill="#FFF3E3" stroke="#18181B" stroke-width="2.5" />
+                    <!-- Head Base -->
+                    <circle cx="80" cy="68" r="35" fill="#FFF3E3" stroke="#18181B" stroke-width="2.8" />
+                    <!-- Hair & Headband -->
+                    <path d="M48 68 C44 42, 60 32, 80 32 C100 32, 116 42, 112 68 C104 60, 94 62, 80 63 C66 62, 56 60, 48 68 Z" fill="#262626" stroke="#18181B" stroke-width="2.8" />
+                    <path d="M47 52 C58 45, 102 45, 113 52 L113 63 C102 56, 58 56, 47 63 Z" fill="#18181B" stroke="#18181B" stroke-width="2.8" />
+                    <path d="M48 55 C58 49, 102 49, 112 55" stroke="#FABE2C" stroke-width="2.2" stroke-linecap="round" />
+                    <path d="M48 59 C58 53, 102 53, 112 59" stroke="#FABE2C" stroke-width="2.2" stroke-linecap="round" />
+                    <!-- Cheeks -->
+                    <circle cx="58" cy="76" r="7.5" fill="#FFAAA6" opacity="0.85" />
+                    <circle cx="102" cy="76" r="7.5" fill="#FFAAA6" opacity="0.85" />
+                    <circle cx="80" cy="71" r="2.5" fill="#FABE2C" />
+
+                    <!-- Normal Eyes -->
+                    <g class="eye-group eye-normal">
+                      <path d="M60 67 Q67 59 74 67" stroke="#18181B" stroke-width="3.2" stroke-linecap="round" fill="none" />
+                      <path d="M86 67 Q93 59 100 67" stroke="#18181B" stroke-width="3.2" stroke-linecap="round" fill="none" />
+                    </g>
+                    <!-- Sparkle Eyes -->
+                    <g class="eye-group eye-sparkle">
+                      <path d="M67 60 L68.5 64 L73 65 L68.5 66.5 L67 71 L65.5 66.5 L61 65 L65.5 64 Z" fill="#FABE2C" stroke="#18181B" stroke-width="1.2" />
+                      <path d="M93 60 L94.5 64 L99 65 L94.5 66.5 L93 71 L91.5 66.5 L87 65 L91.5 64 Z" fill="#FABE2C" stroke="#18181B" stroke-width="1.2" />
+                    </g>
+                    <!-- Scared Eyes -->
+                    <g class="eye-group eye-scared">
+                      <circle cx="67" cy="65" r="7" fill="#FFFFFF" stroke="#18181B" stroke-width="2.2" />
+                      <circle cx="67" cy="65" r="2" fill="#18181B" />
+                      <circle cx="93" cy="65" r="7" fill="#FFFFFF" stroke="#18181B" stroke-width="2.2" />
+                      <circle cx="93" cy="65" r="2" fill="#18181B" />
+                      <path d="M62 55 L72 58" stroke="#18181B" stroke-width="2" stroke-linecap="round" />
+                      <path d="M98 55 L88 58" stroke="#18181B" stroke-width="2" stroke-linecap="round" />
+                    </g>
+
+                    <!-- Normal Mouth -->
+                    <path class="mouth mouth-normal" d="M74 78 Q80 84 86 78" stroke="#18181B" stroke-width="2.8" stroke-linecap="round" fill="none" />
+                    <!-- Scared Mouth -->
+                    <ellipse class="mouth mouth-scared" cx="80" cy="80" rx="5" ry="6" fill="#18181B" />
+
+                    <!-- Body / Shirt -->
+                    <path d="M56 104 L104 104 L110 146 L50 146 Z" fill="#FABE2C" stroke="#18181B" stroke-width="2.8" stroke-linejoin="round" />
+                    <rect x="67" y="115" width="26" height="20" rx="3" fill="#FFFFFF" stroke="#18181B" stroke-width="2.2" />
+                    <text x="80" y="130" text-anchor="middle" font-size="12" font-weight="900" fill="#18181B">01</text>
+                    <!-- Left Arm -->
+                    <g class="arm boy-arm-left">
+                      <path d="M53 108 C42 118, 38 128, 48 135 C54 128, 56 118, 55 108" fill="#FFF3E3" stroke="#18181B" stroke-width="2.5" />
+                    </g>
+                    <!-- Right Arm (Wave / Heart / Hug) -->
+                    <g class="arm boy-arm-right">
+                      <path d="M106 108 C120 95, 134 85, 138 96 C132 108, 118 118, 108 122" fill="#FFF3E3" stroke="#18181B" stroke-width="2.5" />
+                    </g>
+                  </svg>
+                  <span class="mascot-tag">👦 Dara</span>
+                </div>
+
+                <!-- Girl Mascot (Bopha) -->
+                <div class="mascot-figure mascot-girl" id="interactive-mascot-girl" role="button" tabindex="0" aria-label="Girl Mascot Bopha">
+                  <svg viewBox="0 0 160 200" class="mascot-char-svg">
+                    <!-- Pigtails / Buns -->
+                    <circle cx="34" cy="52" r="16" fill="#262626" stroke="#18181B" stroke-width="2.8" />
+                    <circle cx="38" cy="52" r="7" fill="#EE6748" stroke="#18181B" stroke-width="2" />
+                    <circle cx="126" cy="52" r="16" fill="#262626" stroke="#18181B" stroke-width="2.8" />
+                    <circle cx="122" cy="52" r="7" fill="#EE6748" stroke="#18181B" stroke-width="2" />
+                    <!-- Head Base -->
+                    <circle cx="80" cy="68" r="35" fill="#FFF3E3" stroke="#18181B" stroke-width="2.8" />
+                    <!-- Hair & Fringe -->
+                    <path d="M48 68 C44 42, 60 32, 80 32 C100 32, 116 42, 112 68 C104 60, 94 62, 80 63 C66 62, 56 60, 48 68 Z" fill="#262626" stroke="#18181B" stroke-width="2.8" />
+                    <path d="M47 52 C58 45, 102 45, 113 52 L113 61 C102 54, 58 54, 47 61 Z" fill="#36B37E" stroke="#18181B" stroke-width="2.8" />
+                    <!-- Cheeks -->
+                    <circle cx="58" cy="76" r="7.5" fill="#FFAAA6" opacity="0.85" />
+                    <circle cx="102" cy="76" r="7.5" fill="#FFAAA6" opacity="0.85" />
+                    <circle cx="80" cy="71" r="2.5" fill="#FABE2C" />
+
+                    <!-- Normal Eyes -->
+                    <g class="eye-group eye-normal">
+                      <ellipse cx="66" cy="67" rx="6.5" ry="7.5" fill="#18181B" />
+                      <ellipse cx="94" cy="67" rx="6.5" ry="7.5" fill="#18181B" />
+                      <circle cx="68" cy="64" r="2.8" fill="#FFFFFF" />
+                      <circle cx="96" cy="64" r="2.8" fill="#FFFFFF" />
+                    </g>
+                    <!-- Sparkle Eyes -->
+                    <g class="eye-group eye-sparkle">
+                      <path d="M66 60 L67.5 64 L72 65 L67.5 66.5 L66 71 L64.5 66.5 L60 65 L64.5 64 Z" fill="#36B37E" stroke="#18181B" stroke-width="1.2" />
+                      <path d="M94 60 L95.5 64 L100 65 L95.5 66.5 L94 71 L92.5 66.5 L88 65 L92.5 64 Z" fill="#36B37E" stroke="#18181B" stroke-width="1.2" />
+                    </g>
+                    <!-- Scared Eyes -->
+                    <g class="eye-group eye-scared">
+                      <circle cx="66" cy="66" r="7" fill="#FFFFFF" stroke="#18181B" stroke-width="2.2" />
+                      <circle cx="66" cy="66" r="2" fill="#18181B" />
+                      <circle cx="94" cy="66" r="7" fill="#FFFFFF" stroke="#18181B" stroke-width="2.2" />
+                      <circle cx="94" cy="66" r="2" fill="#18181B" />
+                      <path d="M61 56 L71 59" stroke="#18181B" stroke-width="2" stroke-linecap="round" />
+                      <path d="M99 56 L89 59" stroke="#18181B" stroke-width="2" stroke-linecap="round" />
+                    </g>
+
+                    <!-- Normal Mouth -->
+                    <path class="mouth mouth-normal" d="M74 78 Q80 84 86 78" stroke="#18181B" stroke-width="2.8" stroke-linecap="round" fill="none" />
+                    <!-- Scared Mouth -->
+                    <ellipse class="mouth mouth-scared" cx="80" cy="80" rx="5" ry="6" fill="#18181B" />
+
+                    <!-- Dress -->
+                    <path d="M56 104 L104 104 L110 146 L50 146 Z" fill="#36B37E" stroke="#18181B" stroke-width="2.8" stroke-linejoin="round" />
+                    <!-- Arms -->
+                    <g class="arm girl-arm-left">
+                      <path d="M53 108 C39 96, 25 86, 21 97 C27 109, 41 119, 51 123" fill="#FFF3E3" stroke="#18181B" stroke-width="2.5" />
+                    </g>
+                    <g class="arm girl-arm-right">
+                      <path d="M106 108 C117 118, 121 128, 111 135 C105 128, 103 118, 104 108" fill="#FFF3E3" stroke="#18181B" stroke-width="2.5" />
+                    </g>
+                  </svg>
+                  <span class="mascot-tag">👧 Bopha</span>
+                </div>
+              </div>
             </div>
 
-            <div class="calc-results-block">
-              <h4 style="font-size: 0.95rem; font-weight: 900;" data-i18n="calcUpcomingTitle">
-                Next 3 Recommended Vaccinations:
-              </h4>
-              <div id="calc-results-list">
-                <!-- Injected dynamically by script.js -->
-              </div>
+            <!-- "Try clicking on them" under the mascots -->
+            <div class="mascot-click-hint-box" id="mascot-click-hint">
+              <span class="hint-hand-icon">👉</span>
+              <strong data-i18n="mascotClickHint">Try clicking on them</strong>
             </div>
           </div>
 
@@ -646,93 +747,6 @@
             <button class="neo-btn neo-btn-primary btn-trigger-birthday" type="button" style="width: 100%;" data-i18n="btnTestBirthday">
               🎉 Test Birthday Wish & Confetti
             </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================================
-         6. CAMBODIAN HEALTHCARE ECOSYSTEM & INSTITUTIONAL TRUST
-         ======================================================== -->
-    <section id="hospitals" class="section">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-label" data-i18n="trustTag">CAMBODIAN HEALTHCARE ECOSYSTEM</div>
-          <h2 data-i18n="trustTitle">Partnering in Cambodian Child Health</h2>
-          <p data-i18n="trustDesc">
-            Compatible with major pediatric referral hospitals and over 1,200 local commune health centers nationwide.
-          </p>
-        </div>
-
-        <!-- 4 Hospital Cards Grid -->
-        <div class="hospitals-grid">
-          <div class="hospital-card">
-            <span class="hospital-badge-top">Pediatric Hospital</span>
-            <h4 data-i18n="hospKBName">Kantha Bopha Hospital</h4>
-            <span data-i18n="hospKBLoc">Phnom Penh & Siem Reap</span>
-            <div class="hospital-feature-tag" data-i18n="hospKBTag">
-              Free Pediatric Care & Vaccinations
-            </div>
-          </div>
-
-          <div class="hospital-card">
-            <span class="hospital-badge-top">National Center</span>
-            <h4 data-i18n="hospNPHName">National Pediatric Hospital</h4>
-            <span data-i18n="hospNPHLoc">Russian Blvd, Phnom Penh</span>
-            <div class="hospital-feature-tag" data-i18n="hospNPHTag">
-              National Immunization Center
-            </div>
-          </div>
-
-          <div class="hospital-card">
-            <span class="hospital-badge-top">Northern Referral</span>
-            <h4 data-i18n="hospAHCName">Angkor Hospital for Children</h4>
-            <span data-i18n="hospAHCLoc">Siem Reap</span>
-            <div class="hospital-feature-tag" data-i18n="hospAHCTag">
-              Northern Cambodia Referral Center
-            </div>
-          </div>
-
-          <div class="hospital-card">
-            <span class="hospital-badge-top">National Hospital</span>
-            <h4 data-i18n="hospCalmetteName">Calmette Hospital</h4>
-            <span data-i18n="hospCalmetteLoc">Monivong Blvd, Phnom Penh</span>
-            <div class="hospital-feature-tag" data-i18n="hospCalmetteTag">
-              Maternity & Child Health Unit
-            </div>
-          </div>
-        </div>
-
-        <!-- 3 Trust Pillars Strip -->
-        <div class="trust-banner-strip">
-          <div class="trust-pillar">
-            <div class="trust-pillar-icon">🔒</div>
-            <div>
-              <h4 data-i18n="trustPillar1Title">Zero Data Selling</h4>
-              <p data-i18n="trustPillar1Desc">
-                Your child’s medical records stay private on your device. We never sell health data to third parties.
-              </p>
-            </div>
-          </div>
-
-          <div class="trust-pillar">
-            <div class="trust-pillar-icon">🇰🇭</div>
-            <div>
-              <h4 data-i18n="trustPillar2Title">MOH NIP Standardized</h4>
-              <p data-i18n="trustPillar2Desc">
-                100% aligned with the official Cambodian Ministry of Health National Immunization Program protocols.
-              </p>
-            </div>
-          </div>
-
-          <div class="trust-pillar">
-            <div class="trust-pillar-icon">🆓</div>
-            <div>
-              <h4 data-i18n="trustPillar3Title">Always Free for Parents</h4>
-              <p data-i18n="trustPillar3Desc">
-                No subscriptions, no ads, no paywalls. Built for every Cambodian mother, father, and caregiver.
-              </p>
-            </div>
           </div>
         </div>
       </div>
@@ -786,8 +800,8 @@
           <ul>
             <li><a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer" data-i18n="linkDemo">Live Web Demo</a></li>
             <li><a href="#booklet" data-i18n="linkYellowBook">Digital Yellow Book</a></li>
-            <li><a href="#growth" data-i18n="linkGrowth">Growth Charts</a></li>
-            <li><a href="#hospitals" data-i18n="linkHospitals">Hospital Directory</a></li>
+            <li><a href="#features" data-i18n="navFeatures">Features</a></li>
+            <li><a href="#playground" data-i18n="navPlayground">Playground</a></li>
           </ul>
         </div>
 
@@ -899,6 +913,12 @@
         <button class="neo-btn neo-btn-sm neo-btn-white btn-trigger-print" type="button" data-i18n="modalPrint">
           🖨️ Print / Save PDF
         </button>
+      </div>
+
+      <!-- Mobile Swipe Hint -->
+      <div class="mobile-table-scroll-hint">
+        <span>👉 <span data-i18n="tableScrollHint">Swipe horizontally to view full MOH record</span></span>
+        <span class="scroll-arrow-anim">→</span>
       </div>
 
       <div class="booklet-table-wrapper">

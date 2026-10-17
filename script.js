@@ -19,11 +19,12 @@
       navPlayground: 'Playground',
       tryDemoBtn: 'Try Live Demo',
       launchApp: 'Launch Demo',
+      drawerLangLabel: 'Language / ភាសា',
 
       // Hero Section
       heroEyebrow: '🇰🇭 100% Cambodian NIP Digital Record • Official Healthcare Replica',
-      heroHeadline1: 'Care today.',
-      heroHeadline2: 'Grow tomorrow.',
+      heroHeadline1: 'Care today',
+      heroHeadline2: 'Grow tomorrow',
       heroSubhead: 'The joyful, digitized child health record book built for Cambodian families. Never lose a vaccination record or miss an appointment again.',
       btnLaunchDemo: '✨ Launch Interactive Demo →',
       btnSeeBooklet: '📖 See Digital Yellow Book',
@@ -56,7 +57,7 @@
       statWeightLabel: 'Weight',
 
       // Yellow Booklet Cultural Hook
-      bookletAnchorTag: 'THE EMOTIONAL ANCHOR',
+      bookletAnchorTag: 'Digitalize MOH Booklet',
       bookletSectionTitle: 'Your Yellow Booklet, Reimagined.',
       bookletSectionDesc: 'In Cambodia, every mother receives a physical yellow card at birth. But paper tears, gets water-damaged, and gets left behind. KOMA gives every mother and child an indestructible digital twin.',
       
@@ -81,29 +82,30 @@
       statusScheduled: 'Upcoming',
       btnPrintPdf: '🖨️ Print / Export A4 PDF',
       btnOpenFullBooklet: '📖 View Full MOH Booklet Modal',
+      tableScrollHint: 'Swipe horizontally to view full MOH record',
 
-      // 4 Core Feature Pillars
-      pillarsTag: 'CORE PILLARS',
+      // Core Features
+      pillarsTag: 'Core Features',
       pillarsTitle: 'Everything Parents Need, In One Place',
       pillarsDesc: 'Built around the real everyday healthcare journey of Cambodian mothers and fathers.',
 
       pillar1Title: 'National Immunization Schedule',
-      pillar1Desc: 'Pre-loaded with Cambodia’s complete NIP protocol (BCG, HepB, OPV, Pentavalent, PCV, MR, JE). Always aligned with the Ministry of Health.',
+      pillar1Desc: 'Pre-loaded with Cambodia’s complete NIP protocol aligned with the Ministry of Health.',
       
       pillar2Title: 'Smart Reminders & Due Dates',
-      pillar2Desc: 'Calculates exact vaccination dates from your baby’s birth date. Receive timely countdowns so booster shots are never forgotten.',
+      pillar2Desc: 'Automated countdowns calculated from your baby’s birth date so booster shots are never forgotten.',
       reminderSimTitle: 'Pentavalent 2 (DTP-HepB-Hib)',
       reminderSimDays: '3 days left',
       reminderSimMarkBtn: 'Mark as Given ✅',
       reminderSimDone: 'Completed on Oct 15, 2026 at Kantha Bopha Hospital! 🎉',
 
       pillar3Title: 'WHO Growth Monitoring',
-      pillar3Desc: 'Track your child’s height and weight plotted against World Health Organization percentiles (P3 to P97). Spot healthy growth trends easily.',
-      tabWeight: 'Weight (kg)',
-      tabHeight: 'Height (cm)',
+      pillar3Desc: 'Track height & weight plotted against official World Health Organization percentiles (P3 to P97).',
+      tabWeight: 'Weight',
+      tabHeight: 'Height',
 
       pillar4Title: 'Made for Cambodia & Offline-First',
-      pillar4Desc: 'Quick hospital selection (Kantha Bopha, Calmette, NPH, commune centers), complete Khmer font support, and 100% offline local storage.',
+      pillar4Desc: 'Quick hospital selection, complete Khmer font support, and 100% offline local storage.',
       hospSelectPrompt: 'Select Referral Hospital:',
 
       // Playground Section
@@ -111,16 +113,12 @@
       playgroundTitle: 'Try KOMA Features Live',
       playgroundDesc: 'Experience the tools designed to make child health tracking joyful and effortless.',
 
-      calcTitle: 'Vaccine Schedule Calculator',
-      calcDesc: 'Enter your child’s birth date to calculate their exact age and next 3 scheduled vaccinations in Cambodia.',
-      calcInputLabel: 'Child’s Birth Date:',
-      presetNewborn: 'Newborn',
-      preset2m: '2 Months',
-      preset6m: '6 Months',
-      preset1y: '1 Year',
-      calcUpcomingTitle: 'Next 3 Recommended Vaccinations:',
-      calcDueInPrefix: 'Due in',
-      calcDays: 'days',
+      waitLabel: 'Wait for it...',
+      mascotClickHint: 'Try clicking on them',
+      mascotActionSparkle: '✨ Sparkling Eyes',
+      mascotActionHeart: '❤️ Heart Hands',
+      mascotActionHug: '🤗 Mascot Hug',
+      mascotActionScared: '💉 Vaccine Shot!',
 
       bdayTeaserTitle: 'Joyful Birthday Celebrations',
       bdayTeaserDesc: 'Every child deserves to feel celebrated! KOMA has built-in celebratory confetti explosions and heartfelt health blessings on their special day.',
@@ -206,11 +204,12 @@
       navPlayground: 'សាកល្បង',
       tryDemoBtn: 'សាកល្បង Demo',
       launchApp: 'បើក Demo',
+      drawerLangLabel: 'ភាសា / Language',
 
       // Hero Section
       heroEyebrow: '🇰🇭 កូនសៀវភៅលឿងសុខភាពកុមារឌីជីថលកម្ពុជា • ស្របតាមស្តង់ដារជាតិ',
-      heroHeadline1: 'ថែទាំថ្ងៃនេះ។',
-      heroHeadline2: 'រីកចម្រើនថ្ងៃស្អែក។',
+      heroHeadline1: 'ថែទាំថ្ងៃនេះ',
+      heroHeadline2: 'រីកចម្រើនថ្ងៃស្អែក',
       heroSubhead: 'កូនសៀវភៅតាមដានសុខភាពនិងការចាក់ថ្នាំបង្ការកុមារឌីជីថល សម្រាប់ក្រុមគ្រួសារកម្ពុជា។ មិនបាត់បង់ទិន្នន័យ មិនខកខានកាលវិភាគ។',
       btnLaunchDemo: '✨ សាកល្បង Web Demo →',
       btnSeeBooklet: '📖 មើលកូនសៀវភៅលឿង',
@@ -243,7 +242,7 @@
       statWeightLabel: 'ទម្ងន់',
 
       // Yellow Booklet Cultural Hook
-      bookletAnchorTag: 'ចំណុចស្នូលនៃ KOMA',
+      bookletAnchorTag: 'ឌីជីថលូបនីយកម្មសៀវភៅលឿង MOH',
       bookletSectionTitle: 'កូនសៀវភៅលឿង... ក្នុងទម្រង់ឌីជីថលទំនើប',
       bookletSectionDesc: 'នៅកម្ពុជា មាតាគ្រប់រូបតែងទទួលបានកូនសៀវភៅលឿងពេលសម្រាលកូន។ ប៉ុន្តែក្រដាសងាយរហែក ប្រឡាក់ទឹកភ្លៀង ឬភ្លេចនៅផ្ទះពេលទៅមន្ទីរពេទ្យ។ KOMA ផ្តល់នូវកូនសៀវភៅឌីជីថលដែលមិនចេះបាត់បង់។',
 
@@ -268,29 +267,30 @@
       statusScheduled: 'គ្រោងទុក',
       btnPrintPdf: '🖨️ បោះពុម្ព A4 / រក្សាទុក PDF',
       btnOpenFullBooklet: '📖 បើកមើលសៀវភៅលឿងពេញលេញ',
+      tableScrollHint: 'អូសទៅស្តាំដើម្បីមើលព័ត៌មានលម្អិត',
 
-      // 4 Core Feature Pillars
-      pillarsTag: 'មុខងារសំខាន់ៗទាំង ៤',
+      // Core Features
+      pillarsTag: 'មុខងារសំខាន់ៗ',
       pillarsTitle: 'អ្វីៗដែលឪពុកម្តាយត្រូវការ នៅក្នុងកន្លែងតែមួយ',
       pillarsDesc: 'បង្កើតឡើងស្របតាមដំណើរជាក់ស្តែងនៃការថែទាំសុខភាពកុមាររបស់គ្រួសារកម្ពុជា។',
 
       pillar1Title: 'កាលវិភាគចាក់ថ្នាំបង្ការជាតិកម្ពុជា',
-      pillar1Desc: 'ផ្ទុកនូវរាល់ថ្នាំបង្ការដែលកំណត់ដោយក្រសួងសុខាភិបាល (BCG, រលាកថ្លើមបេ, ៥មុខ, ស្វិតដៃជើង, រលាកសួត, កញ្ជ្រឹល-ស្រឡទែន, រលាកខួរក្បាល)។',
+      pillar1Desc: 'ផ្ទុកនូវរាល់ថ្នាំបង្ការដែលកំណត់ដោយក្រសួងសុខាភិបាល ស្របតាមស្តង់ដារជាតិ។',
 
       pillar2Title: 'ការរំលឹកវៃឆ្លាត មិនខកខានកាលបរិច្ឆេទ',
-      pillar2Desc: 'គណនាកាលបរិច្ឆេទចាក់ថ្នាំដោយស្វ័យប្រវត្តិតាមថ្ងៃខែឆ្នាំកំណើតកូន។ ទទួលបានការរំលឹកទាន់ពេលវេលាដើម្បីសុវត្ថិភាពកូនអ្នក។',
+      pillar2Desc: 'គណនាកាលបរិច្ឆេទចាក់ថ្នាំដោយស្វ័យប្រវត្តិតាមថ្ងៃខែឆ្នាំកំណើតកូន ទទួលបានការរំលឹកទាន់ពេលវេលា។',
       reminderSimTitle: 'ថ្នាំបង្ការ៥មុខ លើកទី២ (DTP-HepB-Hib)',
       reminderSimDays: 'នៅសល់ ៣ ថ្ងៃ',
       reminderSimMarkBtn: 'កត់ត្រាថាបានចាក់រួច ✅',
       reminderSimDone: 'បានចាក់រួចរាល់នៅថ្ងៃទី១៥ តុលា ២០២៦ នៅមន្ទីរពេទ្យគន្ធបុប្ផា! 🎉',
 
       pillar3Title: 'តាមដានការលូតលាស់ស្តង់ដារ WHO',
-      pillar3Desc: 'កត់ត្រាទម្ងន់និងកម្ពស់ធៀបនឹងស្តង់ដារអង្គការសុខភាពពិភពលោក (WHO P3 ដល់ P97) ដើម្បីដឹងពីការលូតលាស់របស់កូន។',
-      tabWeight: 'ទម្ងន់ (គ.ក្រ)',
-      tabHeight: 'កម្ពស់ (ស.ម)',
+      pillar3Desc: 'កត់ត្រាទម្ងន់និងកម្ពស់ធៀបនឹងស្តង់ដារអង្គការសុខភាពពិភពលោក (WHO P3 ដល់ P97)។',
+      tabWeight: 'ទម្ងន់',
+      tabHeight: 'កម្ពស់',
 
       pillar4Title: 'បង្កើតសម្រាប់កម្ពុជា & ប្រើបានដោយគ្មានអ៊ីនធឺណិត',
-      pillar4Desc: 'មានបញ្ជីមន្ទីរពេទ្យល្បីៗ (គន្ធបុប្ផា កាល់ម៉ែត កុមារជាតិ មណ្ឌលសុខភាព) គាំទ្រអក្សរខ្មែរ ១០០% និងរក្សាទុកទិន្នន័យលើទូរសព្ទដោយសុវត្ថិភាព។',
+      pillar4Desc: 'មានបញ្ជីមន្ទីរពេទ្យល្បីៗ គាំទ្រអក្សរខ្មែរ ១០០% និងរក្សាទុកទិន្នន័យលើទូរសព្ទដោយសុវត្ថិភាព។',
       hospSelectPrompt: 'ជ្រើសរើសមន្ទីរពេទ្យទទួលការចាក់ថ្នាំ៖',
 
       // Playground Section
@@ -298,16 +298,12 @@
       playgroundTitle: 'សាកល្បងឧបករណ៍ KOMA ដោយផ្ទាល់',
       playgroundDesc: 'ស្វែងយល់ពីរបៀបដែល KOMA ជួយសម្រាលបន្ទុកឪពុកម្តាយក្នុងការថែទាំកូនៗ។',
 
-      calcTitle: 'ឧបករណ៍គណនាកាលវិភាគចាក់ថ្នាំ',
-      calcDesc: 'បញ្ចូលថ្ងៃខែឆ្នាំកំណើតរបស់កូនអ្នក ដើម្បីដឹងពីអាយុជាក់ស្តែង និងថ្នាំបង្ការ ៣ មុខបន្ទាប់ដែលត្រូវចាក់។',
-      calcInputLabel: 'ថ្ងៃខែឆ្នាំកំណើតកូន៖',
-      presetNewborn: 'ទើបកើត',
-      preset2m: '២ ខែ',
-      preset6m: '៦ ខែ',
-      preset1y: '១ ឆ្នាំ',
-      calcUpcomingTitle: 'ថ្នាំបង្ការ ៣ មុខបន្ទាប់ដែលត្រូវចាក់៖',
-      calcDueInPrefix: 'ត្រូវចាក់ក្នុងរយៈពេល',
-      calcDays: 'ថ្ងៃទៀត',
+      waitLabel: 'រង់ចាំមើល...',
+      mascotClickHint: 'សាកល្បងចុចលើពួកយើង',
+      mascotActionSparkle: '✨ ភ្នែកភ្លឺចែងចាំង',
+      mascotActionHeart: '❤️ បេះដូងស្រឡាញ់',
+      mascotActionHug: '🤗 ឱបយ៉ាងកក់ក្តៅ',
+      mascotActionScared: '💉 ខ្លាចម្ជុលចាក់ថ្នាំ!',
 
       bdayTeaserTitle: 'អបអរសាទរខួបកំណើតកុមារ',
       bdayTeaserDesc: 'កុមារគ្រប់រូបសមនឹងទទួលបានការអបអរសាទរ! KOMA មានមុខងារបាញ់កាំជ្រួចឌីជីថល និងពរជ័យសុខភាពនៅថ្ងៃខួបកំណើតរបស់កូន។',
@@ -706,6 +702,12 @@
       }
     });
 
+    // Update active class on drawer language buttons
+    document.querySelectorAll('.drawer-lang-btn').forEach(btn => {
+      const optionLang = btn.getAttribute('data-lang');
+      btn.classList.toggle('active', optionLang === lang);
+    });
+
     // Translate all data-i18n elements
     const dict = translations[lang] || translations.en;
     document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -724,11 +726,15 @@
     // Update Feature 1 Timeline Display
     updatePillar1Display();
 
-    // Update Feature 4 Hospital Details
-    updateHospitalDetails();
+    // Update Feature 4 Hospital Details (if present)
+    if (typeof updateHospitalDetails === 'function') {
+      updateHospitalDetails();
+    }
 
-    // Recalculate Playground if date is present
-    runVaccineCalculator();
+    // Update Mascot Action Pill text in current language
+    if (typeof updateMascotActionDisplay === 'function') {
+      updateMascotActionDisplay();
+    }
   }
 
   // ==========================================
@@ -947,93 +953,196 @@
   }
 
   // ==========================================
-  // 7. PLAYGROUND: VACCINE CALCULATOR
+  // 7. PLAYGROUND: ANIMATED INTERACTIVE MASCOTS
   // ==========================================
-  function runVaccineCalculator() {
-    const input = document.getElementById('calc-birth-input');
-    const resultsContainer = document.getElementById('calc-results-list');
-    const ageDisplay = document.getElementById('calc-child-age-display');
-    if (!input || !resultsContainer) return;
+  const MASCOT_ACTIONS = [
+    {
+      id: 'sparkling-eyes',
+      class: 'action-sparkling-eyes',
+      textEn: '✨ Sparkling Eyes',
+      textKh: '✨ ភ្នែកភ្លឺចែងចាំង'
+    },
+    {
+      id: 'heart-hands',
+      class: 'action-heart-hands',
+      textEn: '❤️ Heart Hands',
+      textKh: '❤️ បេះដូងស្រឡាញ់'
+    },
+    {
+      id: 'hugging',
+      class: 'action-hugging',
+      textEn: '🤗 Mascot Hug',
+      textKh: '🤗 ឱបយ៉ាងកក់ក្តៅ'
+    },
+    {
+      id: 'scared-shot',
+      class: 'action-scared-shot',
+      textEn: '💉 Vaccine Shot!',
+      textKh: '💉 ខ្លាចម្ជុលចាក់ថ្នាំ!'
+    }
+  ];
 
-    const birthDateStr = input.value;
-    if (!birthDateStr) return;
+  let currentMascotActionIndex = 0;
+  let mascotActionTimer = null;
+  let speechBubbleTimeout = null;
 
-    const birthDate = new Date(birthDateStr);
-    const today = new Date();
-    const diffTime = today.getTime() - birthDate.getTime();
-    const diffDays = Math.max(0, Math.floor(diffTime / (1000 * 60 * 60 * 24)));
-    const ageMonths = diffDays / 30.44;
+  function updateMascotActionDisplay() {
+    const pill = document.getElementById('mascot-action-pill');
+    const wrap = document.getElementById('mascots-wrap');
+    if (!pill || !wrap) return;
+
+    const action = MASCOT_ACTIONS[currentMascotActionIndex];
+    if (!action) return;
+
+    MASCOT_ACTIONS.forEach(a => wrap.classList.remove(a.class));
+    wrap.classList.add(action.class);
 
     const isKh = currentLanguage === 'kh';
-
-    // Format child age
-    let ageString = '';
-    if (diffDays < 30) {
-      ageString = isKh ? `${diffDays} ថ្ងៃ` : `${diffDays} days old`;
-    } else if (ageMonths < 12) {
-      const m = Math.floor(ageMonths);
-      const d = Math.floor(diffDays % 30.44);
-      ageString = isKh ? `${m} ខែ ${d} ថ្ងៃ` : `${m} months, ${d} days old`;
-    } else {
-      const y = Math.floor(ageMonths / 12);
-      const m = Math.floor(ageMonths % 12);
-      ageString = isKh ? `${y} ឆ្នាំ ${m} ខែ` : `${y} years, ${m} months old`;
-    }
-
-    if (ageDisplay) {
-      ageDisplay.innerHTML = `<strong>${isKh ? 'អាយុកូនបច្ចុប្បន្ន៖' : 'Child Current Age:'}</strong> <span class="neo-badge" style="background:#FABE2C;">${ageString}</span>`;
-    }
-
-    // Find upcoming vaccines (offsetDays > diffDays or nearest doses)
-    let upcoming = CAMBODIA_VACCINES.filter(v => v.recommendedDays >= diffDays);
-    if (upcoming.length < 3) {
-      upcoming = CAMBODIA_VACCINES.slice(-3);
-    } else {
-      upcoming = upcoming.slice(0, 3);
-    }
-
-    let listHtml = '';
-    upcoming.forEach(vac => {
-      const daysUntil = Math.max(0, vac.recommendedDays - diffDays);
-      const countdownTag = daysUntil === 0
-        ? `<span class="neo-badge" style="background:#FDF0ED; color:#EE6748;">${isKh ? 'ត្រូវចាក់ថ្ងៃនេះ!' : 'Due Today!'}</span>`
-        : `<span class="neo-badge" style="background:#FEF3D6; color:#8C5300;">${isKh ? `នៅសល់ ${daysUntil} ថ្ងៃ` : `In ${daysUntil} days`}</span>`;
-
-      listHtml += `
-        <div class="calc-result-item">
-          <div>
-            <div class="item-title">${isKh ? vac.nameKh : vac.nameEn}</div>
-            <div class="item-desc">${isKh ? vac.recommendedAgeLabelKh : vac.recommendedAgeLabelEn} • 🏥 ${isKh ? vac.defaultHospitalKh : vac.defaultHospital}</div>
-          </div>
-          <div>${countdownTag}</div>
-        </div>
-      `;
-    });
-
-    resultsContainer.innerHTML = listHtml;
+    pill.textContent = isKh ? action.textKh : action.textEn;
   }
 
-  function setPresetDate(type) {
-    const input = document.getElementById('calc-birth-input');
-    if (!input) return;
+  function advanceMascotAction() {
+    currentMascotActionIndex = (currentMascotActionIndex + 1) % MASCOT_ACTIONS.length;
+    updateMascotActionDisplay();
+  }
 
-    const now = new Date();
-    if (type === 'newborn') {
-      now.setDate(now.getDate() - 3); // 3 days ago
-    } else if (type === '2m') {
-      now.setDate(now.getDate() - 60); // 2 months ago
-    } else if (type === '6m') {
-      now.setDate(now.getDate() - 180); // 6 months ago
-    } else if (type === '1y') {
-      now.setFullYear(now.getFullYear() - 1); // 1 year ago
+  function triggerMascotHello(character) {
+    const speechBubble = document.getElementById('mascot-speech-bubble');
+    const speechText = document.getElementById('mascot-speech-text');
+    const boy = document.getElementById('interactive-mascot-boy');
+    const girl = document.getElementById('interactive-mascot-girl');
+    if (!speechBubble || !speechText) return;
+
+    const isKh = currentLanguage === 'kh';
+    let message = '';
+
+    if (character === 'boy') {
+      message = isKh ? '👋 សួស្តី! ខ្ញុំឈ្មោះតារា! រឹងមាំនិងសុខភាពល្អ!' : '👋 Hello! I’m Dara! Healthy and strong!';
+      if (boy) {
+        boy.classList.remove('clicked-bounce');
+        void boy.offsetWidth;
+        boy.classList.add('clicked-bounce');
+      }
+      const wrap = document.getElementById('mascots-wrap');
+      if (wrap) {
+        wrap.classList.add('wave-boy');
+        setTimeout(() => wrap.classList.remove('wave-boy'), 1600);
+      }
+    } else if (character === 'girl') {
+      message = isKh ? '👋 សួស្តី! ខ្ញុំឈ្មោះបុប្ផា! ញញឹមនិងមានសុវត្ថិភាព!' : '👋 Hello! I’m Bopha! Smiling and protected!';
+      if (girl) {
+        girl.classList.remove('clicked-bounce');
+        void girl.offsetWidth;
+        girl.classList.add('clicked-bounce');
+      }
+      const wrap = document.getElementById('mascots-wrap');
+      if (wrap) {
+        wrap.classList.add('wave-girl');
+        setTimeout(() => wrap.classList.remove('wave-girl'), 1600);
+      }
+    } else {
+      message = isKh ? '👋 សួស្តីពី KOMA! យើងស្រឡាញ់សុខភាព!' : '👋 Hello from KOMA! We love staying healthy!';
+      if (boy) {
+        boy.classList.remove('clicked-bounce');
+        void boy.offsetWidth;
+        boy.classList.add('clicked-bounce');
+      }
+      if (girl) {
+        girl.classList.remove('clicked-bounce');
+        void girl.offsetWidth;
+        girl.classList.add('clicked-bounce');
+      }
+      const wrap = document.getElementById('mascots-wrap');
+      if (wrap) {
+        wrap.classList.add('wave-boy', 'wave-girl');
+        setTimeout(() => wrap.classList.remove('wave-boy', 'wave-girl'), 1600);
+      }
     }
 
-    const yyyy = now.getFullYear();
-    const mm = String(now.getMonth() + 1).padStart(2, '0');
-    const dd = String(now.getDate()).padStart(2, '0');
-    input.value = `${yyyy}-${mm}-${dd}`;
+    speechText.textContent = message;
+    speechBubble.classList.add('active');
 
-    runVaccineCalculator();
+    // Confetti burst
+    launchConfettiBurst(0.35, 0.65);
+
+    clearTimeout(speechBubbleTimeout);
+    speechBubbleTimeout = setTimeout(() => {
+      speechBubble.classList.remove('active');
+    }, 2800);
+  }
+
+  function initAnimatedMascots() {
+    updateMascotActionDisplay();
+
+    if (mascotActionTimer) clearInterval(mascotActionTimer);
+    mascotActionTimer = setInterval(advanceMascotAction, 3500);
+
+    const boy = document.getElementById('interactive-mascot-boy');
+    if (boy) {
+      boy.addEventListener('click', (e) => {
+        e.stopPropagation();
+        triggerMascotHello('boy');
+      });
+    }
+
+    const girl = document.getElementById('interactive-mascot-girl');
+    if (girl) {
+      girl.addEventListener('click', (e) => {
+        e.stopPropagation();
+        triggerMascotHello('girl');
+      });
+    }
+
+    const stage = document.getElementById('mascot-stage');
+    if (stage) {
+      stage.addEventListener('click', () => {
+        triggerMascotHello('both');
+      });
+    }
+
+    const clickHint = document.getElementById('mascot-click-hint');
+    if (clickHint) {
+      clickHint.addEventListener('click', () => {
+        triggerMascotHello('both');
+      });
+    }
+  }
+
+  // ==========================================
+  // SCROLLSPY NAVIGATION (YELLOW UNDERLINE)
+  // ==========================================
+  function initScrollspy() {
+    const navLinks = document.querySelectorAll('.nav-desktop .nav-link');
+    const sections = ['features', 'booklet', 'playground'];
+
+    function updateActiveNav() {
+      const scrollPos = window.scrollY + 180;
+      let currentId = '';
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const sec = document.getElementById(sections[i]);
+        if (sec) {
+          const top = sec.offsetTop;
+          if (scrollPos >= top) {
+            currentId = sections[i];
+            break;
+          }
+        }
+      }
+
+      navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href === '#' + currentId) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', updateActiveNav, { passive: true });
+    window.addEventListener('resize', updateActiveNav, { passive: true });
+    updateActiveNav();
   }
 
   // ==========================================
@@ -1121,6 +1230,7 @@
     const modal = document.getElementById('birthday-modal');
     if (modal) {
       modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
       launchConfettiBurst(0.5, 0.5);
       setTimeout(() => launchConfettiBurst(0.3, 0.4), 250);
       setTimeout(() => launchConfettiBurst(0.7, 0.4), 450);
@@ -1129,7 +1239,10 @@
 
   function closeBirthdayModal() {
     const modal = document.getElementById('birthday-modal');
-    if (modal) modal.classList.remove('open');
+    if (modal) {
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
   }
 
   // ==========================================
@@ -1137,25 +1250,35 @@
   // ==========================================
   function openWaitlistModal() {
     const modal = document.getElementById('waitlist-modal');
-    if (modal) modal.classList.add('open');
+    if (modal) {
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
   }
 
   function closeWaitlistModal() {
     const modal = document.getElementById('waitlist-modal');
-    if (modal) modal.classList.remove('open');
+    if (modal) {
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
   }
 
   function openBookletModal() {
     const modal = document.getElementById('booklet-modal');
     if (modal) {
       modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
       renderBookletTable();
     }
   }
 
   function closeBookletModal() {
     const modal = document.getElementById('booklet-modal');
-    if (modal) modal.classList.remove('open');
+    if (modal) {
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
   }
 
   // ==========================================
@@ -1215,13 +1338,15 @@
       langBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         const isOpen = langMenu.classList.toggle('open');
+        langBtn.setAttribute('aria-expanded', String(isOpen));
         if (chevron) chevron.classList.toggle('open', isOpen);
       });
 
       document.addEventListener('click', (e) => {
-        if (!langMenu.contains(e.target) && e.target !== langBtn) {
+        if (!langMenu.contains(e.target) && !langBtn.contains(e.target)) {
           langMenu.classList.remove('open');
-          if (chevron) chevron.classList.remove('open', false);
+          langBtn.setAttribute('aria-expanded', 'false');
+          if (chevron) chevron.classList.remove('open');
         }
       });
     }
@@ -1231,8 +1356,19 @@
       btn.addEventListener('click', () => {
         const selectedLang = btn.getAttribute('data-lang');
         setLanguage(selectedLang);
-        if (langMenu) langMenu.classList.remove('open');
-        if (chevron) chevron.classList.remove('open', false);
+        if (langMenu) {
+          langMenu.classList.remove('open');
+          if (langBtn) langBtn.setAttribute('aria-expanded', 'false');
+        }
+        if (chevron) chevron.classList.remove('open');
+      });
+    });
+
+    // Mobile drawer language options
+    document.querySelectorAll('.drawer-lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const selectedLang = btn.getAttribute('data-lang');
+        setLanguage(selectedLang);
       });
     });
 
@@ -1244,19 +1380,63 @@
     if (hamburgerBtn && mobileDrawer) {
       hamburgerBtn.addEventListener('click', () => {
         mobileDrawer.classList.add('open');
+        hamburgerBtn.setAttribute('aria-expanded', 'true');
+        // Close language dropdown if open
+        if (langMenu) {
+          langMenu.classList.remove('open');
+          if (langBtn) langBtn.setAttribute('aria-expanded', 'false');
+          if (chevron) chevron.classList.remove('open');
+        }
+        document.body.style.overflow = 'hidden';
       });
     }
 
     if (closeDrawerBtn && mobileDrawer) {
       closeDrawerBtn.addEventListener('click', () => {
         mobileDrawer.classList.remove('open');
+        if (hamburgerBtn) hamburgerBtn.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    }
+
+    if (mobileDrawer) {
+      mobileDrawer.addEventListener('click', (e) => {
+        if (e.target === mobileDrawer) {
+          mobileDrawer.classList.remove('open');
+          if (hamburgerBtn) hamburgerBtn.setAttribute('aria-expanded', 'false');
+          document.body.style.overflow = '';
+        }
       });
     }
 
     document.querySelectorAll('.drawer-link').forEach(link => {
       link.addEventListener('click', () => {
-        if (mobileDrawer) mobileDrawer.classList.remove('open');
+        if (mobileDrawer) {
+          mobileDrawer.classList.remove('open');
+          if (hamburgerBtn) hamburgerBtn.setAttribute('aria-expanded', 'false');
+          document.body.style.overflow = '';
+        }
       });
+    });
+
+    // Keyboard Accessibility: Escape key dismisses open menus and modals
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' || e.key === 'Esc') {
+        if (langMenu && langMenu.classList.contains('open')) {
+          langMenu.classList.remove('open');
+          if (langBtn) langBtn.setAttribute('aria-expanded', 'false');
+          if (chevron) chevron.classList.remove('open');
+        }
+        if (mobileDrawer && mobileDrawer.classList.contains('open')) {
+          mobileDrawer.classList.remove('open');
+          if (hamburgerBtn) hamburgerBtn.setAttribute('aria-expanded', 'false');
+          document.body.style.overflow = '';
+        }
+        document.querySelectorAll('.modal-overlay.open').forEach(modal => {
+          modal.classList.remove('open');
+          document.body.style.overflow = '';
+        });
+      }
     });
 
     // 3. Hero Phone Child Switcher
@@ -1335,28 +1515,13 @@
       tabHeight.addEventListener('click', () => updateGrowthMetric('height'));
     }
 
-    // Feature Pillar 4 Hospital Selector
-    const hospSelect = document.getElementById('hospital-select-dropdown');
-    if (hospSelect) {
-      hospSelect.addEventListener('change', updateHospitalDetails);
-    }
+    // 6. Animated Interactive Mascots Showcase
+    initAnimatedMascots();
 
-    // 6. Playground Calculator
-    const calcInput = document.getElementById('calc-birth-input');
-    if (calcInput) {
-      calcInput.addEventListener('change', runVaccineCalculator);
-      calcInput.addEventListener('input', runVaccineCalculator);
-    }
+    // 7. Scrollspy Header Navigation
+    initScrollspy();
 
-    // Calculator Presets
-    document.querySelectorAll('.preset-chip').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const preset = btn.getAttribute('data-preset');
-        setPresetDate(preset);
-      });
-    });
-
-    // 7. Birthday Celebration Triggers
+    // 8. Birthday Celebration Triggers
     const birthdayBtns = document.querySelectorAll('.btn-trigger-birthday');
     birthdayBtns.forEach(btn => {
       btn.addEventListener('click', openBirthdayModal);
@@ -1387,7 +1552,7 @@
       });
     }
 
-    // 8. Waitlist Modal
+    // 9. Waitlist Modal
     const waitlistTriggers = document.querySelectorAll('.btn-trigger-waitlist');
     waitlistTriggers.forEach(btn => {
       btn.addEventListener('click', openWaitlistModal);
@@ -1420,6 +1585,7 @@
       overlay.addEventListener('click', (e) => {
         if (e.target === overlay) {
           overlay.classList.remove('open');
+          document.body.style.overflow = '';
         }
       });
     });
@@ -1435,6 +1601,5 @@
     // Initial Setup
     setLanguage(currentLanguage);
     updateGrowthMetric('weight');
-    setPresetDate('6m'); // Default 6 months for calculator
   });
 })();
