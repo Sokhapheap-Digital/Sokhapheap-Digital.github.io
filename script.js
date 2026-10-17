@@ -791,16 +791,9 @@
 
     const isKh = currentLanguage === 'kh';
 
-    // Infancy = 0 to 6 months (< 9 months)
-    // Toddler = 9 to 18 months (>= 9 months)
-    const filteredVaccines = CAMBODIA_VACCINES.filter(v => {
-      if (activeBookletTab === 'infancy') return v.recommendedAgeMonths < 9;
-      return v.recommendedAgeMonths >= 9;
-    });
-
     let html = '';
-    filteredVaccines.forEach((vac, index) => {
-      const isCompleted = activeBookletTab === 'infancy' && index < 3;
+    CAMBODIA_VACCINES.forEach((vac, index) => {
+      const isCompleted = index < 3;
       const statusBadge = isCompleted
         ? `<span class="table-status-pill completed">✓ ${isKh ? 'បានចាក់' : 'Completed'}</span>`
         : `<span class="table-status-pill due">⏳ ${isKh ? 'ជិតដល់ថ្ងៃ' : 'Due Soon'}</span>`;
@@ -825,12 +818,6 @@
 
     if (tableBody) tableBody.innerHTML = html;
     if (modalTableBody) modalTableBody.innerHTML = html;
-
-    // Toggle Tab styling
-    const tabInf = document.getElementById('booklet-tab-infancy');
-    const tabTod = document.getElementById('booklet-tab-toddler');
-    if (tabInf) tabInf.classList.toggle('active', activeBookletTab === 'infancy');
-    if (tabTod) tabTod.classList.toggle('active', activeBookletTab === 'toddler');
   }
 
   // ==========================================
@@ -1015,9 +1002,11 @@
 
     const isKh = currentLanguage === 'kh';
     let message = '';
+    let confettiX = 0.5;
 
     if (character === 'boy') {
-      message = isKh ? '👋 សួស្តី! ខ្ញុំឈ្មោះតារា! រឹងមាំនិងសុខភាពល្អ!' : '👋 Hello! I’m Dara! Healthy and strong!';
+      message = isKh ? '👋 សួស្តី! ខ្ញុំឈ្មោះតារា! រឹងមាំនិងសុខភាពល្អ!' : '👋 Hello! I’m Dara! I’m strong & healthy!';
+      confettiX = 0.38;
       if (boy) {
         boy.classList.remove('clicked-bounce');
         void boy.offsetWidth;
@@ -1026,10 +1015,11 @@
       const wrap = document.getElementById('mascots-wrap');
       if (wrap) {
         wrap.classList.add('wave-boy');
-        setTimeout(() => wrap.classList.remove('wave-boy'), 1600);
+        setTimeout(() => wrap.classList.remove('wave-boy'), 1800);
       }
     } else if (character === 'girl') {
-      message = isKh ? '👋 សួស្តី! ខ្ញុំឈ្មោះបុប្ផា! ញញឹមនិងមានសុវត្ថិភាព!' : '👋 Hello! I’m Bopha! Smiling and protected!';
+      message = isKh ? '👋 សួស្តី! ខ្ញុំឈ្មោះបុប្ផា! ញញឹមនិងមានសុវត្ថិភាព!' : '👋 Hello! I’m Bopha! Checkups are fun!';
+      confettiX = 0.62;
       if (girl) {
         girl.classList.remove('clicked-bounce');
         void girl.offsetWidth;
@@ -1038,10 +1028,11 @@
       const wrap = document.getElementById('mascots-wrap');
       if (wrap) {
         wrap.classList.add('wave-girl');
-        setTimeout(() => wrap.classList.remove('wave-girl'), 1600);
+        setTimeout(() => wrap.classList.remove('wave-girl'), 1800);
       }
     } else {
-      message = isKh ? '👋 សួស្តីពី KOMA! យើងស្រឡាញ់សុខភាព!' : '👋 Hello from KOMA! We love staying healthy!';
+      message = isKh ? '👋 សូមស្វាគមន៍មកកាន់ KOMA! រួមគ្នារក្សាសុខភាពល្អ!' : '👋 Welcome to KOMA! Let’s stay healthy together!';
+      confettiX = 0.5;
       if (boy) {
         boy.classList.remove('clicked-bounce');
         void boy.offsetWidth;
@@ -1055,7 +1046,7 @@
       const wrap = document.getElementById('mascots-wrap');
       if (wrap) {
         wrap.classList.add('wave-boy', 'wave-girl');
-        setTimeout(() => wrap.classList.remove('wave-boy', 'wave-girl'), 1600);
+        setTimeout(() => wrap.classList.remove('wave-boy', 'wave-girl'), 1800);
       }
     }
 
@@ -1063,12 +1054,12 @@
     speechBubble.classList.add('active');
 
     // Confetti burst
-    launchConfettiBurst(0.35, 0.65);
+    launchConfettiBurst(confettiX, 0.62);
 
     clearTimeout(speechBubbleTimeout);
     speechBubbleTimeout = setTimeout(() => {
       speechBubble.classList.remove('active');
-    }, 2800);
+    }, 3200);
   }
 
   function initAnimatedMascots() {
@@ -1076,6 +1067,31 @@
 
     if (mascotActionTimer) clearInterval(mascotActionTimer);
     mascotActionTimer = setInterval(advanceMascotAction, 3500);
+
+    // Interactive Action Pill & Wait Badge (click to cycle immediately)
+    const actionPill = document.getElementById('mascot-action-pill');
+    if (actionPill) {
+      actionPill.style.cursor = 'pointer';
+      actionPill.setAttribute('title', 'Click to switch action!');
+      actionPill.addEventListener('click', (e) => {
+        e.stopPropagation();
+        advanceMascotAction();
+        if (mascotActionTimer) clearInterval(mascotActionTimer);
+        mascotActionTimer = setInterval(advanceMascotAction, 3500);
+      });
+    }
+
+    const waitBadge = document.querySelector('.mascot-wait-badge');
+    if (waitBadge) {
+      waitBadge.style.cursor = 'pointer';
+      waitBadge.setAttribute('title', 'Click to switch action!');
+      waitBadge.addEventListener('click', (e) => {
+        e.stopPropagation();
+        advanceMascotAction();
+        if (mascotActionTimer) clearInterval(mascotActionTimer);
+        mascotActionTimer = setInterval(advanceMascotAction, 3500);
+      });
+    }
 
     const boy = document.getElementById('interactive-mascot-boy');
     if (boy) {
@@ -1113,7 +1129,8 @@
   // ==========================================
   function initScrollspy() {
     const navLinks = document.querySelectorAll('.nav-desktop .nav-link');
-    const sections = ['features', 'booklet', 'playground'];
+    // Vertical document order: Booklet (top) -> Features -> Playground
+    const sections = ['booklet', 'features', 'playground'];
 
     function updateActiveNav() {
       const scrollPos = window.scrollY + 180;
@@ -1121,12 +1138,9 @@
 
       for (let i = sections.length - 1; i >= 0; i--) {
         const sec = document.getElementById(sections[i]);
-        if (sec) {
-          const top = sec.offsetTop;
-          if (scrollPos >= top) {
-            currentId = sections[i];
-            break;
-          }
+        if (sec && scrollPos >= sec.offsetTop) {
+          currentId = sections[i];
+          break;
         }
       }
 

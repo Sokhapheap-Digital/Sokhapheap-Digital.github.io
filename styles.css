@@ -56,7 +56,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 /* Automatic Khmer Font Activation */
@@ -271,34 +271,36 @@ img, svg {
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 100;
-  background-color: var(--color-bg-canvas);
+  z-index: 1000;
+  background-color: rgba(250, 247, 238, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 2px solid var(--color-border);
-  transition: box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .site-header.scrolled {
-  box-shadow: 0 4px 12px rgba(24, 24, 27, 0.06);
+  box-shadow: 0 4px 16px rgba(24, 24, 27, 0.08);
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  height: 84px;
 }
 
 .logo-brand {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
+  gap: 0.75rem;
   cursor: pointer;
   user-select: none;
 }
 
 .logo-icon-img {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   object-fit: contain;
   transition: transform 0.2s ease;
 }
@@ -308,7 +310,7 @@ img, svg {
 }
 
 .logo-text-img {
-  height: 28px;
+  height: 32px;
   width: auto;
   object-fit: contain;
 }
@@ -316,15 +318,15 @@ img, svg {
 .nav-desktop {
   display: flex;
   align-items: center;
-  gap: 1.8rem;
+  gap: 2.25rem;
 }
 
 .nav-link {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--color-text-dark);
   position: relative;
-  padding: 0.4rem 0;
+  padding: 0.5rem 0.4rem;
   transition: color 0.15s ease;
 }
 
@@ -341,17 +343,21 @@ img, svg {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 0;
-  width: 0%;
-  height: 3px;
+  right: 0;
+  bottom: -4px;
+  height: 4px;
   background-color: var(--color-primary);
-  border-radius: 2px;
-  transition: width 0.2s ease;
+  border-radius: 999px;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.2s ease;
 }
 
 .nav-link:hover::after,
 .nav-link.active::after {
-  width: 100%;
+  opacity: 1;
+  transform: scaleX(1);
 }
 
 .header-actions {
@@ -741,8 +747,8 @@ img, svg {
 }
 
 .badge-birthday {
-  bottom: 45px;
-  right: -30px;
+  bottom: 12px;
+  right: -75px;
   background-color: var(--color-card-soft);
   color: #8C5300;
 }
@@ -1706,14 +1712,15 @@ img, svg {
 
 .mascot-figure:active,
 .mascot-figure.clicked-bounce {
-  animation: mascot-jump 0.5s ease;
+  animation: mascot-pop-jump 0.65s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-@keyframes mascot-jump {
-  0% { transform: translateY(0) scale(1); }
-  40% { transform: translateY(-18px) scale(1.08); }
-  70% { transform: translateY(2px) scale(0.96); }
-  100% { transform: translateY(0) scale(1); }
+@keyframes mascot-pop-jump {
+  0% { transform: scale(1) translateY(0); }
+  30% { transform: scale(1.15, 0.88) translateY(6px); }
+  55% { transform: scale(0.92, 1.18) translateY(-26px); }
+  75% { transform: scale(1.05, 0.95) translateY(-8px); }
+  100% { transform: scale(1) translateY(0); }
 }
 
 .mascot-char-svg {
@@ -1745,16 +1752,30 @@ img, svg {
 
 /* 1. SPARKLING EYES ACTION */
 .action-sparkling-eyes .eye-normal { display: none; }
-.action-sparkling-eyes .eye-sparkle { display: block; animation: sparkle-anim 0.8s ease-in-out infinite alternate; }
+.action-sparkling-eyes .eye-sparkle { 
+  display: block; 
+  animation: sparkle-glint 0.8s ease-in-out infinite alternate; 
+}
+.action-sparkling-eyes .mascot-boy {
+  animation: cute-bob 1.6s ease-in-out infinite alternate;
+}
+.action-sparkling-eyes .mascot-girl {
+  animation: cute-bob 1.6s ease-in-out 0.8s infinite alternate;
+}
 .action-sparkling-eyes .fx-sparkle-1,
 .action-sparkling-eyes .fx-sparkle-2 {
   opacity: 1;
   animation: float-sparkle 1.2s ease-in-out infinite alternate;
 }
 
-@keyframes sparkle-anim {
-  0% { transform: scale(0.85); transform-origin: center; }
-  100% { transform: scale(1.2); transform-origin: center; }
+@keyframes cute-bob {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-8px); }
+}
+
+@keyframes sparkle-glint {
+  0% { transform: scale(0.85); transform-origin: center; transform-box: fill-box; }
+  100% { transform: scale(1.25); transform-origin: center; transform-box: fill-box; }
 }
 
 @keyframes float-sparkle {
@@ -1763,26 +1784,45 @@ img, svg {
 }
 
 /* 2. HEART HANDS ACTION */
+.action-heart-hands .mascot-boy {
+  transform: translateX(8px);
+}
+.action-heart-hands .mascot-girl {
+  transform: translateX(-8px);
+}
 .action-heart-hands .boy-arm-right {
-  transform: rotate(-30deg) translate(10px, -6px);
-  transform-origin: 106px 108px;
+  transform: rotate(-18deg);
+  transform-box: fill-box;
+  transform-origin: top left;
   transition: transform 0.4s ease;
 }
 .action-heart-hands .girl-arm-left {
-  transform: rotate(30deg) translate(-10px, -6px);
-  transform-origin: 53px 108px;
+  transform: rotate(18deg);
+  transform-box: fill-box;
+  transform-origin: top right;
   transition: transform 0.4s ease;
 }
 .action-heart-hands .fx-heart-left,
 .action-heart-hands .fx-heart-center,
 .action-heart-hands .fx-heart-right {
   opacity: 1;
-  animation: float-heart 1.4s ease-in-out infinite alternate;
+}
+.action-heart-hands .fx-heart-center {
+  animation: heart-pulse 0.9s infinite ease-in-out;
+}
+.action-heart-hands .fx-heart-left,
+.action-heart-hands .fx-heart-right {
+  animation: float-heart 1.3s infinite ease-in-out alternate;
+}
+
+@keyframes heart-pulse {
+  0%, 100% { transform: scale(0.92); }
+  50% { transform: scale(1.22); }
 }
 
 @keyframes float-heart {
   0% { transform: translateY(0px) scale(0.9); }
-  100% { transform: translateY(-14px) scale(1.2); }
+  100% { transform: translateY(-14px) scale(1.15); }
 }
 
 /* 3. MASCOTS HUGGING ACTION */
@@ -1790,30 +1830,16 @@ img, svg {
   gap: 0;
 }
 .action-hugging .mascot-boy {
-  transform: translateX(24px) rotate(5deg);
+  transform: translateX(20px) rotate(4deg);
 }
 .action-hugging .mascot-girl {
-  transform: translateX(-24px) rotate(-5deg);
-}
-.action-hugging .boy-arm-right {
-  transform: rotate(-50deg) translate(16px, -12px);
-  transform-origin: 106px 108px;
-  transition: transform 0.4s ease;
-}
-.action-hugging .girl-arm-left {
-  transform: rotate(50deg) translate(-16px, -12px);
-  transform-origin: 53px 108px;
-  transition: transform 0.4s ease;
+  transform: translateX(-20px) rotate(-4deg);
 }
 .action-hugging .fx-heart-center {
   opacity: 1;
-  top: 25px;
-  animation: pulse-hug 1s infinite alternate;
-}
-
-@keyframes pulse-hug {
-  0% { transform: scale(0.9); }
-  100% { transform: scale(1.25); }
+  top: 20px;
+  font-size: 2.3rem;
+  animation: heart-pulse 0.8s infinite;
 }
 
 /* 4. SCARED FACE OF VACCINE SHOT ACTION */
@@ -1823,7 +1849,7 @@ img, svg {
 .action-scared-shot .mouth-scared { display: block; }
 .action-scared-shot .fx-syringe {
   opacity: 1;
-  top: 25px;
+  top: 18px;
   animation: syringe-poke 0.7s ease-in-out infinite alternate;
 }
 .action-scared-shot .fx-sweat-boy,
@@ -1832,17 +1858,17 @@ img, svg {
   animation: sweat-drop 0.8s ease-in-out infinite;
 }
 .action-scared-shot .mascot-figure {
-  animation: scared-shiver 0.2s infinite alternate;
+  animation: scared-shiver 0.12s infinite alternate;
 }
 
 @keyframes scared-shiver {
-  0% { transform: translateY(0) rotate(-1.5deg); }
-  100% { transform: translateY(-3px) rotate(1.5deg); }
+  0% { transform: translate(-2px, 0); }
+  100% { transform: translate(2px, -2px); }
 }
 
 @keyframes syringe-poke {
   0% { transform: translateX(-50%) rotate(-45deg) scale(1); }
-  100% { transform: translateX(-50%) rotate(-35deg) scale(1.12); }
+  100% { transform: translateX(-50%) rotate(-35deg) scale(1.15); }
 }
 
 @keyframes sweat-drop {
@@ -1852,15 +1878,24 @@ img, svg {
 
 /* Mascot Arm Wave on Click */
 .wave-boy .boy-arm-right {
-  animation: arm-wave 0.5s ease-in-out 3;
+  animation: wave-arm-anim 0.35s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: top left;
 }
 .wave-girl .girl-arm-left {
-  animation: arm-wave 0.5s ease-in-out 3;
+  animation: wave-arm-anim-rev 0.35s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: top right;
 }
 
-@keyframes arm-wave {
-  0%, 100% { transform: rotate(0deg); }
-  50% { transform: rotate(-35deg); }
+@keyframes wave-arm-anim {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-24deg) translateY(-4px); }
+}
+
+@keyframes wave-arm-anim-rev {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(24deg) translateY(-4px); }
 }
 
 /* Mascot Click Hint Underneath */
