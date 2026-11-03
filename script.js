@@ -51,19 +51,34 @@
       // Startup About Us
       aboutKicker: 'OUR MISSION',
       aboutTitle: 'About Us',
+      
+      // 1. The Problem We Solve
+      problemSolveTag: 'THE PROBLEM WE SOLVE',
+      problemSolveTitle: 'The Problem We Solve',
+      problemSolveText: "Many parents face challenges in keeping track of their children's healthcare needs. Some may forget important vaccination dates, lose paper-based health records, or lack access to reliable information about child health, nutrition, and development. These challenges can make it difficult for parents to stay informed and ensure their children receive proper care. KOMA aims to address these problems through a simple and accessible digital solution.",
+
+      // 2. Our Solution
+      ourSolutionTag: 'OUR SOLUTION',
+      ourSolutionTitle: 'Our Solution',
+      ourSolutionText: "KOMA provides a range of digital tools to help parents take better care of their children's health. Parents can keep vaccination records organized, track upcoming vaccines, and receive smart reminders so they don't miss important vaccination dates. KOMA also offers growth tracking, age-based nutrition recommendations, and useful child healthcare information to help parents make informed decisions throughout their children's growth journey.",
+
+      // 3. Our Mission and Our Vision
       missionTag: 'OUR MISSION',
       missionTitle: 'Our Mission',
       missionText: "Our mission is to make child healthcare easier, more accessible, and more reliable for every Cambodian family through technology. We aim to help parents manage their children's health records, stay on track with vaccinations, and make informed healthcare decisions.",
       visionTag: 'OUR VISION',
       visionTitle: 'Our Vision',
       visionText: "We envision a Cambodia where every parent has access to reliable health information and every child has the opportunity to grow up healthy. We hope to contribute to a more connected and digitally supported child healthcare system across the country.",
-      aboutSubtitle: 'Eliminating lost vaccination history and empowering parents and clinics with durable, offline-ready medical records.',
-      projectStoryLabel: 'The Problem We Solve',
-      storyCardHeading: 'From Monsoon-Damaged Paper to Permanent Digital Security',
-      projectStoryText: 'Across Cambodia, every newborn is given an official yellow paper health booklet at birth. But through humid monsoon rains, routine household wear, and clinic transitions, paper books tear, fade, or get misplaced. When paper records vanish, children risk missed booster immunizations or redundant injections. KOMA was founded in Phnom Penh to give every Cambodian mother, father, and healthcare worker a permanent, indestructible digital companion.',
-      whoServeTitle: 'Who we serve',
-      whoServeText: 'KOMA is designed to support parents, healthcare workers, and healthcare organizations across Cambodia. It helps parents manage their children\'s health records, keep track of vaccination schedules, and stay informed about important healthcare needs. It also supports healthcare workers in guiding parents and improving health awareness, while helping healthcare organizations strengthen communication and promote better child healthcare services.',
 
+      // 4. Who We Serve
+      whoServeTag: 'WHO WE SERVE',
+      whoServeTitle: 'Who We Serve',
+      whoServeText: "KOMA is designed to support parents, healthcare workers, and healthcare organizations across Cambodia. It helps parents manage their children's health records, keep track of vaccination schedules, and stay informed about important healthcare needs. It also supports healthcare workers in guiding parents and improving health awareness, while helping healthcare organizations strengthen communication and promote better child healthcare services.",
+
+      // 5. Meet Our Team
+      teamTitle: 'Meet Our Team',
+      teamDesc: "We are a team of passionate students who believe technology can make a positive difference in people's lives. With a shared interest in innovation and child healthcare, we created KOMA to address real challenges faced by Cambodian families. Our goal is to continue improving our platform and making child healthcare easier and more accessible through technology.",
+      
       // Startup Features
       featuresKicker: 'PLATFORM CAPABILITIES',
       featuresMainTitle: 'Everything Parents & Pediatricians Need',
@@ -313,19 +328,34 @@
       // Startup About Us
       aboutKicker: 'បេសកកម្មរបស់យើង',
       aboutTitle: 'អំពីយើង',
+      
+      // 1. The Problem We Solve
+      problemSolveTag: 'បញ្ហាដែលយើងដោះស្រាយ',
+      problemSolveTitle: 'បញ្ហាដែលយើងដោះស្រាយ',
+      problemSolveText: 'មាតាបិតាជាច្រើនតែងជួបប្រទះការលំបាកក្នុងការតាមដានតម្រូវការថែទាំសុខភាពរបស់កូនៗ។ អ្នកខ្លះអាចភ្លេចថ្ងៃចាក់ថ្នាំបង្ការសំខាន់ៗ បាត់បង់កូនសៀវភៅសុខភាពក្រដាស ឬខ្វះព័ត៌មានដែលអាចទុកចិត្តបានអំពីសុខភាព អាហារូបត្ថម្ភ និងការលូតលាស់របស់កុមារ។ បញ្ហាប្រឈមទាំងនេះធ្វើឱ្យមាតាបិតាពិបាកទទួលបានព័ត៌មានទាន់ពេល និងធានាថាកូនៗទទួលបានការថែទាំត្រឹមត្រូវ។ KOMA មានគោលបំណងដោះស្រាយបញ្ហាទាំងនេះតាមរយៈដំណោះស្រាយឌីជីថលដ៏សាមញ្ញ និងងាយស្រួលប្រើប្រាស់។',
+
+      // 2. Our Solution
+      ourSolutionTag: 'ដំណោះស្រាយរបស់យើង',
+      ourSolutionTitle: 'ដំណោះស្រាយរបស់យើង',
+      ourSolutionText: 'KOMA ផ្តល់នូវឧបករណ៍ឌីជីថលជាច្រើនដើម្បីជួយមាតាបិតាថែទាំសុខភាពកូនៗឱ្យកាន់តែប្រសើរ។ មាតាបិតាអាចរៀបចំកំណត់ត្រាចាក់ថ្នាំបង្ការឱ្យមានរបៀបរៀបរយ តាមដានវ៉ាក់សាំងបន្ទាប់ និងទទួលបានការរំលឹកឆ្លាតវៃដើម្បីកុំឱ្យខកខានកាលបរិច្ឆេទចាក់ថ្នាំសំខាន់ៗ។ លើសពីនេះ KOMA ក៏ផ្តល់នូវការតាមដានការលូតលាស់ ការណែនាំអាហារូបត្ថម្ភតាមអាយុ និងព័ត៌មានសុខភាពកុមារមានប្រយោជន៍ ដើម្បីជួយមាតាបិតាធ្វើការសម្រេចចិត្តបានត្រឹមត្រូវពេញមួយដំណើរនៃការលូតលាស់របស់កូន។',
+
+      // 3. Our Mission and Our Vision
       missionTag: 'បេសកកម្មរបស់យើង',
       missionTitle: 'បេសកកម្មរបស់យើង',
       missionText: 'បេសកកម្មរបស់យើងគឺធ្វើឱ្យការថែទាំសុខភាពកុមារកាន់តែងាយស្រួល អាចចូលប្រើបានកាន់តែទូលំទូលាយ និងអាចទុកចិត្តបានសម្រាប់គ្រប់ក្រុមគ្រួសារកម្ពុជា តាមរយៈបច្ចេកវិទ្យា។ យើងមានគោលបំណងជួយមាតាបិតាគ្រប់គ្រងកំណត់ត្រាសុខភាពរបស់កូនៗ តាមដានកាលវិភាគចាក់ថ្នាំបង្ការបានត្រឹមត្រូវ និងធ្វើការសម្រេចចិត្តប្រកបដោយទំនុកចិត្តលើការថែទាំសុខភាព។',
       visionTag: 'ចក្ខុវិស័យរបស់យើង',
       visionTitle: 'ចក្ខុវិស័យរបស់យើង',
       visionText: 'យើងស្រមៃឃើញប្រទេសកម្ពុជាដែលមាតាបិតាគ្រប់រូបទទួលបានព័ត៌មានសុខភាពដែលអាចទុកចិត្តបាន ហើយកុមារគ្រប់រូបមានឱកាសធំធាត់ឡើងប្រកបដោយសុខភាពល្អ។ យើងសង្ឃឹមថានឹងរួមចំណែកដល់ប្រព័ន្ធថែទាំសុខភាពកុមារដែលតភ្ជាប់គ្នាកាន់តែជិតស្និទ្ធ និងគាំទ្រដោយប្រព័ន្ធឌីជីថលនៅទូទាំងប្រទេស។',
-      aboutSubtitle: 'លុបបំបាត់ការបាត់បង់ទិន្នន័យចាក់ថ្នាំ និងផ្តល់ជូននូវកូនសៀវភៅសុខភាពឌីជីថលដែលអាចប្រើប្រាស់បានគ្រប់ទីកន្លែង។',
-      projectStoryLabel: 'បញ្ហាដែលយើងដោះស្រាយ',
-      storyCardHeading: 'ពីក្រដាសងាយរហែកក្នុងរដូវវស្សា ទៅជាកូនសៀវភៅឌីជីថលសុវត្ថិភាពអចិន្ត្រៃយ៍',
-      projectStoryText: 'នៅកម្ពុជា ឪពុកម្តាយគ្រប់រូបតែងទទួលបានកូនសៀវភៅលឿងក្រដាសពេលសម្រាលកូន។ ប៉ុន្តែក្រដាសងាយរហែក ប្រឡាក់ទឹកភ្លៀង ឬភ្លេចនៅផ្ទះពេលទៅមន្ទីរពេទ្យ ដែលអាចធ្វើឱ្យកុមារខកខានការចាក់ថ្នាំបង្ការការពារជីវិត។ KOMA ត្រូវបានបង្កើតឡើងនៅរាជធានីភ្នំពេញ ដើម្បីផ្តល់ជូនកូនសៀវភៅឌីជីថលដែលមិនចេះបាត់បង់ និងស្របតាមស្តង់ដារក្រសួងសុខាភិបាល។',
+
+      // 4. Who We Serve
+      whoServeTag: 'អ្នកដែលយើងបម្រើ',
       whoServeTitle: 'អ្នកដែលយើងបម្រើ',
       whoServeText: 'KOMA ត្រូវបានរចនាឡើងដើម្បីគាំទ្រដល់មាតាបិតា បុគ្គលិកសុខាភិបាល និងស្ថាប័នសុខាភិបាលទូទាំងប្រទេសកម្ពុជា។ វាជួយមាតាបិតាក្នុងការគ្រប់គ្រងកំណត់ត្រាសុខភាពរបស់កូនៗ តាមដានកាលវិភាគចាក់ថ្នាំបង្ការ និងទទួលបានព័ត៌មានអំពីតម្រូវការសុខភាពសំខាន់ៗ។ លើសពីនេះ វាក៏ជួយបុគ្គលិកសុខាភិបាលក្នុងការណែនាំមាតាបិតា និងលើកកម្ពស់ការយល់ដឹងអំពីសុខភាព ព្រមទាំងជួយស្ថាប័នសុខាភិបាលពង្រឹងទំនាក់ទំនង និងលើកកម្ពស់សេវាថែទាំសុខភាពកុមារឱ្យកាន់តែប្រសើរឡើង។',
 
+      // 5. Meet Our Team
+      teamTitle: 'ជួបជាមួយក្រុមការងាររបស់យើង',
+      teamDesc: 'យើងជាក្រុមនិស្សិតប្រកបដោយឆន្ទៈ ដែលជឿជាក់ថាបច្ចេកវិទ្យាអាចបង្កើតការផ្លាស់ប្តូរជាវិជ្ជមានដល់ជីវិតមនុស្ស។ ជាមួយនឹងចំណាប់អារម្មណ៍រួមគ្នាក្នុងការច្នៃប្រឌិត និងការថែទាំសុខភាពកុមារ យើងបានបង្កើត KOMA ឡើងដើម្បីដោះស្រាយបញ្ហាប្រឈមជាក់ស្តែងដែលគ្រួសារកម្ពុជាកំពុងជួបប្រទះ។ គោលដៅរបស់យើងគឺបន្តអភិវឌ្ឍប្រព័ន្ធរបស់យើង និងធ្វើឱ្យការថែទាំសុខភាពកុមារកាន់តែងាយស្រួលតាមរយៈបច្ចេកវិទ្យា។',
+      
       // Startup Features
       featuresKicker: 'សមត្ថភាពនៃប្រព័ន្ធ',
       featuresMainTitle: 'អ្វីៗគ្រប់យ៉ាងដែលមាតាបិតា និងគ្រូពេទ្យកុមារត្រូវការ',
