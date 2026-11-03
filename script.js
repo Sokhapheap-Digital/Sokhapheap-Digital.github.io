@@ -11,12 +11,83 @@
   // ==========================================
   const translations = {
     en: {
-      // Navigation
+      // Navigation Matching Sample
+      navHome: 'Home',
+      navAbout: 'About',
       navFeatures: 'Features',
+      navDemo: 'Demo',
+      btnContactUs: 'Contact Us',
+
+      // Hero Section Matching Sample
+      heroTagline: 'Digital Vaccination Reminder',
+      heroTitle1: 'Care today,',
+      heroTitle2: 'Grow tomorrow.',
+      heroDescSample: 'KOMA is a bilingual child health record for Cambodian parents includes the MOH national vaccination schedule per child, growth measurements according to WHO curves, and Telegram reminders before each vaccination due date.',
+      btnGetAppHero: 'Get App',
+
+      // Phone Mockup Matching Sample
+      phoneSecureBadge: 'Secure & Private',
+      phoneWelcomeSign: 'WELCOME',
+      phoneSub: 'CHILD HEALTH & VACCINE TRACKER',
+      phoneSignInTelegram: 'Sign in with your Telegram',
+      phoneBtnTelegram: 'Log in with Telegram',
+      phoneOr: 'OR',
+      phoneTryDemo: 'Try out our app demo',
+      phoneBtnDemo: '✨ KOMA Demo',
+
+      // Startup Navigation & Hero
+      navHowItWorks: 'How it works',
+      navSecurity: 'Trust & Security',
+      btnGetApp: 'Get App',
+      btnWatchVideo: 'Watch demo video',
+      heroBadgeText: '🇰🇭 Cambodia MOH Protocol • National Immunization Program',
+      heroHeadline1: 'Next-Generation Child Health & Immunization Companion',
+      heroSubhead: 'The modern, indestructible digital companion for Cambodian families and pediatric clinics. Protect your child\'s immunization history against paper damage, automate booster alerts, and track WHO growth curves with ease.',
+      btnRequestInvite: 'Request Mobile App Invite',
+      btnExploreDemo: 'Explore Live Web App',
+      btnRequestMobile: 'Request Mobile App Invite',
+      btnTryWebDemo: 'Explore Web App Demo ↗',
+
+      // Startup About Us
+      aboutKicker: 'OUR MISSION',
+      aboutTitle: 'Digitizing Child Healthcare Across Cambodia',
+      aboutSubtitle: 'Eliminating lost vaccination history and empowering parents and clinics with durable, offline-ready medical records.',
+      projectStoryLabel: 'The Problem We Solve',
+      storyCardHeading: 'From Monsoon-Damaged Paper to Permanent Digital Security',
+      projectStoryText: 'Across Cambodia, every newborn is given an official yellow paper health booklet at birth. But through humid monsoon rains, routine household wear, and clinic transitions, paper books tear, fade, or get misplaced. When paper records vanish, children risk missed booster immunizations or redundant injections. KOMA was founded in Phnom Penh to give every Cambodian mother, father, and healthcare worker a permanent, indestructible digital companion.',
+      whoServeTitle: 'Who We Empower',
+      whoServeText: 'Designed specifically around the healthcare ecosystem connecting Cambodian parents, local clinics, and specialized pediatric referral hospitals.',
+
+      // Startup Features
+      featuresKicker: 'PLATFORM CAPABILITIES',
+      featuresMainTitle: 'Everything Parents & Pediatricians Need',
+      pillarsDesc: 'Engineered around the real, everyday immunization journey of Cambodian families.',
+      pillar1Title: 'National Immunization Schedule (NIP)',
+      pillar1Desc: 'Pre-loaded with Cambodia\'s complete protocol approved by the Ministry of Health. Covers BCG, HepB, Pentavalent (DTP-HepB-Hib), OPV, IPV, PCV, and Measles-Rubella from Birth through 18 months.',
+      pillar2Title: 'Smart Countdown & Due Date Alerts',
+      pillar2Desc: 'Automated reminder engines calculated precisely from your child\'s birth date. Proactive alerts notify parents via Telegram and SMS 7 days, 3 days, and 24 hours prior to scheduled clinic dates.',
+      pillar3Title: 'WHO Standard Growth Monitoring',
+      pillar3Desc: 'Track height and weight curves mapped against official World Health Organization percentile standards (P3 to P97). Spot nutritional deficits early and monitor healthy infant development.',
+      btnOpenFullBooklet: '📖 View Full MOH Schedule Modal',
+      btnPrintPdf: '🖨️ Export Official PDF Booklet',
+
+      // Startup How It Works
+      howItWorksKicker: 'SIMPLE WORKFLOW',
+      howItWorksTitle: 'How KOMA Works in 3 Easy Steps',
+      howItWorksSubtitle: 'Get your child\'s official Ministry of Health digital health record active in under two minutes.',
+
+      // Startup Security
+      securityKicker: 'SECURITY & RELIABILITY',
+      securityTitle: 'Bank-Grade Privacy & Clinical Reliability',
+      securitySubtitle: 'Engineered to perform in rural provincial centers while strictly safeguarding sensitive pediatric data.',
+
+      // Navigation
       navBooklet: 'MOH Booklet',
       navGrowth: 'Growth Charts',
       navHospitals: 'Hospital Guide',
-      navPlayground: 'Playground',
+      navPlayground: 'Security & Trust',
+      tryDemoBtn: 'Try Live Demo',
+      launchApp: 'Launch Demo',
       tryDemoBtn: 'Try Live Demo',
       launchApp: 'Launch Demo',
       drawerLangLabel: 'Language / ភាសា',
@@ -60,7 +131,7 @@
       bookletAnchorTag: 'Digitalize MOH Booklet',
       bookletSectionTitle: 'Your Yellow Booklet, Reimagined.',
       bookletSectionDesc: 'In Cambodia, every mother receives a physical yellow card at birth. But paper tears, gets water-damaged, and gets left behind. KOMA gives every mother and child an indestructible digital twin.',
-      
+
       paperCardTitle: 'Traditional Paper Booklet',
       paperCardDesc: 'The fragile yellow paper booklet given at birth centers across Cambodia.',
       paperFlaw1: '💧 Water-damaged easily during monsoon season',
@@ -91,7 +162,7 @@
 
       pillar1Title: 'National Immunization Schedule',
       pillar1Desc: 'Pre-loaded with Cambodia’s complete NIP protocol aligned with the Ministry of Health.',
-      
+
       pillar2Title: 'Smart Reminders & Due Dates',
       pillar2Desc: 'Automated countdowns calculated from your baby’s birth date so booster shots are never forgotten.',
       reminderSimTitle: 'Pentavalent 2 (DTP-HepB-Hib)',
@@ -129,19 +200,19 @@
       trustTag: 'CAMBODIAN HEALTHCARE ECOSYSTEM',
       trustTitle: 'Partnering in Cambodian Child Health',
       trustDesc: 'Compatible with major pediatric referral hospitals and over 1,200 local commune health centers nationwide.',
-      
+
       hospKBName: 'Kantha Bopha Hospital',
       hospKBLoc: 'Phnom Penh & Siem Reap',
       hospKBTag: 'Free Pediatric Care & Vaccinations',
-      
+
       hospNPHName: 'National Pediatric Hospital',
       hospNPHLoc: 'Russian Blvd, Phnom Penh',
       hospNPHTag: 'National Immunization Center',
-      
+
       hospAHCName: 'Angkor Hospital for Children',
       hospAHCLoc: 'Siem Reap',
       hospAHCTag: 'Northern Cambodia Referral Center',
-      
+
       hospCalmetteName: 'Calmette Hospital',
       hospCalmetteLoc: 'Monivong Blvd, Phnom Penh',
       hospCalmetteTag: 'Maternity & Child Health Unit',
@@ -196,12 +267,81 @@
     },
 
     kh: {
-      // Navigation
+      // Navigation Matching Sample
+      navHome: 'ទំព័រដើម',
+      navAbout: 'អំពីយើង',
       navFeatures: 'មុខងារ',
+      navDemo: 'សាកល្បង',
+      btnContactUs: 'ទាក់ទងយើង',
+
+      // Hero Section Matching Sample
+      heroTagline: 'ការរំលឹកកាលវិភាគចាក់ថ្នាំឌីជីថល',
+      heroTitle1: 'ថែទាំថ្ងៃនេះ,',
+      heroTitle2: 'រីកចម្រើនថ្ងៃស្អែក។',
+      heroDescSample: 'KOMA គឺជាកូនសៀវភៅតាមដានសុខភាពកុមារពីរភាសាសម្រាប់មាតាបិតាកម្ពុជា រួមបញ្ចូលទាំងកាលវិភាគចាក់ថ្នាំបង្ការជាតិរបស់ក្រសួងសុខាភិបាល ការវាស់វែងការលូតលាស់តាមខ្សែកោង WHO និងការរំលឹកតាម Telegram មុនកាលបរិច្ឆេទចាក់ថ្នាំនីមួយៗ។',
+      btnGetAppHero: 'ទាញយក App',
+
+      // Phone Mockup Matching Sample
+      phoneSecureBadge: 'សុវត្ថិភាព & ឯកជន',
+      phoneWelcomeSign: 'សូមស្វាគមន៍',
+      phoneSub: 'កម្មវិធីតាមដានសុខភាព និងថ្នាំបង្ការកុមារ',
+      phoneSignInTelegram: 'ចូលគណនីតាម Telegram របស់អ្នក',
+      phoneBtnTelegram: 'ចូលដោយប្រើ Telegram',
+      phoneOr: 'ឬ',
+      phoneTryDemo: 'សាកល្បង Demo របស់យើង',
+      phoneBtnDemo: '✨ KOMA Demo',
+
+      // Startup Navigation & Hero
+      navHowItWorks: 'របៀបដំណើរការ',
+      navSecurity: 'ទំនុកចិត្ត & សុវត្ថិភាព',
+      btnGetApp: 'ទាញយក App',
+      btnWatchVideo: 'មើលវីដេអូសាកល្បង',
+      heroBadgeText: '🇰🇭 ស្របតាមកាលវិភាគជាតិ NIP • ក្រសួងសុខាភិបាលកម្ពុជា',
+      heroHeadline1: 'កូនសៀវភៅសុខភាព និងចាក់ថ្នាំបង្ការឌីជីថលសម្រាប់កុមារកម្ពុជា',
+      heroSubhead: 'កូនសៀវភៅតាមដានសុខភាពនិងការចាក់ថ្នាំបង្ការកុមារឌីជីថលទំនើប សម្រាប់ក្រុមគ្រួសារកម្ពុជា និងគ្លីនិកកុមារ។ ការពារការបាត់បង់ទិន្នន័យ ទទួលបានការរំលឹកកាលបរិច្ឆេទឆ្លាតវៃ និងតាមដានការលូតលាស់ស្តង់ដារ WHO។',
+      btnRequestInvite: 'ស្នើសុំការអញ្ជើញប្រើប្រាស់ App',
+      btnExploreDemo: 'សាកល្បង Live Web App',
+      btnRequestMobile: 'ស្នើសុំការអញ្ជើញប្រើប្រាស់ App',
+      btnTryWebDemo: 'សាកល្បង Web App Demo ↗',
+
+      // Startup About Us
+      aboutKicker: 'បេសកកម្មរបស់យើង',
+      aboutTitle: 'ឌីជីថលូបនីយកម្មសុខភាពកុមារទូទាំងប្រទេសកម្ពុជា',
+      aboutSubtitle: 'លុបបំបាត់ការបាត់បង់ទិន្នន័យចាក់ថ្នាំ និងផ្តល់ជូននូវកូនសៀវភៅសុខភាពឌីជីថលដែលអាចប្រើប្រាស់បានគ្រប់ទីកន្លែង។',
+      projectStoryLabel: 'បញ្ហាដែលយើងដោះស្រាយ',
+      storyCardHeading: 'ពីក្រដាសងាយរហែកក្នុងរដូវវស្សា ទៅជាកូនសៀវភៅឌីជីថលសុវត្ថិភាពអចិន្ត្រៃយ៍',
+      projectStoryText: 'នៅកម្ពុជា ឪពុកម្តាយគ្រប់រូបតែងទទួលបានកូនសៀវភៅលឿងក្រដាសពេលសម្រាលកូន។ ប៉ុន្តែក្រដាសងាយរហែក ប្រឡាក់ទឹកភ្លៀង ឬភ្លេចនៅផ្ទះពេលទៅមន្ទីរពេទ្យ ដែលអាចធ្វើឱ្យកុមារខកខានការចាក់ថ្នាំបង្ការការពារជីវិត។ KOMA ត្រូវបានបង្កើតឡើងនៅរាជធានីភ្នំពេញ ដើម្បីផ្តល់ជូនកូនសៀវភៅឌីជីថលដែលមិនចេះបាត់បង់ និងស្របតាមស្តង់ដារក្រសួងសុខាភិបាល។',
+      whoServeTitle: 'អ្នកដែលយើងផ្តល់អត្ថប្រយោជន៍',
+      whoServeText: 'រចនាឡើងយ៉ាងយកចិត្តទុកដាក់សម្រាប់តភ្ជាប់រវាងមាតាបិតា មណ្ឌលសុខភាពមូលដ្ឋាន និងមន្ទីរពេទ្យកុមារជាតិឯកទេស។',
+
+      // Startup Features
+      featuresKicker: 'សមត្ថភាពនៃប្រព័ន្ធ',
+      featuresMainTitle: 'អ្វីៗគ្រប់យ៉ាងដែលមាតាបិតា និងគ្រូពេទ្យកុមារត្រូវការ',
+      pillarsDesc: 'រចនាឡើងស្របតាមដំណើរជាក់ស្តែងនៃការថែទាំសុខភាពកុមារកម្ពុជា។',
+      pillar1Title: 'កាលវិភាគចាក់ថ្នាំបង្ការជាតិ (NIP)',
+      pillar1Desc: 'បានកំណត់ស្របតាមស្តង់ដារផ្លូវការរបស់ក្រសួងសុខាភិបាលកម្ពុជា ចាប់ពីពេលទើបកើតរហូតដល់អាយុ ១៨ ខែ រួមមាន BCG, HepB, Pentavalent, OPV, IPV, PCV និងកញ្ជ្រឹល-ស្អូច។',
+      pillar2Title: 'ការរំលឹកកាលបរិច្ឆេទឆ្លាតវៃតាម Telegram',
+      pillar2Desc: 'គណនាដោយស្វ័យប្រវត្តិតាមថ្ងៃខែឆ្នាំកំណើតរបស់កូនលោកអ្នក។ ផ្ញើសាររំលឹកជាមុន ៧ថ្ងៃ ៣ថ្ងៃ និង ២៤ម៉ោងតាម Telegram និង SMS មុនថ្ងៃកំណត់ចាក់ថ្នាំ។',
+      pillar3Title: 'ការតាមដានការលូតលាស់ស្តង់ដារ WHO',
+      pillar3Desc: 'កត់ត្រានិងតាមដានការឡើងទម្ងន់និងកម្ពស់ធៀបនឹងស្តង់ដារអង្គការសុខភាពពិភពលោក (Percentiles P3 ដល់ P97) ដើម្បីដឹងទាន់ពេលពីស្ថានភាពអាហារូបត្ថម្ភ។',
+      btnOpenFullBooklet: '📖 មើលកាលវិភាគ MOH ពេញលេញ',
+      btnPrintPdf: '🖨️ បោះពុម្ពកូនសៀវភៅជា PDF',
+
+      // Startup How It Works
+      howItWorksKicker: 'ដំណើរការងាយស្រួល',
+      howItWorksTitle: 'របៀបប្រើប្រាស់ KOMA ក្នុង ៣ ជំហាន',
+      howItWorksSubtitle: 'បង្កើតកូនសៀវភៅសុខភាពឌីជីថលរបស់កូនអ្នកយ៉ាងឆាប់រហ័សក្នុងរយៈពេលមិនដល់ ២ នាទី។',
+
+      // Startup Security
+      securityKicker: 'សុវត្ថិភាព & ទំនុកចិត្តខ្ពស់',
+      securityTitle: 'សុវត្ថិភាពទិន្នន័យកម្រិតស្តង់ដារ និងទំនុកចិត្តផ្នែកវេជ្ជសាស្ត្រ',
+      securitySubtitle: 'រចនាឡើងដើម្បីដំណើរការបានល្អនៅមណ្ឌលសុខភាពជនបទ និងការពារទិន្នន័យសុខភាពកុមារយ៉ាងម៉ឺងម៉ាត់។',
+
+      // Navigation
       navBooklet: 'សៀវភៅលឿង',
       navGrowth: 'តារាងលូតលាស់',
       navHospitals: 'មន្ទីរពេទ្យ',
-      navPlayground: 'សាកល្បង',
+      navPlayground: 'សុវត្ថិភាព & ទំនុកចិត្ត',
       tryDemoBtn: 'សាកល្បង Demo',
       launchApp: 'បើក Demo',
       drawerLangLabel: 'ភាសា / Language',
@@ -680,7 +820,7 @@
     localStorage.setItem('koma_lang', lang);
 
     document.documentElement.setAttribute('lang', lang === 'kh' ? 'km' : 'en');
-    
+
     // Update active flag in header button
     const activeFlag = document.getElementById('active-lang-flag');
     const activeText = document.getElementById('active-lang-text');
@@ -718,6 +858,15 @@
     });
 
     // Update Phone Mockup UI
+    const phoneFlagImg = document.getElementById('phone-flag-img');
+    if (phoneFlagImg) {
+      phoneFlagImg.src = lang === 'kh' ? 'assets/flag-kh.png' : 'assets/flag-en.png';
+      phoneFlagImg.alt = lang === 'kh' ? 'Khmer' : 'English';
+    }
+    const daraSignText = document.getElementById('dara-sign-text');
+    if (daraSignText) {
+      daraSignText.textContent = lang === 'kh' ? 'សូមស្វាគមន៍' : 'WELCOME';
+    }
     updatePhoneMockup();
 
     // Update Digital Yellow Booklet
@@ -1063,6 +1212,7 @@
   }
 
   function initAnimatedMascots() {
+    if (!document.getElementById('mascot-stage')) return;
     updateMascotActionDisplay();
 
     if (mascotActionTimer) clearInterval(mascotActionTimer);
@@ -1129,12 +1279,11 @@
   // ==========================================
   function initScrollspy() {
     const navLinks = document.querySelectorAll('.nav-desktop .nav-link');
-    // Vertical document order: Booklet (top) -> Features -> Playground
-    const sections = ['booklet', 'features', 'playground'];
+    const sections = ['home', 'about', 'features'];
 
     function updateActiveNav() {
       const scrollPos = window.scrollY + 180;
-      let currentId = '';
+      let currentId = 'home';
 
       for (let i = sections.length - 1; i >= 0; i--) {
         const sec = document.getElementById(sections[i]);
@@ -1386,6 +1535,23 @@
       });
     });
 
+    // Phone mockup language toggle pill
+    const phoneLangPill = document.getElementById('phone-lang-pill');
+    if (phoneLangPill) {
+      phoneLangPill.addEventListener('click', () => {
+        const nextLang = currentLanguage === 'en' ? 'kh' : 'en';
+        setLanguage(nextLang);
+      });
+    }
+
+    // Phone Telegram button
+    const phoneTelegramBtn = document.getElementById('phone-telegram-btn');
+    if (phoneTelegramBtn) {
+      phoneTelegramBtn.addEventListener('click', () => {
+        window.open('https://t.me', '_blank');
+      });
+    }
+
     // 2. Mobile Menu Toggle
     const hamburgerBtn = document.getElementById('hamburger-btn');
     const mobileDrawer = document.getElementById('mobile-drawer');
@@ -1533,7 +1699,133 @@
     initAnimatedMascots();
 
     // 7. Scrollspy Header Navigation
+    function initScrollspy() {
+      const sections = [
+        { id: 'home', el: document.getElementById('home'), link: document.querySelector('.nav-desktop a[href="#home"]') },
+        { id: 'about', el: document.getElementById('about'), link: document.querySelector('.nav-desktop a[href="#about"]') },
+        { id: 'features', el: document.getElementById('features'), link: document.querySelector('.nav-desktop a[href="#features"]') }
+      ];
+
+      function updateActive() {
+        const scrollY = window.scrollY + 160;
+        let activeSection = null;
+
+        for (let i = sections.length - 1; i >= 0; i--) {
+          const sec = sections[i];
+          if (sec.el && sec.el.offsetTop <= scrollY) {
+            activeSection = sec;
+            break;
+          }
+        }
+
+        sections.forEach(sec => {
+          if (!sec.link) return;
+          const isActive = activeSection && activeSection.id === sec.id;
+          sec.link.classList.toggle('active', isActive);
+          if (sec.id === 'features') {
+            sec.link.classList.toggle('active-green', isActive);
+          } else if (sec.id === 'about') {
+            sec.link.classList.toggle('active-blue', isActive);
+          }
+        });
+      }
+
+      window.addEventListener('scroll', updateActive, { passive: true });
+      updateActive();
+    }
     initScrollspy();
+
+    // 7b. Features 3-Card Interactive Tab Switching (Image 5)
+    function initFeatureTabs() {
+      const cards = document.querySelectorAll('.features-card-outline');
+      const bannerTitle = document.getElementById('feature-active-banner-title');
+      const bannerIcon = document.getElementById('feature-active-banner-icon');
+      const pane1 = document.getElementById('feature-pane-1');
+      const pane2 = document.getElementById('feature-pane-2');
+      const pane3 = document.getElementById('feature-pane-3');
+
+      const featureDetails = {
+        '1': {
+          titleEn: 'National Immunization Schedule',
+          titleKh: 'កាលវិភាគចាក់ថ្នាំបង្ការជាតិ',
+          color: '#00A86B',
+          bgColor: '#E6F7F0',
+          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="m18 2 4 4"/><path d="m17 7 3-3"/><path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5"/><path d="m9 11 4 4"/><path d="m5 19-3 3"/><path d="m14 4 6 6"/></svg>`
+        },
+        '2': {
+          titleEn: 'Smart Reminders & Due Dates',
+          titleKh: 'ការរំលឹកឆ្លាតវៃ & កាលបរិច្ឆេទ',
+          color: '#EE6748',
+          bgColor: '#FEF3D6',
+          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>`
+        },
+        '3': {
+          titleEn: 'WHO Growth Monitoring',
+          titleKh: 'ការតាមដានការលូតលាស់ស្តង់ដារ WHO',
+          color: '#4AAEE8',
+          bgColor: '#EBF5FC',
+          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="3" y1="20" x2="21" y2="20"/></svg>`
+        }
+      };
+
+      cards.forEach(card => {
+        card.addEventListener('click', () => {
+          const tab = card.getAttribute('data-feature-tab');
+          cards.forEach(c => c.classList.remove('active'));
+          card.classList.add('active');
+
+          const info = featureDetails[tab] || featureDetails['1'];
+          if (bannerTitle) {
+            bannerTitle.textContent = currentLanguage === 'kh' ? info.titleKh : info.titleEn;
+          }
+          if (bannerIcon) {
+            bannerIcon.innerHTML = info.icon;
+            bannerIcon.style.backgroundColor = info.bgColor;
+            bannerIcon.style.color = info.color;
+          }
+
+          if (pane1) pane1.style.display = tab === '1' ? 'block' : 'none';
+          if (pane2) pane2.style.display = tab === '2' ? 'block' : 'none';
+          if (pane3) pane3.style.display = tab === '3' ? 'block' : 'none';
+        });
+      });
+    }
+    initFeatureTabs();
+
+    // 7c. Video Demo Modal Handlers
+    const videoModal = document.getElementById('video-modal');
+    const closeVideoModalBtn = document.getElementById('btn-close-video-modal');
+    const openVideoBtns = document.querySelectorAll('.btn-open-demo-video, .btn-trigger-video');
+    const videoToWaitlistBtn = document.getElementById('video-to-waitlist-btn');
+    const videoPlayBtn = document.getElementById('video-play-btn');
+
+    function openVideoModal() {
+      if (videoModal) {
+        videoModal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeVideoModal() {
+      if (videoModal) {
+        videoModal.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    }
+
+    openVideoBtns.forEach(btn => btn.addEventListener('click', openVideoModal));
+    if (closeVideoModalBtn) closeVideoModalBtn.addEventListener('click', closeVideoModal);
+    if (videoToWaitlistBtn) {
+      videoToWaitlistBtn.addEventListener('click', () => {
+        closeVideoModal();
+        openWaitlistModal();
+      });
+    }
+    if (videoPlayBtn) {
+      videoPlayBtn.addEventListener('click', () => {
+        window.open('https://demo.komakh.com', '_blank', 'noopener,noreferrer');
+      });
+    }
 
     // 8. Birthday Celebration Triggers
     const birthdayBtns = document.querySelectorAll('.btn-trigger-birthday');

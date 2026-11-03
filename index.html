@@ -1,53 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KOMA | Cambodian Child Health & Vaccination Companion</title>
-  <meta name="description" content="KOMA is the joyful, digitized child health record book built for Cambodian families. Track vaccinations, WHO growth, reminders, and your official Ministry of Health yellow booklet.">
+  <meta name="description"
+    content="KOMA is the joyful, digitized child health record book built for Cambodian families. Track vaccinations, WHO growth, reminders, and your official Ministry of Health yellow booklet.">
   <meta name="theme-color" content="#FABE2C">
-  
+
   <!-- Favicon & Touch Icons -->
   <link rel="icon" type="image/png" href="assets/logo.png">
   <link rel="apple-touch-icon" href="assets/logo.png">
-  
-  <!-- Google Fonts: Plus Jakarta Sans (English) & Kantumruy Pro (Khmer) -->
+
+  <!-- Google Fonts: Bebas Neue, Plus Jakarta Sans (English) & Kantumruy Pro (Khmer) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,800&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kantumruy+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,800&display=swap"
+    rel="stylesheet">
+
   <!-- Neo-Brutalist Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
   <!-- ========================================================
-       1. GLOBAL STICKY NAVIGATION HEADER
+       1. GLOBAL STICKY NAVIGATION HEADER (MATCHING SAMPLE MOCKUP)
        ======================================================== -->
   <header class="site-header">
     <div class="container header-inner">
-      <!-- Left: Logo & Wordmark -->
+      <!-- Left: Logo Wordmark (Matching Sample Mockup) -->
       <a href="#home" class="logo-brand" aria-label="KOMA Home">
-        <img src="assets/logo.png" alt="KOMA Mascot Logo" class="logo-icon-img">
         <img src="assets/koma-text.svg" alt="KOMA" class="logo-text-img">
       </a>
 
-      <!-- Center: Navigation Links -->
+      <!-- Center: Navigation Links Matching Sample Mockup -->
       <nav class="nav-desktop" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link active" data-i18n="navHome">Home</a>
+        <a href="#about" class="nav-link" data-i18n="navAbout">About</a>
         <a href="#features" class="nav-link" data-i18n="navFeatures">Features</a>
-        <a href="#booklet" class="nav-link" data-i18n="navBooklet">MOH Booklet</a>
-        <a href="#playground" class="nav-link" data-i18n="navPlayground">Playground</a>
+        <a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer" class="nav-link" data-i18n="navDemo">Demo</a>
       </nav>
 
-      <!-- Right Controls: Language Dropdown & Demo CTA -->
+      <!-- Right Controls: Contact Us Pill & Language Switcher -->
       <div class="header-actions">
-        <!-- Interactive Language Switcher (Replica of Demo App) -->
+        <button type="button" class="btn-contact-pill btn-trigger-waitlist" data-i18n="btnContactUs">Contact Us</button>
+
         <div class="lang-dropdown-wrapper">
-          <button id="lang-dropdown-btn" class="lang-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Select Language">
+          <button id="lang-dropdown-btn" class="lang-btn" type="button" aria-haspopup="true" aria-expanded="false"
+            aria-label="Select Language">
             <img id="active-lang-flag" src="assets/flag-en.png" alt="English" class="flag-icon">
-            <span id="active-lang-text">English</span>
-            <svg id="lang-chevron" class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+            <span id="active-lang-text" style="display: none;">English</span>
+            <svg id="lang-chevron" class="chevron-icon" viewBox="0 0 24 24" fill="currentColor"
+              style="width: 12px; height: 12px;">
+              <path d="M7 10l5 5 5-5z" />
             </svg>
           </button>
 
@@ -69,8 +77,10 @@
         </div>
 
         <!-- Mobile Hamburger Toggle -->
-        <button id="hamburger-btn" class="hamburger-btn" type="button" aria-label="Open mobile menu" aria-controls="mobile-drawer" aria-expanded="false">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+        <button id="hamburger-btn" class="hamburger-btn" type="button" aria-label="Open mobile menu"
+          aria-controls="mobile-drawer" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" aria-hidden="true">
             <line x1="3" y1="12" x2="21" y2="12"></line>
             <line x1="3" y1="6" x2="21" y2="6"></line>
             <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -84,17 +94,18 @@
   <div id="mobile-drawer" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
     <div class="mobile-drawer-content">
       <div class="drawer-header">
-        <div class="logo-brand">
-          <img src="assets/logo.png" alt="KOMA" style="width: 32px; height: 32px;">
-          <img src="assets/koma-text.svg" alt="KOMA" style="height: 22px;">
-        </div>
-        <button id="close-drawer-btn" class="modal-close-btn" style="position: static;" aria-label="Close mobile menu">✕</button>
+        <a href="#home" class="logo-brand" style="text-decoration: none;">
+          <img src="assets/koma-text.svg" alt="KOMA" style="height: 28px;">
+        </a>
+        <button id="close-drawer-btn" class="modal-close-btn" style="position: static;"
+          aria-label="Close mobile menu">✕</button>
       </div>
 
       <div class="drawer-links">
+        <a href="#home" class="drawer-link" data-i18n="navHome">Home</a>
+        <a href="#about" class="drawer-link" data-i18n="navAbout">About</a>
         <a href="#features" class="drawer-link" data-i18n="navFeatures">Features</a>
-        <a href="#booklet" class="drawer-link" data-i18n="navBooklet">MOH Booklet</a>
-        <a href="#playground" class="drawer-link" data-i18n="navPlayground">Playground</a>
+        <a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer" class="drawer-link" data-i18n="navDemo">Demo</a>
       </div>
 
       <!-- Mobile Language Switcher Inside Drawer -->
@@ -113,9 +124,10 @@
       </div>
 
       <div style="margin-top: auto; display: flex; flex-direction: column; gap: 0.85rem;">
-        <a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer" class="neo-btn neo-btn-primary" style="width: 100%;" data-i18n="launchApp">
-          Launch Demo
-        </a>
+          <button type="button" class="btn-contact-pill btn-trigger-waitlist" style="width: 100%; text-align: center;"
+            data-i18n="btnContactUs">
+            Contact Us
+          </button>
       </div>
     </div>
   </div>
@@ -123,649 +135,444 @@
   <main id="home">
 
     <!-- ========================================================
-         2. HERO SECTION WITH INTERACTIVE PHONE MOCKUP
+         2. HERO SECTION (REDESIGNED TO MATCH SAMPLE MOCKUP)
          ======================================================== -->
-    <section class="section hero-section">
-      <div class="container hero-grid">
-        <!-- Left: Copy & Actions -->
-        <div class="hero-copy">
-          <h1>
-            <span data-i18n="heroHeadline1">Care today</span><br>
-            <span class="highlight-text" data-i18n="heroHeadline2">Grow tomorrow</span>
-          </h1>
+            <section class="hero-sample-section" id="hero">
+              <div class="container hero-sample-container">
+                <!-- Left: Text & CTA Content -->
+                <div class="hero-sample-left">
+                  <div class="hero-sample-eyebrow" data-i18n="heroTagline">Digital Vaccination Reminder</div>
+                  <h1 class="hero-sample-title">
+                    <span data-i18n="heroTitle1">Care today,</span><br>
+                    <span data-i18n="heroTitle2">Grow tomorrow.</span>
+                  </h1>
+                  <p class="hero-sample-desc" data-i18n="heroDescSample">
+                    KOMA is a bilingual child health record for Cambodian parents includes the MOH national vaccination
+                    schedule per child, growth measurements according to WHO curves, and Telegram reminders before each
+                    vaccination due date.
+                  </p>
+                  <div class="hero-sample-action">
+                    <button type="button" class="hero-btn-getapp btn-trigger-waitlist" data-i18n="btnGetAppHero">
+                      Get App
+                    </button>
+                  </div>
+                </div>
 
-          <p class="hero-subhead" data-i18n="heroSubhead">
-            The joyful, digitized child health record book built for Cambodian families. Never lose a vaccination record or miss an appointment again.
-          </p>
+                    <!-- Right: Phone Mockup & Cheerful Bopha Mascot -->
+                    <div class="hero-sample-right">
+                      <div class="hero-showcase-stage">
+                        <!-- Smartphone Device Frame Mockup -->
+                        <div class="hero-phone-mockup">
+                          <!-- Top Dynamic Island Notch / Speaker Pill -->
+                          <div class="phone-dynamic-island">
+                            <div class="phone-camera-lens"></div>
+                            <div class="phone-speaker-slit"></div>
+                          </div>
 
-          <div class="hero-actions">
-            <a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer" class="neo-btn neo-btn-primary" style="font-size: 1.05rem; padding: 0.85rem 1.75rem;" data-i18n="btnLaunchDemo">
-              ✨ Launch Interactive Demo →
-            </a>
-          </div>
-        </div>
+                          <!-- Phone Inner Screen Content -->
+                          <div class="phone-inner-screen">
+                            <!-- Phone Top Bar: Secure Badge & Language Switcher -->
+                            <div class="phone-top-bar">
+                              <div class="phone-secure-pill">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                  stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg>
+                                <span data-i18n="phoneSecureBadge">Secure & Private</span>
+                              </div>
 
-        <!-- Right: The Hero Phone Mockup Stage -->
-        <div class="hero-visual-stage">
-          <!-- Mascot Peeking Left (Oliver Boy) -->
-          <div class="mascot-peeking-left">
-            <svg viewBox="0 0 160 220" fill="none" class="w-full h-full select-none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="80" cy="68" r="35" fill="#FFF3E3" stroke="#18181B" stroke-width="2.8" />
-              <circle cx="47" cy="70" r="7" fill="#FFF3E3" stroke="#18181B" stroke-width="2.5" />
-              <circle cx="113" cy="70" r="7" fill="#FFF3E3" stroke="#18181B" stroke-width="2.5" />
-              <path d="M48 68 C44 42, 60 32, 80 32 C100 32, 116 42, 112 68 C104 60, 94 62, 80 63 C66 62, 56 60, 48 68 Z" fill="#262626" stroke="#18181B" stroke-width="2.8" />
-              <path d="M47 52 C58 45, 102 45, 113 52 L113 63 C102 56, 58 56, 47 63 Z" fill="#18181B" stroke="#18181B" stroke-width="2.8" />
-              <path d="M48 55 C58 49, 102 49, 112 55" stroke="#FABE2C" stroke-width="2.2" stroke-linecap="round" />
-              <path d="M48 59 C58 53, 102 53, 112 59" stroke="#FABE2C" stroke-width="2.2" stroke-linecap="round" />
-              <circle cx="58" cy="76" r="7.5" fill="#FFAAA6" opacity="0.85" />
-              <circle cx="102" cy="76" r="7.5" fill="#FFAAA6" opacity="0.85" />
-              <path d="M60 67 Q67 59 74 67" stroke="#18181B" stroke-width="3.2" stroke-linecap="round" fill="none" />
-              <path d="M86 67 Q93 59 100 67" stroke="#18181B" stroke-width="3.2" stroke-linecap="round" fill="none" />
-              <circle cx="80" cy="71" r="2.5" fill="#FABE2C" />
-              <path d="M74 78 Q80 84 86 78" stroke="#18181B" stroke-width="2.8" stroke-linecap="round" fill="none" />
-              <!-- Hand Waving -->
-              <path d="M110 110 C125 90, 138 75, 142 90 C138 105, 122 118, 112 125" fill="#FFF3E3" stroke="#18181B" stroke-width="2.8" />
-              <path d="M56 104 L104 104 L110 146 L50 146 Z" fill="#FABE2C" stroke="#18181B" stroke-width="2.8" stroke-linejoin="round" />
-              <rect x="67" y="115" width="26" height="20" rx="3" fill="#FFFFFF" stroke="#18181B" stroke-width="2.2" />
-              <text x="80" y="130" text-anchor="middle" font-size="12" font-weight="900" fill="#18181B">01</text>
-            </svg>
-          </div>
+                              <button type="button" class="phone-lang-pill" id="phone-lang-pill"
+                                aria-label="Toggle language">
+                                <img src="assets/flag-en.png" alt="Language" class="flag-icon" id="phone-flag-img">
+                                <span class="chevron-arrow">▼</span>
+                              </button>
+                            </div>
 
-          <!-- Mascot Peeking Right (Luna Girl) -->
-          <div class="mascot-peeking-right">
-            <svg viewBox="0 0 160 220" fill="none" class="w-full h-full select-none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="34" cy="52" r="16" fill="#262626" stroke="#18181B" stroke-width="2.8" />
-              <circle cx="38" cy="52" r="7" fill="#EE6748" stroke="#18181B" stroke-width="2" />
-              <circle cx="126" cy="52" r="16" fill="#262626" stroke="#18181B" stroke-width="2.8" />
-              <circle cx="122" cy="52" r="7" fill="#EE6748" stroke="#18181B" stroke-width="2" />
-              <circle cx="80" cy="68" r="35" fill="#FFF3E3" stroke="#18181B" stroke-width="2.8" />
-              <path d="M48 68 C44 42, 60 32, 80 32 C100 32, 116 42, 112 68 C104 60, 94 62, 80 63 C66 62, 56 60, 48 68 Z" fill="#262626" stroke="#18181B" stroke-width="2.8" />
-              <path d="M47 52 C58 45, 102 45, 113 52 L113 61 C102 54, 58 54, 47 61 Z" fill="#36B37E" stroke="#18181B" stroke-width="2.8" />
-              <circle cx="58" cy="76" r="7.5" fill="#FFAAA6" opacity="0.85" />
-              <circle cx="102" cy="76" r="7.5" fill="#FFAAA6" opacity="0.85" />
-              <ellipse cx="66" cy="67" rx="6.5" ry="7.5" fill="#18181B" />
-              <ellipse cx="94" cy="67" rx="6.5" ry="7.5" fill="#18181B" />
-              <circle cx="68" cy="64" r="2.8" fill="#FFFFFF" />
-              <circle cx="96" cy="64" r="2.8" fill="#FFFFFF" />
-              <circle cx="80" cy="71" r="2.5" fill="#FABE2C" />
-              <path d="M74 78 Q80 84 86 78" stroke="#18181B" stroke-width="2.8" stroke-linecap="round" fill="none" />
-              <path d="M56 104 L104 104 L110 146 L50 146 Z" fill="#36B37E" stroke="#18181B" stroke-width="2.8" stroke-linejoin="round" />
-            </svg>
-          </div>
+                            <!-- Mascot Dara Holding WELCOME Sign -->
+                            <div class="phone-mascot-dara">
+                              <svg viewBox="0 0 140 140" class="dara-welcome-svg" xmlns="http://www.w3.org/2000/svg"
+                                aria-label="Boy Mascot Dara Holding Welcome Sign">
+                                <!-- Ears -->
+                                <circle cx="36" cy="52" r="7" fill="#FFE5C4" stroke="#18181B" stroke-width="2.2" />
+                                <circle cx="104" cy="52" r="7" fill="#FFE5C4" stroke="#18181B" stroke-width="2.2" />
 
-          <!-- Floating Badges -->
-          <div class="floating-badge badge-nip">
-            <span>💉</span> <span data-i18n="badgeNip">100% Cambodian NIP Schedule</span>
-          </div>
-          <div class="floating-badge badge-birthday btn-trigger-birthday" title="Tap to test birthday confetti!">
-            <span>🎂</span> <span data-i18n="badgeBday">Built-in Birthday Celebrations</span>
-          </div>
+                                <!-- Head Base -->
+                                <circle cx="70" cy="50" r="34" fill="#FFE5C4" stroke="#18181B" stroke-width="2.8" />
 
-          <!-- Real Phone Mockup -->
-          <div class="phone-mockup">
-            <div class="phone-screen">
-              <!-- Status Bar -->
-              <div class="phone-status-bar">
-                <span></span>
-                <div class="phone-notch"></div>
-                <span>🔋</span>
-              </div>
+                                <!-- Hair Back/Top -->
+                                <path
+                                  d="M38 48 C32 20, 50 12, 70 12 C90 12, 108 20, 102 48 C94 40, 84 42, 70 43 C56 42, 46 40, 38 48 Z"
+                                  fill="#18181B" stroke="#18181B" stroke-width="2.8" />
 
-              <!-- Parent Greeting Card -->
-              <div class="phone-parent-card">
-                <div class="parent-avatar-circle" title="Parent Avatar">
-                  <svg viewBox="0 0 36 36" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="36" height="36" fill="#4AAEE8"/>
-                    <circle cx="18" cy="14" r="7" fill="#FFE5C4" stroke="#18181B" stroke-width="1.8"/>
-                    <path d="M11 13 C11 8 14 6 18 6 C22 6 25 8 25 13 C23 11 20 10 18 10 C16 10 13 11 11 13 Z" fill="#18181B"/>
-                    <circle cx="15.5" cy="14" r="1" fill="#18181B"/>
-                    <circle cx="20.5" cy="14" r="1" fill="#18181B"/>
-                    <path d="M16 17 Q18 19 20 17" stroke="#18181B" stroke-width="1.2" stroke-linecap="round" fill="none"/>
-                    <path d="M8 32 C8 25 12 23 18 23 C24 23 28 25 28 32 Z" fill="#FABE2C" stroke="#18181B" stroke-width="1.8"/>
+                                <!-- Yellow Headband with Dark Stripe -->
+                                <path d="M36 34 C48 26, 92 26, 104 34 L104 43 C92 36, 48 36, 36 43 Z" fill="#FABE2C"
+                                  stroke="#18181B" stroke-width="2.5" stroke-linejoin="round" />
+                                <path d="M38 38 C49 32, 91 32, 102 38" stroke="#18181B" stroke-width="2"
+                                  stroke-linecap="round" />
+
+                                <!-- Blush Cheeks -->
+                                <circle cx="48" cy="58" r="6" fill="#FFAAA6" opacity="0.85" />
+                                <circle cx="92" cy="58" r="6" fill="#FFAAA6" opacity="0.85" />
+
+                                <!-- Happy Closed Eyes -->
+                                <path d="M48 49 Q55 42, 62 49" stroke="#18181B" stroke-width="3" stroke-linecap="round"
+                                  fill="none" />
+                                <path d="M78 49 Q85 42, 92 49" stroke="#18181B" stroke-width="3" stroke-linecap="round"
+                                  fill="none" />
+
+                                <!-- Nose -->
+                                <circle cx="70" cy="53" r="2.2" fill="#FABE2C" />
+
+                                <!-- Joyful Smile -->
+                                <path d="M62 60 Q70 69, 78 60 Z" fill="#D9383A" stroke="#18181B" stroke-width="2.2"
+                                  stroke-linejoin="round" />
+                                <path d="M66 65 Q70 63, 74 65" fill="#FFAAA6" />
+
+                                <!-- Yellow Shirt Shoulders behind sign -->
+                                <path d="M42 78 L28 88 L38 98 L52 86 Z" fill="#FABE2C" stroke="#18181B"
+                                  stroke-width="2.4" stroke-linejoin="round" />
+                                <path d="M98 78 L112 88 L102 98 L88 86 Z" fill="#FABE2C" stroke="#18181B"
+                                  stroke-width="2.4" stroke-linejoin="round" />
+
+                                <!-- Green Shorts -->
+                                <path d="M52 108 L88 108 L92 122 L72 123 L70 116 L68 123 L48 122 Z" fill="#22A06B"
+                                  stroke="#18181B" stroke-width="2.2" stroke-linejoin="round" />
+                                <!-- Little Shoes -->
+                                <ellipse cx="58" cy="126" rx="7" ry="4" fill="#18181B" />
+                                <ellipse cx="82" cy="126" rx="7" ry="4" fill="#18181B" />
+
+                            <!-- WELCOME Sign (Held in Front) -->
+                            <rect x="26" y="74" width="88" height="34" rx="6" fill="#FFFFFF" stroke="#22A06B"
+                              stroke-width="2.8" />
+                            <text x="70" y="96" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif"
+                              font-size="11" font-weight="900" fill="#22A06B" letter-spacing="1.5"
+                              id="dara-sign-text">WELCOME</text>
+
+                              <!-- Hands gripping the sides of the sign -->
+                              <path d="M22 84 C22 79, 30 79, 30 84 C30 89, 22 89, 22 84 Z" fill="#FFE5C4"
+                                stroke="#18181B" stroke-width="2" />
+                              <path d="M110 84 C110 79, 118 79, 118 84 C118 89, 110 89, 110 84 Z" fill="#FFE5C4"
+                                stroke="#18181B" stroke-width="2" />
                   </svg>
                 </div>
-                <div class="parent-info">
-                  <h4><span data-i18n="greetingPrefix">Greeting,</span> User 👋</h4>
-                  <span data-i18n="parentRole">Parent • Phnom Penh</span>
-                </div>
-              </div>
 
-              <!-- Child Switcher Tabs (Dara Chan vs Bopha Chan) -->
-              <div class="phone-child-switcher">
-                <button id="tab-child-dara" class="child-tab-btn active" type="button">
-                  <span style="font-size: 1rem;">👦</span>
-                  <span data-i18n="daraName">Dara Chan</span>
-                </button>
-                <button id="tab-child-bopha" class="child-tab-btn" type="button">
-                  <span style="font-size: 1rem;">👧</span>
-                  <span data-i18n="bophaName">Bopha Chan</span>
-                </button>
-              </div>
+                    <!-- Brand Wordmark & Subtitle -->
+                    <div class="phone-brand-group">
+                      <img src="assets/koma-text.svg" alt="KOMA" class="phone-koma-logo">
+                      <div class="phone-tracker-subtitle" data-i18n="phoneSub">CHILD HEALTH & VACCINE TRACKER</div>
+                    </div>
 
-              <!-- Active Child Profile Card inside Phone -->
-              <div style="background-color: #FFFFFF; border: 2px solid var(--color-border); border-radius: 18px; padding: 0.65rem 0.75rem; display: flex; align-items: center; gap: 0.65rem; box-shadow: var(--shadow-sm);">
-                <div id="phone-child-avatar" style="width: 38px; height: 38px; flex-shrink: 0;">
-                  <!-- Dynamic SVG Avatar -->
-                </div>
-                <div>
-                  <h4 id="phone-child-name" style="font-size: 0.88rem; font-weight: 900; line-height: 1.1;">Dara Chan</h4>
-                  <span id="phone-child-age" style="font-size: 0.72rem; font-weight: 700; color: var(--color-text-muted);">1 year old</span>
-                </div>
-                <span class="neo-badge" style="margin-left: auto; background-color: var(--color-status-green-bg); color: #176B46;">
-                  Healthy
-                </span>
-              </div>
+                  <!-- Sign In Prompt -->
+                  <div class="phone-signin-prompt" data-i18n="phoneSignInTelegram">Sign in with your Telegram</div>
 
-              <!-- Due Vaccine Reminder Card -->
-              <div class="phone-due-card">
-                <span id="phone-due-days" class="due-badge-pill">Due in 3 days</span>
-                <div id="phone-due-title" class="due-title">Pentavalent 2 (DTP-HepB-Hib)</div>
-                <div id="phone-due-hosp" class="due-hospital">National Pediatric Hospital • Phnom Penh</div>
-              </div>
+                        <!-- Telegram Button -->
+                        <button type="button" class="phone-btn-telegram" id="phone-telegram-btn">
+                          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                            <path
+                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z" />
+                          </svg>
+                          <span data-i18n="phoneBtnTelegram">Log in with Telegram</span>
+                        </button>
 
-              <!-- Quick Stats Grid inside Phone -->
-              <div class="phone-stats-grid">
-                <div class="phone-stat-box">
-                  <div class="icon">💉</div>
-                  <strong id="phone-stat-vaccines">8 / 12</strong>
-                  <small data-i18n="statVaccinesLabel">Vaccines</small>
+                        <!-- Divider -->
+                        <div class="phone-or-divider">
+                          <span data-i18n="phoneOr">OR</span>
+                        </div>
+
+                        <!-- Try Demo Prompt -->
+                        <div class="phone-demo-prompt" data-i18n="phoneTryDemo">Try out our app demo</div>
+
+                        <!-- Demo Button -->
+                        <a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer"
+                          class="phone-btn-demo" data-i18n="phoneBtnDemo">
+                          ✨ KOMA Demo
+                        </a>
+                  </div>
                 </div>
-                <div class="phone-stat-box">
-                  <div class="icon">📏</div>
-                  <strong id="phone-stat-height">74 cm</strong>
-                  <small data-i18n="statHeightLabel">Height</small>
-                </div>
-                <div class="phone-stat-box">
-                  <div class="icon">⚖️</div>
-                  <strong id="phone-stat-weight">9.6 kg</strong>
-                  <small data-i18n="statWeightLabel">Weight</small>
+
+                    <!-- Cheerful Bopha Mascot Jumping Beside Phone (Matching Sample Mockup) -->
+                    <div class="hero-mascot-bopha" aria-label="Girl Mascot Bopha Cheering Beside Phone">
+                      <svg viewBox="0 0 240 290" class="bopha-waving-svg" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <!-- Floating Sparkles around Bopha -->
+                        <path d="M192 34 L195 23 L198 34 L209 37 L198 40 L195 51 L192 40 L181 37 Z" fill="#F59E0B" />
+                        <path d="M220 86 L222 78 L224 86 L232 88 L224 90 L222 98 L220 90 L212 88 Z" fill="#F59E0B" />
+                        <path d="M42 56 L44 49 L46 56 L53 58 L46 60 L44 67 L42 60 L35 58 Z" fill="#F59E0B" />
+
+                        <!-- Legs & Shoes -->
+                        <!-- Left Standing Leg -->
+                        <path d="M92 208 L86 242 L106 244 L112 208 Z" fill="#FFE5C4" stroke="#18181B"
+                          stroke-width="3" />
+                        <rect x="84" y="236" width="22" height="9" rx="2" fill="#FFFFFF" stroke="#18181B"
+                          stroke-width="2" />
+                        <path
+                          d="M75 242 L102 244 C110 246, 112 254, 108 260 C102 268, 72 268, 66 262 C60 254, 65 243, 75 242 Z"
+                          fill="#18181B" stroke="#18181B" stroke-width="2.5" />
+                        <ellipse cx="88" cy="252" rx="4" ry="2" fill="#FFFFFF" />
+
+                        <!-- Right Kicking Leg -->
+                        <g transform="rotate(30 142 220)">
+                          <path d="M136 198 L131 233 L151 236 L157 198 Z" fill="#FFE5C4" stroke="#18181B"
+                            stroke-width="3" />
+                          <rect x="129" y="227" width="22" height="9" rx="2" fill="#FFFFFF" stroke="#18181B"
+                            stroke-width="2" />
+                          <path
+                            d="M123 233 L150 235 C158 237, 160 245, 156 251 C150 259, 120 259, 114 253 C108 245, 113 234, 123 233 Z"
+                            fill="#18181B" stroke="#18181B" stroke-width="2.5" />
+                          <ellipse cx="135" cy="243" rx="4" ry="2" fill="#FFFFFF" />
+                        </g>
+
+                        <!-- Outstretched Right Arm (pointing toward phone) -->
+                        <path d="M76 150 C50 130, 32 144, 26 154 C20 168, 46 176, 74 166 Z" fill="#FFE5C4"
+                          stroke="#18181B" stroke-width="3.2" stroke-linejoin="round" />
+
+                        <!-- Emerald Green Dress Body -->
+                        <path d="M76 142 L152 142 L170 212 L58 212 Z" fill="#22A06B" stroke="#18181B" stroke-width="3.2"
+                          stroke-linejoin="round" />
+
+                        <!-- Dress Sleeves -->
+                        <path d="M78 143 L64 157 L74 169 L88 157 Z" fill="#22A06B" stroke="#18181B" stroke-width="3"
+                          stroke-linejoin="round" />
+                        <path d="M150 143 L164 157 L154 169 L140 157 Z" fill="#22A06B" stroke="#18181B" stroke-width="3"
+                          stroke-linejoin="round" />
+
+                        <!-- Peter Pan White Collar & Red Button -->
+                        <path d="M98 142 C98 152, 114 156, 114 142" fill="#FFFFFF" stroke="#18181B"
+                          stroke-width="2.6" />
+                        <path d="M114 142 C114 156, 130 152, 130 142" fill="#FFFFFF" stroke="#18181B"
+                          stroke-width="2.6" />
+                        <circle cx="114" cy="160" r="3.5" fill="#EF4444" />
+
+                        <!-- Crossbody Yellow Messenger Bag -->
+                        <!-- Black Strap from right shoulder to left hip -->
+                        <path d="M86 144 L154 186" stroke="#18181B" stroke-width="4.8" stroke-linecap="round" />
+                        <!-- Yellow Bag Body on hip -->
+                        <rect x="136" y="174" width="38" height="30" rx="6" fill="#FABE2C" stroke="#18181B"
+                          stroke-width="2.8" />
+                        <!-- Bag Flap -->
+                        <path d="M136 174 L174 174 L171 190 C171 195, 139 195, 139 190 Z" fill="#F59E0B"
+                          stroke="#18181B" stroke-width="2.4" stroke-linejoin="round" />
+                        <circle cx="155" cy="188" r="3.2" fill="#18181B" />
+
+                        <!-- Left Arm Raised High (Waving happily) -->
+                        <path d="M150 148 C176 122, 198 98, 208 108 C216 122, 192 148, 160 168 Z" fill="#FFE5C4"
+                          stroke="#18181B" stroke-width="3.2" stroke-linejoin="round" />
+
+                        <!-- Hair Buns with Red Ribbons -->
+                        <circle cx="64" cy="65" r="23" fill="#18181B" stroke="#18181B" stroke-width="3" />
+                        <circle cx="70" cy="71" r="9" fill="#EF4444" />
+                        <circle cx="164" cy="65" r="23" fill="#18181B" stroke="#18181B" stroke-width="3" />
+                        <circle cx="158" cy="71" r="9" fill="#EF4444" />
+
+                        <!-- Head Base -->
+                        <circle cx="114" cy="95" r="44" fill="#FFE5C4" stroke="#18181B" stroke-width="3.2" />
+                        <!-- Ears -->
+                        <circle cx="72" cy="97" r="8" fill="#FFE5C4" stroke="#18181B" stroke-width="3" />
+                        <circle cx="156" cy="97" r="8" fill="#FFE5C4" stroke="#18181B" stroke-width="3" />
+
+                        <!-- Hair Back & Fringe -->
+                        <path
+                          d="M72 91 C66 57, 89 45, 114 45 C139 45, 162 57, 156 91 C146 81, 132 83, 114 85 C96 83, 82 81, 72 91 Z"
+                          fill="#18181B" stroke="#18181B" stroke-width="3.2" />
+                        <path d="M80 83 Q97 75, 114 83 Q130 75, 148 83" stroke="#18181B" stroke-width="3" fill="none" />
+
+                        <!-- Rosy Cheeks -->
+                        <circle cx="86" cy="105" r="9.5" fill="#FFAAA6" opacity="0.85" />
+                        <circle cx="142" cy="105" r="9.5" fill="#FFAAA6" opacity="0.85" />
+
+                        <!-- Sparkling Big Eyes -->
+                        <ellipse cx="96" cy="93" rx="8" ry="9.5" fill="#18181B" />
+                        <ellipse cx="132" cy="93" rx="8" ry="9.5" fill="#18181B" />
+                        <circle cx="98" cy="90" r="3.5" fill="#FFFFFF" />
+                        <circle cx="134" cy="90" r="3.5" fill="#FFFFFF" />
+                        <circle cx="93" cy="97" r="1.5" fill="#FFFFFF" />
+                        <circle cx="129" cy="97" r="1.5" fill="#FFFFFF" />
+
+                        <!-- Nose -->
+                        <circle cx="114" cy="99" r="3" fill="#FABE2C" />
+
+                        <!-- Open Smiling Mouth -->
+                        <path d="M100 107 Q114 125, 128 107 Z" fill="#D9383A" stroke="#18181B" stroke-width="3"
+                          stroke-linejoin="round" />
+                        <path d="M106 115 Q114 111, 122 115" fill="#FFAAA6" />
+                      </svg>
+                    </div>
                 </div>
               </div>
-            </div>
           </div>
-        </div>
-      </div>
     </section>
 
     <!-- ========================================================
-         3. CULTURAL HOOK: "YOUR YELLOW BOOKLET, REIMAGINED"
+         3. ABOUT US SECTION (MATCHING IMAGES 2, 3, 4)
          ======================================================== -->
-    <section id="booklet" class="section yellow-booklet-section">
+    <section id="about" class="about-section-container">
       <div class="container">
-        <div class="section-header">
-          <div class="section-label" data-i18n="bookletAnchorTag">Digitalize MOH Booklet</div>
-          <h2 data-i18n="bookletSectionTitle">Your Yellow Booklet, Reimagined.</h2>
-          <p data-i18n="bookletSectionDesc">
-            In Cambodia, every mother receives a physical yellow card at birth. But paper tears, gets water-damaged, and gets left behind. KOMA gives every mother and child an indestructible digital twin.
+
+        <!-- Big Sky-Blue Title (Matching Image 2) -->
+        <h2 class="about-sky-title" data-i18n="aboutTitle">About us</h2>
+
+        <!-- Project Story Row (Matching Image 2) -->
+        <div class="about-story-row">
+          <div class="about-story-col">
+            <span class="about-story-tag" data-i18n="projectStoryLabel">Project story</span>
+            <p class="about-story-paragraph" data-i18n="projectStoryText">
+              Aliquip excepteur totam iste incididunt natus sint atque maxime magna incididunt nisi odit. Fugit proident
+              id labore eaque beatae facere excepteur molestias id atque est qui accusantium veritatis anim cupidatat.
+              Aliquip consectetur aute nihil cupiditate omnis deserunt consequat pariatur tempor excepturi porro in.
+            </p>
+          </div>
+          <div class="about-photo-frame">
+            <img src="assets/problem-we-solve.jpg" alt="KOMA team working together collaboratively" loading="lazy">
+          </div>
+        </div>
+
+        <!-- "Who do we serve?" Container (Matching Images 2 & 3) -->
+        <div class="who-serve-box">
+          <h3 class="who-serve-green-title" data-i18n="whoServeTitle">Who do we serve?</h3>
+          <p class="who-serve-desc" data-i18n="whoServeText">
+            Aliquip excepteur totam iste incididunt natus sint atque maxime magna incididunt nisi odit. Fugit proident
+            id labore eaque beatae facere excepteur molestias id atque est qui accusantium veritatis anim cupidatat.
+            Aliquip consectetur aute nihil cupiditate omnis deserunt consequat pariatur tempor excepturi porro in.
           </p>
+
         </div>
 
-        <!-- Transformation Flow Banner -->
-        <div class="transformation-flow-banner">
-          <div class="trans-flow-step trans-paper-step">
-            <span class="trans-flow-icon">📄</span>
-            <div class="trans-flow-info">
-              <strong>IRL Yellow Paper Booklet</strong>
-              <small>Fragile • Easily Torn • Monsoon Prone</small>
-            </div>
-          </div>
-          <div class="trans-flow-connector">
-            <div class="trans-connector-badge">
-              <span class="trans-sparkle">✨</span>
-              <span>DIGITIZED TRANSFORMATION</span>
-              <span class="trans-arrow">➔</span>
-            </div>
-            <div class="trans-beam-line"></div>
-          </div>
-          <div class="trans-flow-step trans-digital-step">
-            <span class="trans-flow-icon">📱</span>
-            <div class="trans-flow-info">
-              <strong>KOMA Indestructible Digital Twin</strong>
-              <small>MOH Standard • Forever Safe • Smart Alerts</small>
-            </div>
-          </div>
-        </div>
+        <!-- "Team detail" Container (Matching Images 3 & 4) -->
+        <div class="team-detail-box">
+          <h3 class="team-detail-yellow-title" data-i18n="teamDetailTitle">Team detail</h3>
 
-        <!-- Split Comparison -->
-        <div class="comparison-grid">
-          <!-- Left: The Paper Booklet (The Frustration) -->
-          <div class="paper-card">
-            <div class="paper-badge">⚠️ IRL PHYSICAL BOOKLET (PAPER)</div>
-            <h3 data-i18n="paperCardTitle">Traditional Paper Booklet</h3>
-            <p data-i18n="paperCardDesc">The fragile yellow paper booklet given at birth centers across Cambodia.</p>
-
-            <div class="paper-flaws-list">
-              <div class="paper-flaw-item" data-i18n="paperFlaw1">
-                💧 Water-damaged easily during monsoon season
+          <!-- 5 Team Member Cards Grid (Matching Image 4) -->
+          <div class="team-members-5grid">
+            <!-- Member 1: Project Lead -->
+            <div class="team-member-col">
+              <div class="team-landscape-card">
+                <img src="assets/team-project-lead.jpg" alt="Thon Chhengkeang - Project Lead" loading="lazy">
               </div>
-              <div class="paper-flaw-item" data-i18n="paperFlaw2">
-                ✍️ Faded ink & illegible doctor handwriting
-              </div>
-              <div class="paper-flaw-item" data-i18n="paperFlaw3">
-                🏠 Forgotten at home during clinic checkups
-              </div>
-              <div class="paper-flaw-item" data-i18n="paperFlaw4">
-                ⏳ Zero automated due date reminders
-              </div>
-            </div>
-          </div>
-
-          <!-- Right: The KOMA Solution - Digital Twin -->
-          <div class="digital-twin-card">
-            <div class="digital-twin-header">
-              <div class="moh-emblem-group">
-                <div class="moh-emblem-badge">MOH KH</div>
-                <div class="moh-title-block">
-                  <h3 data-i18n="digitalCardTitle">KOMA Digital Twin (MOH Standard)</h3>
-                  <span data-i18n="digitalCardSubtitle">Kingdom of Cambodia • Ministry of Health Official Schedule</span>
-                </div>
-              </div>
+              <h4 class="team-member-title-name">Thon Chhengkeang</h4>
+              <span class="team-member-subtitle-role" data-i18n="roleProjectLead">Project Lead</span>
             </div>
 
-
-
-            <!-- Mobile Swipe Hint -->
-            <div class="mobile-table-scroll-hint">
-              <span>👉 <span data-i18n="tableScrollHint">Swipe horizontally to view full MOH record</span></span>
-              <span class="scroll-arrow-anim">→</span>
+            <!-- Member 2: Financial Lead -->
+            <div class="team-member-col">
+              <div class="team-landscape-card">
+                <img src="assets/team-financial-lead.jpg" alt="Sin Vimolika - Financial Lead" loading="lazy">
+              </div>
+              <h4 class="team-member-title-name">Sin Vimolika</h4>
+              <span class="team-member-subtitle-role" data-i18n="roleFinancialLead">Financial Lead</span>
             </div>
 
-            <!-- Replica Table -->
-            <div class="booklet-table-wrapper">
-              <table class="booklet-table">
-                <thead>
-                  <tr>
-                    <th data-i18n="thVaccine">Vaccine</th>
-                    <th data-i18n="thDueAge">Due Age</th>
-                    <th data-i18n="thDateGiven">Date Given</th>
-                    <th data-i18n="thHospital">Hospital / Health Center</th>
-                    <th data-i18n="thStatus">Status</th>
-                  </tr>
-                </thead>
-                <tbody id="booklet-table-body">
-                  <!-- Rendered dynamically by script.js -->
-                </tbody>
-              </table>
+            <!-- Member 3: Operation Lead -->
+            <div class="team-member-col">
+              <div class="team-landscape-card">
+                <img src="assets/team-operation-lead.jpg" alt="Ung Soucheav - Operation Lead" loading="lazy">
+              </div>
+              <h4 class="team-member-title-name">Ung Soucheav</h4>
+              <span class="team-member-subtitle-role" data-i18n="roleOperationLead">Operation Lead</span>
             </div>
 
-            <!-- Action Controls -->
-            <div class="booklet-actions-row">
-              <button class="neo-btn neo-btn-sm neo-btn-white btn-trigger-print" type="button" data-i18n="btnPrintPdf">
-                🖨️ Print / Export A4 PDF
-              </button>
-              <button class="neo-btn neo-btn-sm neo-btn-primary btn-open-booklet-modal" type="button" data-i18n="btnOpenFullBooklet">
-                📖 View Full MOH Booklet Modal
-              </button>
+            <!-- Member 4: Product Lead -->
+            <div class="team-member-col">
+              <div class="team-landscape-card">
+                <img src="assets/team-product-lead.jpg" alt="Nang Sotheavin - Product Lead" loading="lazy">
+              </div>
+              <h4 class="team-member-title-name">Nang Sotheavin</h4>
+              <span class="team-member-subtitle-role" data-i18n="roleProductLead">Product Lead</span>
+            </div>
+
+            <!-- Member 5: Technical Lead -->
+            <div class="team-member-col">
+              <div class="team-landscape-card">
+                <img src="assets/team-technical-lead.jpg" alt="Min Sivutra - Technical Lead" loading="lazy">
+              </div>
+              <h4 class="team-member-title-name">Min Sivutra</h4>
+              <span class="team-member-subtitle-role" data-i18n="roleTechnicalLead">Technical Lead</span>
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
     <!-- ========================================================
-         4. CORE FEATURE SHOWCASE (4 NEO-BRUTALIST PILLARS)
+         4. FEATURES SECTION (MATCHING IMAGE 5)
          ======================================================== -->
-    <section id="features" class="section">
+    <section id="features" class="features-yellow-wrapper">
       <div class="container">
-        <div class="section-header">
-          <div class="section-label" data-i18n="pillarsTag">Core Features</div>
-          <h2 data-i18n="pillarsTitle">Everything Parents Need, In One Place</h2>
-          <p data-i18n="pillarsDesc">
+        <!-- Section Header (Matching Image 5) -->
+        <div class="features-top-header">
+          <h2 class="features-big-green-title" data-i18n="featuresMainTitle">FEATURES</h2>
+          <h3 class="features-subheading-black" data-i18n="pillarsTitle">Everything Parents Need, In One Place</h3>
+          <p class="features-tagline-gray" data-i18n="pillarsDesc">
             Built around the real everyday healthcare journey of Cambodian mothers and fathers.
           </p>
         </div>
 
-        <div class="features-grid">
-          <!-- Pillar 1: National Immunization Schedule -->
-          <article class="neo-card feature-pillar-card">
-            <div class="feature-card-top">
-              <div class="pillar-icon-box" style="background-color: var(--color-status-green-bg); color: #176B46;">
-                💉
+        <!-- 3 Feature Summary Cards Row (Matching Image 5) -->
+        <div class="features-outline-cards-row">
+          <!-- Card 01: National Immunization Schedule -->
+          <div class="features-card-outline">
+            <div class="features-card-outline-top">
+              <div class="feature-square-icon mint">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="m18 2 4 4" />
+                  <path d="m17 7 3-3" />
+                  <path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5" />
+                  <path d="m9 11 4 4" />
+                  <path d="m5 19-3 3" />
+                  <path d="m14 4 6 6" />
+                </svg>
               </div>
-              <div class="pillar-number">01</div>
+              <span class="feature-outline-digit">01</span>
             </div>
-
-            <h3 data-i18n="pillar1Title">National Immunization Schedule</h3>
-            <p data-i18n="pillar1Desc">
-              Pre-loaded with Cambodia’s complete NIP protocol aligned with the Ministry of Health.
+            <h4 class="feature-outline-title" data-i18n="pillar1Title">National Immunization Schedule</h4>
+            <p class="feature-outline-desc" data-i18n="pillar1Desc">
+              Pre-loaded with Cambodia's complete NIP protocol aligned with the Ministry of Health.
             </p>
+          </div>
 
-            <div class="pillar-demo-box">
-              <div class="timeline-pill-group">
-                <button class="dose-chip active" type="button">At Birth</button>
-                <button class="dose-chip" type="button">6 Weeks</button>
-                <button class="dose-chip" type="button">9 Months</button>
-                <button class="dose-chip" type="button">18 Months</button>
+          <!-- Card 02: Smart Reminders & Due Dates -->
+          <div class="features-card-outline">
+            <div class="features-card-outline-top">
+              <div class="feature-square-icon peach">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+                  <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+                </svg>
               </div>
-
-              <div class="timeline-result-card">
-                <div>
-                  <strong id="pillar1-dose-title" style="font-size: 0.88rem; display: block; color: var(--color-text-dark);">
-                    BCG (Tuberculosis)
-                  </strong>
-                  <span id="pillar1-dose-age" style="font-size: 0.75rem; color: var(--color-text-muted); font-weight: 700;">
-                    At Birth (within 24h)
-                  </span>
-                </div>
-                <span id="pillar1-dose-hosp" class="neo-badge" style="background: #E8F8F0; color: #176B46;">
-                  🏥 Kantha Bopha
-                </span>
-              </div>
+              <span class="feature-outline-digit">02</span>
             </div>
-          </article>
-
-          <!-- Pillar 2: Smart Reminders & Overdue Alerts -->
-          <article class="neo-card feature-pillar-card">
-            <div class="feature-card-top">
-              <div class="pillar-icon-box" style="background-color: var(--color-status-coral-bg); color: #AF371C;">
-                🔔
-              </div>
-              <div class="pillar-number">02</div>
-            </div>
-
-            <h3 data-i18n="pillar2Title">Smart Reminders & Due Dates</h3>
-            <p data-i18n="pillar2Desc">
-              Automated countdowns calculated from your baby’s birth date so booster shots are never forgotten.
+            <h4 class="feature-outline-title" data-i18n="pillar2Title">Smart Reminders & Due Dates</h4>
+            <p class="feature-outline-desc" data-i18n="pillar2Desc">
+              Automated countdowns calculated from your baby's birth date so booster shots are never forgotten.
             </p>
+          </div>
 
-            <div class="pillar-demo-box" id="reminder-sim-box">
-              <div class="reminder-sim-row">
-                <div>
-                  <strong id="reminder-sim-title" style="font-size: 0.88rem; display: block;" data-i18n="reminderSimTitle">
-                    Pentavalent 2 (DTP-HepB-Hib)
-                  </strong>
-                  <span class="reminder-timer-pill" style="margin-top: 0.35rem;">
-                    ⏰ <span id="reminder-sim-days" data-i18n="reminderSimDays">3 days left</span>
-                  </span>
-                </div>
-                <button id="btn-mark-reminder-done" class="neo-btn neo-btn-sm neo-btn-primary" type="button" data-i18n="reminderSimMarkBtn">
-                  Mark as Given ✅
-                </button>
+          <!-- Card 03: WHO Growth Monitoring -->
+          <div class="features-card-outline">
+            <div class="features-card-outline-top">
+              <div class="feature-square-icon blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10" />
+                  <line x1="12" y1="20" x2="12" y2="4" />
+                  <line x1="6" y1="20" x2="6" y2="14" />
+                  <line x1="3" y1="20" x2="21" y2="20" />
+                </svg>
               </div>
+              <span class="feature-outline-digit">03</span>
             </div>
-          </article>
-
-          <!-- Pillar 3: WHO Growth Monitoring -->
-          <article id="growth" class="neo-card feature-pillar-card">
-            <div class="feature-card-top">
-              <div class="pillar-icon-box" style="background-color: var(--color-status-blue-bg); color: #12639E;">
-                📈
-              </div>
-              <div class="pillar-number">03</div>
-            </div>
-
-            <h3 data-i18n="pillar3Title">WHO Growth Monitoring</h3>
-            <p data-i18n="pillar3Desc">
+            <h4 class="feature-outline-title" data-i18n="pillar3Title">WHO Growth Monitoring</h4>
+            <p class="feature-outline-desc" data-i18n="pillar3Desc">
               Track height & weight plotted against official World Health Organization percentiles (P3 to P97).
             </p>
-
-            <div class="pillar-demo-box">
-              <div class="growth-toggle-row">
-                <span style="font-size: 0.78rem; font-weight: 800; color: var(--color-text-dark);">
-                  WHO Standard (P50)
-                </span>
-                <div style="display: flex; gap: 0.35rem;">
-                  <button id="growth-tab-weight" class="growth-tab-btn active" type="button" data-i18n="tabWeight">
-                    Weight
-                  </button>
-                  <button id="growth-tab-height" class="growth-tab-btn" type="button" data-i18n="tabHeight">
-                    Height
-                  </button>
-                </div>
-              </div>
-
-              <!-- SVG Interactive Canvas Box -->
-              <div id="growth-svg-stage" class="growth-svg-container">
-                <!-- Rendered dynamically by script.js -->
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================================
-         5. INTERACTIVE MINI-PLAYGROUND (CALCULATOR & BIRTHDAY)
-         ======================================================== -->
-    <section id="playground" class="section playground-section">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-label" data-i18n="playgroundTag">INTERACTIVE PLAYGROUND</div>
-          <h2 data-i18n="playgroundTitle">Try KOMA Features Live</h2>
-          <p data-i18n="playgroundDesc">
-            Experience the tools designed to make child health tracking joyful and effortless.
-          </p>
-        </div>
-
-        <div class="playground-grid">
-          <!-- Playground Widget 1: Animated Interactive Mascots -->
-          <div class="mascot-interactive-card neo-card" id="mascot-card">
-            <!-- "Wait for it" above the mascots -->
-            <div class="mascot-header-bar">
-              <div class="mascot-wait-badge">
-                <span class="wait-icon">⏳</span>
-                <span data-i18n="waitLabel">Wait for it...</span>
-              </div>
-              <div id="mascot-action-pill" class="mascot-action-pill">
-                ✨ Sparkling Eyes
-              </div>
-            </div>
-
-            <!-- Mascots Animated Interactive Stage -->
-            <div class="mascot-stage" id="mascot-stage" title="Click on Dara or Bopha to say hello!">
-              <!-- Speech Bubble on click -->
-              <div id="mascot-speech-bubble" class="mascot-speech-bubble">
-                <span class="bubble-arrow"></span>
-                <span id="mascot-speech-text">👋 Hello! We love staying healthy & happy!</span>
-              </div>
-
-              <!-- Floating Visual FX Stage -->
-              <div class="mascot-stage-fx">
-                <div class="fx-item fx-syringe" id="fx-syringe">💉</div>
-                <div class="fx-item fx-heart-left" id="fx-heart-left">❤️</div>
-                <div class="fx-item fx-heart-center" id="fx-heart-center">💖</div>
-                <div class="fx-item fx-heart-right" id="fx-heart-right">💕</div>
-                <div class="fx-item fx-sparkle-1" id="fx-sparkle-1">✨</div>
-                <div class="fx-item fx-sparkle-2" id="fx-sparkle-2">✨</div>
-                <div class="fx-item fx-sweat-boy" id="fx-sweat-boy">💦</div>
-                <div class="fx-item fx-sweat-girl" id="fx-sweat-girl">💦</div>
-              </div>
-
-              <!-- Boy & Girl Characters Container -->
-              <div class="mascots-wrap action-sparkling-eyes" id="mascots-wrap">
-                <!-- Boy Mascot (Dara) -->
-                <div class="mascot-figure mascot-boy" id="interactive-mascot-boy" role="button" tabindex="0" aria-label="Boy Mascot Dara">
-                  <svg viewBox="0 0 160 200" class="mascot-char-svg">
-                    <!-- Ears -->
-                    <circle cx="47" cy="70" r="7" fill="#FFF3E3" stroke="#18181B" stroke-width="2.5" />
-                    <circle cx="113" cy="70" r="7" fill="#FFF3E3" stroke="#18181B" stroke-width="2.5" />
-                    <!-- Head Base -->
-                    <circle cx="80" cy="68" r="35" fill="#FFF3E3" stroke="#18181B" stroke-width="2.8" />
-                    <!-- Hair & Headband -->
-                    <path d="M48 68 C44 42, 60 32, 80 32 C100 32, 116 42, 112 68 C104 60, 94 62, 80 63 C66 62, 56 60, 48 68 Z" fill="#262626" stroke="#18181B" stroke-width="2.8" />
-                    <path d="M47 52 C58 45, 102 45, 113 52 L113 63 C102 56, 58 56, 47 63 Z" fill="#18181B" stroke="#18181B" stroke-width="2.8" />
-                    <path d="M48 55 C58 49, 102 49, 112 55" stroke="#FABE2C" stroke-width="2.2" stroke-linecap="round" />
-                    <path d="M48 59 C58 53, 102 53, 112 59" stroke="#FABE2C" stroke-width="2.2" stroke-linecap="round" />
-                    <!-- Cheeks & Nose -->
-                    <circle cx="58" cy="76" r="7.5" fill="#FFAAA6" opacity="0.85" />
-                    <circle cx="102" cy="76" r="7.5" fill="#FFAAA6" opacity="0.85" />
-                    <circle cx="80" cy="71" r="2.5" fill="#FABE2C" />
-
-                    <!-- Normal Eyes -->
-                    <g class="eye-group eye-normal">
-                      <path d="M60 67 Q67 59 74 67" stroke="#18181B" stroke-width="3.2" stroke-linecap="round" fill="none" />
-                      <path d="M86 67 Q93 59 100 67" stroke="#18181B" stroke-width="3.2" stroke-linecap="round" fill="none" />
-                    </g>
-                    <!-- Sparkle Eyes -->
-                    <g class="eye-group eye-sparkle">
-                      <path d="M67 60 L68.5 64 L73 65 L68.5 66.5 L67 71 L65.5 66.5 L61 65 L65.5 64 Z" fill="#FABE2C" stroke="#18181B" stroke-width="1.2" />
-                      <path d="M93 60 L94.5 64 L99 65 L94.5 66.5 L93 71 L91.5 66.5 L87 65 L91.5 64 Z" fill="#FABE2C" stroke="#18181B" stroke-width="1.2" />
-                    </g>
-                    <!-- Scared Eyes -->
-                    <g class="eye-group eye-scared">
-                      <circle cx="67" cy="65" r="7.5" fill="#FFFFFF" stroke="#18181B" stroke-width="2.4" />
-                      <circle cx="67" cy="65" r="2.2" fill="#18181B" />
-                      <circle cx="93" cy="65" r="7.5" fill="#FFFFFF" stroke="#18181B" stroke-width="2.4" />
-                      <circle cx="93" cy="65" r="2.2" fill="#18181B" />
-                      <path d="M61 55 L72 58" stroke="#18181B" stroke-width="2" stroke-linecap="round" />
-                      <path d="M99 55 L88 58" stroke="#18181B" stroke-width="2" stroke-linecap="round" />
-                    </g>
-
-                    <!-- Normal Mouth -->
-                    <path class="mouth mouth-normal" d="M74 78 Q80 84 86 78" stroke="#18181B" stroke-width="2.8" stroke-linecap="round" fill="none" />
-                    <!-- Scared Mouth -->
-                    <ellipse class="mouth mouth-scared" cx="80" cy="81" rx="5" ry="6.5" fill="#18181B" />
-
-                    <!-- Yellow Shirt & Bib -->
-                    <path d="M54 104 L106 104 L112 148 L48 148 Z" fill="#FABE2C" stroke="#18181B" stroke-width="2.8" stroke-linejoin="round" />
-                    <rect x="67" y="116" width="26" height="20" rx="3" fill="#FFFFFF" stroke="#18181B" stroke-width="2.2" />
-                    <text x="80" y="131" text-anchor="middle" font-size="12" font-weight="900" fill="#18181B">01</text>
-                    <!-- Left Sleeve & Arm -->
-                    <path d="M54 104 L44 114 L50 120 L58 110 Z" fill="#FABE2C" stroke="#18181B" stroke-width="2.2" stroke-linejoin="round" />
-                    <path class="boy-arm-left" d="M47 117 C42 124, 38 132, 41 138 C44 142, 50 139, 49 133 C48 127, 49 122, 51 119" fill="#FFF3E3" stroke="#18181B" stroke-width="2.4" stroke-linejoin="round" />
-                    <!-- Right Sleeve & Arm -->
-                    <path d="M106 104 L116 114 L110 120 L102 110 Z" fill="#FABE2C" stroke="#18181B" stroke-width="2.2" stroke-linejoin="round" />
-                    <path class="boy-arm-right" d="M109 117 C118 112, 126 102, 130 96 C134 90, 139 94, 136 101 C131 109, 121 118, 112 121" fill="#FFF3E3" stroke="#18181B" stroke-width="2.4" stroke-linejoin="round" />
-                  </svg>
-                  <span class="mascot-tag">👦 Dara</span>
-                </div>
-
-                <!-- Girl Mascot (Bopha) -->
-                <div class="mascot-figure mascot-girl" id="interactive-mascot-girl" role="button" tabindex="0" aria-label="Girl Mascot Bopha">
-                  <svg viewBox="0 0 160 200" class="mascot-char-svg">
-                    <!-- Pigtails / Buns -->
-                    <circle cx="34" cy="52" r="16" fill="#262626" stroke="#18181B" stroke-width="2.8" />
-                    <circle cx="38" cy="52" r="6" fill="#EE6748" stroke="#18181B" stroke-width="2" />
-                    <circle cx="126" cy="52" r="16" fill="#262626" stroke="#18181B" stroke-width="2.8" />
-                    <circle cx="122" cy="52" r="6" fill="#EE6748" stroke="#18181B" stroke-width="2" />
-                    <!-- Head Base -->
-                    <circle cx="80" cy="68" r="35" fill="#FFF3E3" stroke="#18181B" stroke-width="2.8" />
-                    <!-- Hair & Fringe -->
-                    <path d="M48 68 C44 42, 60 32, 80 32 C100 32, 116 42, 112 68 C104 60, 94 62, 80 63 C66 62, 56 60, 48 68 Z" fill="#262626" stroke="#18181B" stroke-width="2.8" />
-                    <path d="M47 52 C58 45, 102 45, 113 52 L113 61 C102 54, 58 54, 47 61 Z" fill="#36B37E" stroke="#18181B" stroke-width="2.8" />
-                    <!-- Cheeks -->
-                    <circle cx="58" cy="76" r="7.5" fill="#FFAAA6" opacity="0.85" />
-                    <circle cx="102" cy="76" r="7.5" fill="#FFAAA6" opacity="0.85" />
-                    <circle cx="80" cy="71" r="2.5" fill="#FABE2C" />
-
-                    <!-- Normal Eyes -->
-                    <g class="eye-group eye-normal">
-                      <ellipse cx="66" cy="67" rx="6.5" ry="7.5" fill="#18181B" />
-                      <ellipse cx="94" cy="67" rx="6.5" ry="7.5" fill="#18181B" />
-                      <circle cx="68" cy="64" r="2.8" fill="#FFFFFF" />
-                      <circle cx="96" cy="64" r="2.8" fill="#FFFFFF" />
-                    </g>
-                    <!-- Sparkle Eyes -->
-                    <g class="eye-group eye-sparkle">
-                      <path d="M66 60 L67.5 64 L72 65 L67.5 66.5 L66 71 L64.5 66.5 L60 65 L64.5 64 Z" fill="#36B37E" stroke="#18181B" stroke-width="1.2" />
-                      <path d="M94 60 L95.5 64 L100 65 L95.5 66.5 L94 71 L92.5 66.5 L88 65 L92.5 64 Z" fill="#36B37E" stroke="#18181B" stroke-width="1.2" />
-                    </g>
-                    <!-- Scared Eyes -->
-                    <g class="eye-group eye-scared">
-                      <circle cx="66" cy="66" r="7" fill="#FFFFFF" stroke="#18181B" stroke-width="2.2" />
-                      <circle cx="66" cy="66" r="2" fill="#18181B" />
-                      <circle cx="94" cy="66" r="7" fill="#FFFFFF" stroke="#18181B" stroke-width="2.2" />
-                      <circle cx="94" cy="66" r="2" fill="#18181B" />
-                      <path d="M61 56 L71 59" stroke="#18181B" stroke-width="2" stroke-linecap="round" />
-                      <path d="M99 56 L89 59" stroke="#18181B" stroke-width="2" stroke-linecap="round" />
-                    </g>
-
-                    <!-- Normal Mouth -->
-                    <path class="mouth mouth-normal" d="M74 78 Q80 84 86 78" stroke="#18181B" stroke-width="2.8" stroke-linecap="round" fill="none" />
-                    <!-- Scared Mouth -->
-                    <ellipse class="mouth mouth-scared" cx="80" cy="80" rx="5" ry="6" fill="#18181B" />
-
-                    <!-- Emerald Green Dress -->
-                    <path d="M54 104 L106 104 L114 148 L46 148 Z" fill="#36B37E" stroke="#18181B" stroke-width="2.8" stroke-linejoin="round" />
-                    <!-- Left Sleeve & Arm -->
-                    <path d="M54 104 L44 114 L50 120 L58 110 Z" fill="#36B37E" stroke="#18181B" stroke-width="2.2" stroke-linejoin="round" />
-                    <path class="girl-arm-left" d="M51 117 C42 112, 34 102, 30 96 C26 90, 21 94, 24 101 C29 109, 39 118, 48 121" fill="#FFF3E3" stroke="#18181B" stroke-width="2.4" stroke-linejoin="round" />
-                    <!-- Right Sleeve & Arm -->
-                    <path d="M106 104 L116 114 L110 120 L102 110 Z" fill="#36B37E" stroke="#18181B" stroke-width="2.2" stroke-linejoin="round" />
-                    <path class="girl-arm-right" d="M113 117 C118 124, 122 132, 119 138 C116 142, 110 139, 111 133 C112 127, 111 122, 109 119" fill="#FFF3E3" stroke="#18181B" stroke-width="2.4" stroke-linejoin="round" />
-
-                  </svg>
-                  <span class="mascot-tag">👧 Bopha</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- "Try clicking on them" under the mascots -->
-            <div class="mascot-click-hint-box" id="mascot-click-hint">
-              <span class="hint-hand-icon">👉</span>
-              <strong data-i18n="mascotClickHint">Try clicking on them</strong>
-            </div>
-          </div>
-
-          <!-- Playground Widget 2: Birthday Celebration Preview -->
-          <div class="birthday-teaser-card">
-            <div>
-              <div style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.25rem 0.65rem; background: #FABE2C; border: 1.5px solid #18181B; border-radius: 9999px; font-size: 0.75rem; font-weight: 900;">
-                🎂 CELEBRATION ENGINE
-              </div>
-              <h3 style="margin-top: 0.75rem; font-size: 1.45rem;" data-i18n="bdayTeaserTitle">
-                Joyful Birthday Celebrations
-              </h3>
-              <p style="font-size: 0.88rem; margin-top: 0.4rem;" data-i18n="bdayTeaserDesc">
-                Every child deserves to feel celebrated! KOMA has built-in celebratory confetti explosions and heartfelt health blessings on their special day.
-              </p>
-            </div>
-
-            <!-- Interactive Cake Illustration -->
-            <div id="birthday-teaser-cake" class="birthday-cake-illustration" title="Tap to celebrate!">
-              <svg viewBox="0 0 160 160" width="100%" height="100%">
-                <ellipse cx="80" cy="142" rx="68" ry="12" fill="#FFFFFF" stroke="#18181B" stroke-width="2.5" />
-                <ellipse cx="80" cy="140" rx="60" ry="9" fill="#FAF7EE" />
-                <rect x="30" y="98" width="100" height="38" rx="8" fill="#EE6748" stroke="#18181B" stroke-width="2.5" />
-                <path d="M30 110 Q40 118 50 110 Q60 118 70 110 Q80 118 90 110 Q100 118 110 110 Q120 118 130 110 L130 98 L30 98 Z" fill="#FFFFFF" stroke="#18181B" stroke-width="2" />
-                <rect x="45" y="65" width="70" height="34" rx="6" fill="#FABE2C" stroke="#18181B" stroke-width="2.5" />
-                <path d="M45 76 Q55 83 65 76 Q75 83 80 76 Q85 83 95 76 Q105 83 115 76 L115 65 L45 65 Z" fill="#FFFFFF" stroke="#18181B" stroke-width="2" />
-                <!-- Candles -->
-                <rect x="58" y="42" width="6" height="24" rx="2" fill="#4AAEE8" stroke="#18181B" stroke-width="1.5" />
-                <path d="M61 42 Q58 33 61 28 Q64 33 61 42" fill="#EE6748" />
-                <rect x="77" y="38" width="6" height="28" rx="2" fill="#36B37E" stroke="#18181B" stroke-width="1.5" />
-                <path d="M80 38 Q77 26 80 20 Q83 26 80 38" fill="#FABE2C" />
-                <rect x="96" y="42" width="6" height="24" rx="2" fill="#EE6748" stroke="#18181B" stroke-width="1.5" />
-                <path d="M99 42 Q96 33 99 28 Q102 33 99 42" fill="#FABE2C" />
-              </svg>
-            </div>
-
-            <div style="font-size: 0.78rem; font-weight: 800; color: #8C5300; margin-bottom: 1rem;" data-i18n="bdayTapHint">
-              Tap cake to blow candles & launch confetti!
-            </div>
-
-            <button class="neo-btn neo-btn-primary btn-trigger-birthday" type="button" style="width: 100%;" data-i18n="btnTestBirthday">
-              🎉 Test Birthday Wish & Confetti
-            </button>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ========================================================
-         7. FINAL CONVERSION BANNER (TRY DEMO / WAITLIST)
-         ======================================================== -->
-    <section class="section cta-banner-section">
-      <div class="container">
-        <div class="cta-banner-card">
-          <h2 data-i18n="ctaBannerTitle">Start your child’s digital health journey today.</h2>
-          <p data-i18n="ctaBannerDesc">
-            Join hundreds of Cambodian parents who care with confidence, peace of mind, and joy.
-          </p>
-
-          <div class="cta-banner-actions">
-            <a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer" class="neo-btn neo-btn-white" style="font-size: 1.1rem; padding: 0.9rem 2rem;" data-i18n="btnTryWebDemo">
-              🚀 Try Web Demo Now
-            </a>
-            <button class="neo-btn neo-btn-primary btn-trigger-waitlist" type="button" style="font-size: 1.1rem; padding: 0.9rem 2rem; background-color: #FFFFFF;" data-i18n="btnRequestMobile">
-              📱 Request Mobile App Invite
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
+    </main>
 
   <!-- ========================================================
        8. FOOTER
@@ -788,10 +595,10 @@
         <div class="footer-col">
           <h5 data-i18n="footerColProduct">Product</h5>
           <ul>
-            <li><a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer" data-i18n="linkDemo">Live Web Demo</a></li>
-            <li><a href="#booklet" data-i18n="linkYellowBook">Digital Yellow Book</a></li>
+            <li><a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer" data-i18n="linkDemo">Live
+                Web Demo</a></li>
+            <li><a href="#about" data-i18n="navAbout">About Us</a></li>
             <li><a href="#features" data-i18n="navFeatures">Features</a></li>
-            <li><a href="#playground" data-i18n="navPlayground">Playground</a></li>
           </ul>
         </div>
 
@@ -799,8 +606,10 @@
         <div class="footer-col">
           <h5 data-i18n="footerColResources">Resources</h5>
           <ul>
-            <li><a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer" data-i18n="linkMOH">MOH Cambodia NIP</a></li>
-            <li><a href="https://t.me" target="_blank" rel="noopener noreferrer" data-i18n="linkTelegram">Telegram Parent Community</a></li>
+            <li><a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer" data-i18n="linkMOH">MOH
+                Cambodia NIP</a></li>
+            <li><a href="https://t.me" target="_blank" rel="noopener noreferrer" data-i18n="linkTelegram">Telegram
+                Parent Community</a></li>
             <li><a href="#playground" data-i18n="linkFAQ">Vaccine FAQs</a></li>
           </ul>
         </div>
@@ -818,9 +627,6 @@
 
       <!-- Bottom Bar -->
       <div class="footer-bottom-bar">
-        <div class="cambodia-love-badge" data-i18n="footerBuiltIn">
-          Built with ❤️ in Phnom Penh, Cambodia 🇰🇭
-        </div>
         <div data-i18n="footerCopyright">
           © 2026 KOMA. All rights reserved.
         </div>
@@ -831,104 +637,6 @@
   <!-- ========================================================
        9. MODALS: BIRTHDAY MODAL, WAITLIST MODAL, FULL BOOKLET MODAL
        ======================================================== -->
-
-  <!-- Birthday Celebration Modal (Exact Replica of BirthdayModal.tsx) -->
-  <div id="birthday-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="bday-modal-title">
-    <div class="modal-container text-center">
-      <button id="btn-close-birthday-modal" class="modal-close-btn" type="button" aria-label="Close modal">✕</button>
-
-      <div class="neo-badge" style="background:#FABE2C; margin-bottom: 0.5rem;" data-i18n="bdayModalHeading">
-        ✨ HAPPY BIRTHDAY ✨
-      </div>
-
-      <h2 id="bday-modal-title" style="font-size: 1.85rem; margin-bottom: 0.75rem;">
-        Dara Chan (ចាន់ តារា)
-      </h2>
-
-      <!-- Tap to blow candles cake -->
-      <div id="modal-birthday-cake" class="neo-card-soft" style="padding: 1.25rem; margin-bottom: 1.25rem; cursor: pointer;" title="Tap to blow candles and pop confetti!">
-        <div style="width: 140px; height: 140px; margin: 0 auto;">
-          <svg viewBox="0 0 160 160" width="100%" height="100%">
-            <ellipse cx="80" cy="142" rx="68" ry="12" fill="#FFFFFF" stroke="#18181B" stroke-width="2.5" />
-            <ellipse cx="80" cy="140" rx="60" ry="9" fill="#FAF7EE" />
-            <rect x="30" y="98" width="100" height="38" rx="8" fill="#EE6748" stroke="#18181B" stroke-width="2.5" />
-            <path d="M30 110 Q40 118 50 110 Q60 118 70 110 Q80 118 90 110 Q100 118 110 110 Q120 118 130 110 L130 98 L30 98 Z" fill="#FFFFFF" stroke="#18181B" stroke-width="2" />
-            <rect x="45" y="65" width="70" height="34" rx="6" fill="#FABE2C" stroke="#18181B" stroke-width="2.5" />
-            <path d="M45 76 Q55 83 65 76 Q75 83 80 76 Q85 83 95 76 Q105 83 115 76 L115 65 L45 65 Z" fill="#FFFFFF" stroke="#18181B" stroke-width="2" />
-            <rect x="58" y="42" width="6" height="24" rx="2" fill="#4AAEE8" stroke="#18181B" stroke-width="1.5" />
-            <path d="M61 42 Q58 33 61 28 Q64 33 61 42" fill="#EE6748" />
-            <rect x="77" y="38" width="6" height="28" rx="2" fill="#36B37E" stroke="#18181B" stroke-width="1.5" />
-            <path d="M80 38 Q77 26 80 20 Q83 26 80 38" fill="#FABE2C" />
-            <rect x="96" y="42" width="6" height="24" rx="2" fill="#EE6748" stroke="#18181B" stroke-width="1.5" />
-            <path d="M99 42 Q96 33 99 28 Q102 33 99 42" fill="#FABE2C" />
-          </svg>
-        </div>
-        <p style="font-size: 0.8rem; font-weight: 800; color: #8C5300; margin-top: 0.5rem;" data-i18n="bdayTapHint">
-          🎂 Tap cake to blow candles & launch confetti!
-        </p>
-      </div>
-
-      <!-- Health Blessing Note -->
-      <div class="neo-card" style="padding: 1rem 1.25rem; text-align: left; margin-bottom: 1.5rem; background: #FAF7EE;">
-        <div style="font-size: 0.88rem; font-weight: 900; margin-bottom: 0.35rem; color: #EE6748;">
-          ❤️ KOMA Health Wishes
-        </div>
-        <p style="font-size: 0.82rem; font-weight: 700; color: #18181B; line-height: 1.5;" data-i18n="bdayModalWish">
-          KOMA warmly wishes you robust health, protection, sharp wisdom, and a bright future!
-        </p>
-        <div style="display: flex; gap: 0.75rem; margin-top: 0.75rem; font-size: 0.75rem; font-weight: 800; color: #52525B;">
-          <span>🛡️ <span data-i18n="bdayModalSafe">Safe & Protected</span></span>
-          <span>📈 <span data-i18n="bdayModalGrowth">Healthy Growth</span></span>
-        </div>
-      </div>
-
-      <button id="btn-celebrate-done" class="neo-btn neo-btn-primary" type="button" style="width: 100%;" data-i18n="bdayModalCelebrate">
-        Celebrate! 🎉
-      </button>
-    </div>
-  </div>
-
-  <!-- Full MOH Booklet Modal -->
-  <div id="booklet-modal" class="modal-overlay" role="dialog" aria-modal="true">
-    <div class="modal-container large-modal">
-      <button id="btn-close-booklet-modal" class="modal-close-btn" type="button" aria-label="Close modal">✕</button>
-
-      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 0.75rem;">
-        <div>
-          <span class="neo-badge" style="background: var(--color-primary);">MOH CAMBODIA NIP</span>
-          <h2 style="font-size: 1.6rem; margin-top: 0.35rem;" data-i18n="digitalCardTitle">
-            KOMA Digital Twin (MOH Standard)
-          </h2>
-        </div>
-        <button class="neo-btn neo-btn-sm neo-btn-white btn-trigger-print" type="button" data-i18n="modalPrint">
-          🖨️ Print / Save PDF
-        </button>
-      </div>
-
-      <!-- Mobile Swipe Hint -->
-      <div class="mobile-table-scroll-hint">
-        <span>👉 <span data-i18n="tableScrollHint">Swipe horizontally to view full MOH record</span></span>
-        <span class="scroll-arrow-anim">→</span>
-      </div>
-
-      <div class="booklet-table-wrapper">
-        <table class="booklet-table">
-          <thead>
-            <tr>
-              <th data-i18n="thVaccine">Vaccine</th>
-              <th data-i18n="thDueAge">Due Age</th>
-              <th data-i18n="thDateGiven">Date Given</th>
-              <th data-i18n="thHospital">Hospital / Health Center</th>
-              <th data-i18n="thStatus">Status</th>
-            </tr>
-          </thead>
-          <tbody id="modal-booklet-table-body">
-            <!-- Dynamically populated -->
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
 
   <!-- Mobile App Waitlist Modal -->
   <div id="waitlist-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="waitlist-modal-title">
@@ -946,7 +654,9 @@
         Be the first to access KOMA on iOS and Android when public beta opens in Phnom Penh.
       </p>
 
-      <div id="waitlist-success-msg" class="neo-card" style="display: none; background: #E8F8F0; border-color: #36B37E; color: #176B46; padding: 1rem; margin-top: 1rem; font-weight: 800; font-size: 0.9rem;" data-i18n="waitlistSuccess">
+      <div id="waitlist-success-msg" class="neo-card"
+        style="display: none; background: #E8F8F0; border-color: #36B37E; color: #176B46; padding: 1rem; margin-top: 1rem; font-weight: 800; font-size: 0.9rem;"
+        data-i18n="waitlistSuccess">
         🎉 You are on the waitlist! We will notify you via Telegram/SMS.
       </div>
 
@@ -973,13 +683,79 @@
     </div>
   </div>
 
+  <!-- Interactive Demo Video & Walkthrough Modal -->
+  <div id="video-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="video-modal-title">
+    <div class="modal-container large-modal">
+      <button id="btn-close-video-modal" class="modal-close-btn" type="button" aria-label="Close modal">✕</button>
+
+      <div
+        style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
+        <div>
+          <span class="neo-badge" style="background: #FABE2C;">🎬 LIVE DEMO SHOWCASE</span>
+          <h2 id="video-modal-title" style="font-size: 1.6rem; margin-top: 0.35rem;">
+            Experience KOMA in Action
+          </h2>
+        </div>
+        <a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer"
+          class="neo-btn neo-btn-sm neo-btn-primary">
+          🚀 Open Full Web App
+        </a>
+      </div>
+
+      <!-- Interactive App Video / Live Interactive Stage -->
+      <div
+        style="background-color: #FAF7EE; border: 2px solid #18181B; border-radius: 20px; padding: 1.5rem; text-align: center; margin-bottom: 1.25rem;">
+        <div
+          style="max-width: 540px; margin: 0 auto; background: #FFFFFF; border: 2px solid #18181B; border-radius: 24px; padding: 1.5rem; box-shadow: 4px 4px 0px #18181B;">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+            <img src="assets/logo.png" alt="KOMA" style="width: 36px; height: 36px;">
+            <div style="text-align: left;">
+              <h4 style="font-size: 1rem; font-weight: 800; margin: 0;">KOMA Child Health Companion</h4>
+              <span style="font-size: 0.75rem; color: #52525B;">Cambodia Ministry of Health Schedule Pre-Loaded</span>
+            </div>
+            <span class="neo-badge" style="margin-left: auto; background: #E8F8F0; color: #176B46;">Live Ready</span>
+          </div>
+
+          <div
+            style="border-radius: 16px; overflow: hidden; border: 1.5px solid #18181B; background: #18181B; position: relative; padding-top: 56.25%;">
+            <!-- Simulated Interactive Video / Screen Walkthrough -->
+            <div
+              style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(135deg, #1E3A8A 0%, #0F172A 100%); color: #FFFFFF; padding: 1.5rem;">
+              <div
+                style="width: 64px; height: 64px; border-radius: 9999px; background: #FABE2C; color: #18181B; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; box-shadow: 0 4px 14px rgba(0,0,0,0.3); margin-bottom: 0.85rem; cursor: pointer; transition: transform 0.15s ease;"
+                id="video-play-btn" title="Click to play preview">
+                ▶
+              </div>
+              <h4 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 0.25rem;">KOMA Feature Walkthrough</h4>
+              <p style="font-size: 0.85rem; color: #94A3B8; max-width: 380px;">
+                See how Cambodian parents track vaccines, set automated Telegram due date alerts, and safeguard physical
+                yellow cards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer" class="neo-btn neo-btn-primary"
+          style="padding: 0.8rem 1.6rem;">
+          🚀 Try Live Web App (No Install)
+        </a>
+        <button type="button" class="neo-btn neo-btn-white btn-trigger-waitlist" id="video-to-waitlist-btn">
+          📱 Get Mobile App Invite
+        </button>
+      </div>
+    </div>
+  </div>
+
   <!-- Hidden Print Container for Official A4 Printable Yellow Booklet -->
   <div id="printable-yellow-booklet" class="no-screen" style="display: none;">
     <div style="padding: 20px; font-family: sans-serif;">
       <div style="text-align: center; border-bottom: 2px solid black; padding-bottom: 12px; margin-bottom: 16px;">
         <h2 style="margin: 0; font-size: 18px; text-transform: uppercase;">KINGDOM OF CAMBODIA • MINISTRY OF HEALTH</h2>
         <h3 style="margin: 4px 0 0 0; font-size: 15px;">NATIONAL IMMUNIZATION PROGRAM (NIP) - YELLOW HEALTH BOOKLET</h3>
-        <p style="margin: 4px 0 0 0; font-size: 12px; color: #333;">Child: Dara Chan (ចាន់ តារា) • DOB: June 15, 2025 • Record ID: KH-MOH-2025-0812</p>
+        <p style="margin: 4px 0 0 0; font-size: 12px; color: #333;">Child: Dara Chan (ចាន់ តារា) • DOB: June 15, 2025 •
+          Record ID: KH-MOH-2025-0812</p>
       </div>
       <table style="width: 100%; border-collapse: collapse; font-size: 11px;">
         <thead>
@@ -1060,4 +836,5 @@
   <!-- Interactive JavaScript -->
   <script src="script.js"></script>
 </body>
+
 </html>
