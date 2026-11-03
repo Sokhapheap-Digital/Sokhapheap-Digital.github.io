@@ -3553,6 +3553,83 @@ img.flag-icon {
   overflow-wrap: break-word;
 }
 
+/* Mission & Vision Row */
+.mission-vision-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.mission-card,
+.vision-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 20px;
+  padding: 2.25rem 2rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mission-card:hover,
+.vision-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.mission-tag,
+.vision-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.mission-tag {
+  color: #059669;
+  background-color: #ECFDF5;
+  border: 1px solid #A7F3D0;
+}
+
+.vision-tag {
+  color: #0284C7;
+  background-color: #F0F9FF;
+  border: 1px solid #BAE6FD;
+}
+
+.mission-title,
+.vision-title {
+  font-size: clamp(1.3rem, 2.2vw, 1.55rem);
+  font-weight: 800;
+  margin-bottom: 0.85rem;
+  letter-spacing: -0.015em;
+}
+
+.mission-title {
+  color: #10B981;
+}
+
+.vision-title {
+  color: #0284C7;
+}
+
+.mission-text,
+.vision-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #4B5563;
+  margin: 0;
+}
+
+
 .about-story-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -3880,6 +3957,7 @@ img.flag-icon {
     padding: 3rem 0;
   }
 
+  .mission-vision-row,
   .about-story-row,
   .who-serve-grid {
     grid-template-columns: 1fr;
@@ -3916,6 +3994,8 @@ img.flag-icon {
     grid-template-columns: 1fr;
   }
 
+  .mission-card,
+  .vision-card,
   .who-serve-box,
   .team-detail-box {
     padding: 1.75rem 1.25rem;

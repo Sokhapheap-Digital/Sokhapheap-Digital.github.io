@@ -50,7 +50,13 @@
 
       // Startup About Us
       aboutKicker: 'OUR MISSION',
-      aboutTitle: 'Digitizing Child Healthcare Across Cambodia',
+      aboutTitle: 'About Us',
+      missionTag: 'OUR MISSION',
+      missionTitle: 'Our Mission',
+      missionText: "Our mission is to make child healthcare easier, more accessible, and more reliable for every Cambodian family through technology. We aim to help parents manage their children's health records, stay on track with vaccinations, and make informed healthcare decisions.",
+      visionTag: 'OUR VISION',
+      visionTitle: 'Our Vision',
+      visionText: "We envision a Cambodia where every parent has access to reliable health information and every child has the opportunity to grow up healthy. We hope to contribute to a more connected and digitally supported child healthcare system across the country.",
       aboutSubtitle: 'Eliminating lost vaccination history and empowering parents and clinics with durable, offline-ready medical records.',
       projectStoryLabel: 'The Problem We Solve',
       storyCardHeading: 'From Monsoon-Damaged Paper to Permanent Digital Security',
@@ -306,7 +312,13 @@
 
       // Startup About Us
       aboutKicker: 'បេសកកម្មរបស់យើង',
-      aboutTitle: 'ឌីជីថលូបនីយកម្មសុខភាពកុមារទូទាំងប្រទេសកម្ពុជា',
+      aboutTitle: 'អំពីយើង',
+      missionTag: 'បេសកកម្មរបស់យើង',
+      missionTitle: 'បេសកកម្មរបស់យើង',
+      missionText: 'បេសកកម្មរបស់យើងគឺធ្វើឱ្យការថែទាំសុខភាពកុមារកាន់តែងាយស្រួល អាចចូលប្រើបានកាន់តែទូលំទូលាយ និងអាចទុកចិត្តបានសម្រាប់គ្រប់ក្រុមគ្រួសារកម្ពុជា តាមរយៈបច្ចេកវិទ្យា។ យើងមានគោលបំណងជួយមាតាបិតាគ្រប់គ្រងកំណត់ត្រាសុខភាពរបស់កូនៗ តាមដានកាលវិភាគចាក់ថ្នាំបង្ការបានត្រឹមត្រូវ និងធ្វើការសម្រេចចិត្តប្រកបដោយទំនុកចិត្តលើការថែទាំសុខភាព។',
+      visionTag: 'ចក្ខុវិស័យរបស់យើង',
+      visionTitle: 'ចក្ខុវិស័យរបស់យើង',
+      visionText: 'យើងស្រមៃឃើញប្រទេសកម្ពុជាដែលមាតាបិតាគ្រប់រូបទទួលបានព័ត៌មានសុខភាពដែលអាចទុកចិត្តបាន ហើយកុមារគ្រប់រូបមានឱកាសធំធាត់ឡើងប្រកបដោយសុខភាពល្អ។ យើងសង្ឃឹមថានឹងរួមចំណែកដល់ប្រព័ន្ធថែទាំសុខភាពកុមារដែលតភ្ជាប់គ្នាកាន់តែជិតស្និទ្ធ និងគាំទ្រដោយប្រព័ន្ធឌីជីថលនៅទូទាំងប្រទេស។',
       aboutSubtitle: 'លុបបំបាត់ការបាត់បង់ទិន្នន័យចាក់ថ្នាំ និងផ្តល់ជូននូវកូនសៀវភៅសុខភាពឌីជីថលដែលអាចប្រើប្រាស់បានគ្រប់ទីកន្លែង។',
       projectStoryLabel: 'បញ្ហាដែលយើងដោះស្រាយ',
       storyCardHeading: 'ពីក្រដាសងាយរហែកក្នុងរដូវវស្សា ទៅជាកូនសៀវភៅឌីជីថលសុវត្ថិភាពអចិន្ត្រៃយ៍',
