@@ -55,8 +55,8 @@
       projectStoryLabel: 'The Problem We Solve',
       storyCardHeading: 'From Monsoon-Damaged Paper to Permanent Digital Security',
       projectStoryText: 'Across Cambodia, every newborn is given an official yellow paper health booklet at birth. But through humid monsoon rains, routine household wear, and clinic transitions, paper books tear, fade, or get misplaced. When paper records vanish, children risk missed booster immunizations or redundant injections. KOMA was founded in Phnom Penh to give every Cambodian mother, father, and healthcare worker a permanent, indestructible digital companion.',
-      whoServeTitle: 'Who We Empower',
-      whoServeText: 'Designed specifically around the healthcare ecosystem connecting Cambodian parents, local clinics, and specialized pediatric referral hospitals.',
+      whoServeTitle: 'Who we serve',
+      whoServeText: 'KOMA is designed to support parents, healthcare workers, and healthcare organizations across Cambodia. It helps parents manage their children\'s health records, keep track of vaccination schedules, and stay informed about important healthcare needs. It also supports healthcare workers in guiding parents and improving health awareness, while helping healthcare organizations strengthen communication and promote better child healthcare services.',
 
       // Startup Features
       featuresKicker: 'PLATFORM CAPABILITIES',
@@ -311,8 +311,8 @@
       projectStoryLabel: 'បញ្ហាដែលយើងដោះស្រាយ',
       storyCardHeading: 'ពីក្រដាសងាយរហែកក្នុងរដូវវស្សា ទៅជាកូនសៀវភៅឌីជីថលសុវត្ថិភាពអចិន្ត្រៃយ៍',
       projectStoryText: 'នៅកម្ពុជា ឪពុកម្តាយគ្រប់រូបតែងទទួលបានកូនសៀវភៅលឿងក្រដាសពេលសម្រាលកូន។ ប៉ុន្តែក្រដាសងាយរហែក ប្រឡាក់ទឹកភ្លៀង ឬភ្លេចនៅផ្ទះពេលទៅមន្ទីរពេទ្យ ដែលអាចធ្វើឱ្យកុមារខកខានការចាក់ថ្នាំបង្ការការពារជីវិត។ KOMA ត្រូវបានបង្កើតឡើងនៅរាជធានីភ្នំពេញ ដើម្បីផ្តល់ជូនកូនសៀវភៅឌីជីថលដែលមិនចេះបាត់បង់ និងស្របតាមស្តង់ដារក្រសួងសុខាភិបាល។',
-      whoServeTitle: 'អ្នកដែលយើងផ្តល់អត្ថប្រយោជន៍',
-      whoServeText: 'រចនាឡើងយ៉ាងយកចិត្តទុកដាក់សម្រាប់តភ្ជាប់រវាងមាតាបិតា មណ្ឌលសុខភាពមូលដ្ឋាន និងមន្ទីរពេទ្យកុមារជាតិឯកទេស។',
+      whoServeTitle: 'អ្នកដែលយើងបម្រើ',
+      whoServeText: 'KOMA ត្រូវបានរចនាឡើងដើម្បីគាំទ្រដល់មាតាបិតា បុគ្គលិកសុខាភិបាល និងស្ថាប័នសុខាភិបាលទូទាំងប្រទេសកម្ពុជា។ វាជួយមាតាបិតាក្នុងការគ្រប់គ្រងកំណត់ត្រាសុខភាពរបស់កូនៗ តាមដានកាលវិភាគចាក់ថ្នាំបង្ការ និងទទួលបានព័ត៌មានអំពីតម្រូវការសុខភាពសំខាន់ៗ។ លើសពីនេះ វាក៏ជួយបុគ្គលិកសុខាភិបាលក្នុងការណែនាំមាតាបិតា និងលើកកម្ពស់ការយល់ដឹងអំពីសុខភាព ព្រមទាំងជួយស្ថាប័នសុខាភិបាលពង្រឹងទំនាក់ទំនង និងលើកកម្ពស់សេវាថែទាំសុខភាពកុមារឱ្យកាន់តែប្រសើរឡើង។',
 
       // Startup Features
       featuresKicker: 'សមត្ថភាពនៃប្រព័ន្ធ',
