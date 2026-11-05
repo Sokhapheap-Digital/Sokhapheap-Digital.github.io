@@ -56,7 +56,7 @@
       // 1. The Problem We Solve
       problemSolveTag: 'THE PROBLEM WE SOLVE',
       problemSolveTitle: 'The Problem We Solve',
-      problemSolveText: "Many parents face challenges in keeping track of their children's healthcare needs. Some may forget important vaccination dates, lose paper-based health records, or lack access to reliable information about child health, nutrition, and development. These challenges can make it difficult for parents to stay informed and ensure their children receive proper care. KOMA aims to address these problems through a simple and accessible digital solution.",
+      problemSolveText: "Many parents face challenges in managing their children's healthcare needs. They may forget important vaccination dates, lose paper-based health records, or lack reliable information about child health, nutrition, and development. When children miss important vaccinations, they may not receive the protection they need against preventable diseases, which can put their health at risk. These challenges make it harder for parents to ensure their children receive proper care on time. KOMA addresses these problems by providing a simple digital platform for vaccination tracking, timely reminders, and child healthcare information.",
 
       // 2. Our Solution
       ourSolutionTag: 'OUR SOLUTION',
@@ -66,7 +66,7 @@
       // 3. Our Mission and Our Vision
       missionTag: 'OUR MISSION',
       missionTitle: 'Our Mission',
-      missionText: "Our mission is to make child healthcare easier, more accessible, and more reliable for every Cambodian family through technology. We aim to help parents manage their children's health records, stay on track with vaccinations, and make informed healthcare decisions.",
+      missionText: "Our mission is to make child healthcare easier, more accessible, and more reliable for every Cambodian family through technology. We aim to help parents manage their children's health records, stay on track with vaccination schedules, and make informed healthcare decisions. We also aim to reduce the number of children who miss important vaccinations by providing timely reminders and easy access to reliable health information, helping protect children from vaccine-preventable diseases.",
       visionTag: 'OUR VISION',
       visionTitle: 'Our Vision',
       visionText: "We envision a Cambodia where every parent has access to reliable health information and every child has the opportunity to grow up healthy. We hope to contribute to a more connected and digitally supported child healthcare system across the country.",
@@ -74,7 +74,7 @@
       // 4. Who We Serve
       whoServeTag: 'WHO WE SERVE',
       whoServeTitle: 'Who We Serve',
-      whoServeText: "KOMA is designed to support parents, healthcare workers, and healthcare organizations across Cambodia. It helps parents manage their children's health records, keep track of vaccination schedules, and stay informed about important healthcare needs. It also supports healthcare workers in guiding parents and improving health awareness, while helping healthcare organizations strengthen communication and promote better child healthcare services.",
+      whoServeText: "KOMA mainly serves children aged 0–2 years old and their parents or caregivers. Young children are our main beneficiaries because they need important vaccinations and proper healthcare during their early years. KOMA helps parents and caregivers keep track of their children's vaccination schedules, receive timely reminders, and manage health records in one place. It also provides helpful information about children's growth, nutrition, and development, making it easier for parents to understand and take care of their children's health.",
 
       // 5. Meet Our Team
       teamTitle: 'Meet Our Team',
@@ -376,7 +376,7 @@
       // 1. The Problem We Solve
       problemSolveTag: 'បញ្ហាដែលយើងដោះស្រាយ',
       problemSolveTitle: 'បញ្ហាដែលយើងដោះស្រាយ',
-      problemSolveText: 'មាតាបិតាជាច្រើនតែងជួបប្រទះការលំបាកក្នុងការតាមដានតម្រូវការថែទាំសុខភាពរបស់កូនៗ។ អ្នកខ្លះអាចភ្លេចថ្ងៃចាក់ថ្នាំបង្ការសំខាន់ៗ បាត់បង់កូនសៀវភៅសុខភាពក្រដាស ឬខ្វះព័ត៌មានដែលអាចទុកចិត្តបានអំពីសុខភាព អាហារូបត្ថម្ភ និងការលូតលាស់របស់កុមារ។ បញ្ហាប្រឈមទាំងនេះធ្វើឱ្យមាតាបិតាពិបាកទទួលបានព័ត៌មានទាន់ពេល និងធានាថាកូនៗទទួលបានការថែទាំត្រឹមត្រូវ។ KOMA មានគោលបំណងដោះស្រាយបញ្ហាទាំងនេះតាមរយៈដំណោះស្រាយឌីជីថលដ៏សាមញ្ញ និងងាយស្រួលប្រើប្រាស់។',
+      problemSolveText: 'មាតាបិតាជាច្រើនជួបប្រទះការលំបាកក្នុងការគ្រប់គ្រងតម្រូវការថែទាំសុខភាពរបស់កូនៗ។ ពួកគេអាចភ្លេចកាលបរិច្ឆេទចាក់ថ្នាំបង្ការសំខាន់ៗ បាត់បង់កំណត់ត្រាសុខភាពជាក្រដាស ឬខ្វះព័ត៌មានដែលអាចទុកចិត្តបានអំពីសុខភាព អាហារូបត្ថម្ភ និងការលូតលាស់របស់កុមារ។ នៅពេលកុមារខកខានការចាក់ថ្នាំបង្ការសំខាន់ៗ ពួកគេអាចនឹងមិនទទួលបានការការពារដែលពួកគេត្រូវការប្រឆាំងនឹងជំងឺដែលអាចការពារបាននោះឡើយ ដែលអាចធ្វើឱ្យប៉ះពាល់ដល់សុខភាពរបស់ពួកគេ។ បញ្ហាប្រឈមទាំងនេះធ្វើឱ្យមាតាបិតាកាន់តែពិបាកក្នុងការធានាថាកូនរបស់ពួកគេទទួលបានការថែទាំត្រឹមត្រូវទាន់ពេលវេលា។ KOMA ដោះស្រាយបញ្ហាទាំងនេះដោយផ្តល់នូវវេទិកាឌីជីថលដ៏សាមញ្ញមួយសម្រាប់ការតាមដានការចាក់ថ្នាំបង្ការ ការរំលឹកទាន់ពេលវេលា និងព័ត៌មានថែទាំសុខភាពកុមារ។',
 
       // 2. Our Solution
       ourSolutionTag: 'ដំណោះស្រាយរបស់យើង',
@@ -386,7 +386,7 @@
       // 3. Our Mission and Our Vision
       missionTag: 'បេសកកម្មរបស់យើង',
       missionTitle: 'បេសកកម្មរបស់យើង',
-      missionText: 'បេសកកម្មរបស់យើងគឺធ្វើឱ្យការថែទាំសុខភាពកុមារកាន់តែងាយស្រួល អាចចូលប្រើបានកាន់តែទូលំទូលាយ និងអាចទុកចិត្តបានសម្រាប់គ្រប់ក្រុមគ្រួសារកម្ពុជា តាមរយៈបច្ចេកវិទ្យា។ យើងមានគោលបំណងជួយមាតាបិតាគ្រប់គ្រងកំណត់ត្រាសុខភាពរបស់កូនៗ តាមដានកាលវិភាគចាក់ថ្នាំបង្ការបានត្រឹមត្រូវ និងធ្វើការសម្រេចចិត្តប្រកបដោយទំនុកចិត្តលើការថែទាំសុខភាព។',
+      missionText: 'បេសកកម្មរបស់យើងគឺធ្វើឱ្យការថែទាំសុខភាពកុមារកាន់តែងាយស្រួល អាចចូលប្រើបានកាន់តែទូលំទូលាយ និងអាចទុកចិត្តបានសម្រាប់គ្រប់ក្រុមគ្រួសារកម្ពុជា តាមរយៈបច្ចេកវិទ្យា។ យើងមានគោលបំណងជួយមាតាបិតាគ្រប់គ្រងកំណត់ត្រាសុខភាពរបស់កូនៗ តាមដានកាលវិភាគចាក់ថ្នាំបង្ការបានត្រឹមត្រូវ និងធ្វើការសម្រេចចិត្តប្រកបដោយទំនុកចិត្តលើការថែទាំសុខភាព។ យើងក៏មានគោលបំណងកាត់បន្ថយចំនួនកុមារដែលខកខានការចាក់ថ្នាំបង្ការសំខាន់ៗ តាមរយៈការផ្តល់ការរំលឹកទាន់ពេលវេលា និងភាពងាយស្រួលក្នុងការទទួលបានព័ត៌មានសុខភាពដែលអាចទុកចិត្តបាន ដើម្បីជួយការពារកុមារពីជំងឺដែលអាចការពារបានដោយការចាក់ថ្នាំបង្ការ។',
       visionTag: 'ចក្ខុវិស័យរបស់យើង',
       visionTitle: 'ចក្ខុវិស័យរបស់យើង',
       visionText: 'យើងស្រមៃឃើញប្រទេសកម្ពុជាដែលមាតាបិតាគ្រប់រូបទទួលបានព័ត៌មានសុខភាពដែលអាចទុកចិត្តបាន ហើយកុមារគ្រប់រូបមានឱកាសធំធាត់ឡើងប្រកបដោយសុខភាពល្អ។ យើងសង្ឃឹមថានឹងរួមចំណែកដល់ប្រព័ន្ធថែទាំសុខភាពកុមារដែលតភ្ជាប់គ្នាកាន់តែជិតស្និទ្ធ និងគាំទ្រដោយប្រព័ន្ធឌីជីថលនៅទូទាំងប្រទេស។',
@@ -394,7 +394,7 @@
       // 4. Who We Serve
       whoServeTag: 'អ្នកដែលយើងបម្រើ',
       whoServeTitle: 'អ្នកដែលយើងបម្រើ',
-      whoServeText: 'KOMA ត្រូវបានរចនាឡើងដើម្បីគាំទ្រដល់មាតាបិតា បុគ្គលិកសុខាភិបាល និងស្ថាប័នសុខាភិបាលទូទាំងប្រទេសកម្ពុជា។ វាជួយមាតាបិតាក្នុងការគ្រប់គ្រងកំណត់ត្រាសុខភាពរបស់កូនៗ តាមដានកាលវិភាគចាក់ថ្នាំបង្ការ និងទទួលបានព័ត៌មានអំពីតម្រូវការសុខភាពសំខាន់ៗ។ លើសពីនេះ វាក៏ជួយបុគ្គលិកសុខាភិបាលក្នុងការណែនាំមាតាបិតា និងលើកកម្ពស់ការយល់ដឹងអំពីសុខភាព ព្រមទាំងជួយស្ថាប័នសុខាភិបាលពង្រឹងទំនាក់ទំនង និងលើកកម្ពស់សេវាថែទាំសុខភាពកុមារឱ្យកាន់តែប្រសើរឡើង។',
+      whoServeText: 'KOMA បម្រើជាចម្បងដល់កុមារដែលមានអាយុពី ០ ដល់ ២ ឆ្នាំ និងឪពុកម្តាយ ឬអ្នកថែទាំរបស់ពួកគេ។ កុមារតូចៗគឺជាអ្នកទទួលផលចម្បងរបស់យើង ពីព្រោះពួកគេត្រូវការការចាក់ថ្នាំបង្ការសំខាន់ៗ និងការថែទាំសុខភាពត្រឹមត្រូវក្នុងអំឡុងពេលប៉ុន្មានឆ្នាំដំបូងនៃជីវិតរបស់ពួកគេ។ KOMA ជួយឪពុកម្តាយ និងអ្នកថែទាំក្នុងការតាមដានកាលវិភាគចាក់ថ្នាំបង្ការរបស់កូនៗ ទទួលបានការរំលឹកទាន់ពេលវេលា និងគ្រប់គ្រងកំណត់ត្រាសុខភាពនៅកន្លែងតែមួយ។ វាក៏ផ្តល់នូវព័ត៌មានមានប្រយោជន៍អំពីការលូតលាស់ អាហារូបត្ថម្ភ និងការអភិវឌ្ឍរបស់កុមារ ដែលធ្វើឱ្យឪពុកម្តាយកាន់តែងាយស្រួលក្នុងការយល់ដឹង និងថែទាំសុខភាពកូនៗរបស់ពួកគេ។',
 
       // 5. Meet Our Team
       teamTitle: 'ជួបជាមួយក្រុមការងាររបស់យើង',
