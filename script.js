@@ -1,6 +1,6 @@
 /**
  * KOMA Homepage Redesign - Interactive Engine & Bilingual System
- * Alignment with https://demo.komakh.com
+ * Alignment with https://app.komakh.com/
  */
 
 (function () {
@@ -20,8 +20,9 @@
 
       // Hero Section Matching Sample
       heroTagline: 'Digital Vaccination Reminder',
-      heroTitle1: 'Care today,',
-      heroTitle2: 'Grow tomorrow.',
+      heroTitle: 'Healthier future for your child',
+      heroTitle1: 'Healthier future for your child',
+      heroTitle2: '',
       heroDescSample: 'KOMA is a bilingual child health record for Cambodian parents includes the MOH national vaccination schedule per child, growth measurements according to WHO curves, and Telegram reminders before each vaccination due date.',
       btnGetAppHero: 'Get App',
 
@@ -177,9 +178,49 @@
       tableScrollHint: 'Swipe horizontally to view full MOH record',
 
       // Core Features
-      pillarsTag: 'Core Features',
-      pillarsTitle: 'Everything Parents Need, In One Place',
-      pillarsDesc: 'Built around the real everyday healthcare journey of Cambodian mothers and fathers.',
+      featuresMainTitle: 'KOMA FEATURES',
+      featuresTitle: 'KOMA Features',
+      featuresDesc: "KOMA offers simple tools to help parents take care of their children's health. From vaccination reminders to growth tracking and food tips, KOMA helps parents stay informed at every stage of their child's growth.",
+
+      feature1Badge: 'Vaccination & Schedule',
+      feature1Title: '1. Vaccination Tracking & Reminders',
+      feature1Lead: "Keep your child's vaccination records organized and never miss an important vaccination date.",
+      feature1Bullet1: "View vaccination schedules based on your child's age.",
+      feature1Bullet2: "Track completed, upcoming, and due vaccines.",
+      feature1Bullet3: "Get reminders for upcoming vaccinations.",
+      feature1Bullet4: "Keep all vaccination records in one place.",
+
+      feature2Badge: 'Growth & Development',
+      feature2Title: '2. Growth Tracking',
+      feature2Lead: "Follow your child's growth and see how they develop over time.",
+      feature2Bullet1: "Record your child's height and weight.",
+      feature2Bullet2: "Check growth progress over time.",
+      feature2Bullet3: "Keep track of important growth information.",
+
+      feature3Badge: 'Nutrition & Food Guide',
+      feature3Title: '3. Nutrition Guidance',
+      feature3Lead: "Learn more about your child's food needs at different ages.",
+      feature3Bullet1: "Explore food tips based on your child's age.",
+      feature3Bullet2: "Learn about suitable foods for each growth stage.",
+      feature3Bullet3: "Get helpful information about healthy eating.",
+
+      featuresCtaTitle: "Take Care of Your Child's Health with KOMA",
+      featuresCtaDesc: "Make your child's healthcare easier with KOMA. Keep health information organized and stay on track with important care needs.",
+      featuresCtaBtn: "Get Started with KOMA Today!",
+
+      // Demo Section
+      demoKicker: 'LIVE DEMO',
+      demoTitle: 'Demo',
+      demoDesc: "Watch how KOMA makes child healthcare simple, organized, and stress-free for parents. Explore schedules, growth tracking, and health tips in real-time.",
+      demoBadge1: 'Vaccine Tracking & Reminders',
+      demoBadge2: 'WHO Growth Curves',
+      demoBadge3: 'Age-Based Nutrition Advice',
+      demoTryBtn: 'Try Demo',
+      demoTrySubtitle: 'Instant access in your browser • No install required',
+
+      pillarsTag: 'KOMA FEATURES',
+      pillarsTitle: 'KOMA Features',
+      pillarsDesc: "KOMA offers simple tools to help parents take care of their children's health. From vaccination reminders to growth tracking and food tips, KOMA helps parents stay informed at every stage of their child's growth.",
 
       pillar1Title: 'National Immunization Schedule',
       pillar1Desc: 'Pre-loaded with Cambodia’s complete NIP protocol aligned with the Ministry of Health.',
@@ -271,6 +312,8 @@
       // Footer
       footerSlogan: 'Helping Cambodian parents care with confidence, stay informed, and celebrate every milestone.',
       footerColProduct: 'Product',
+      footerColCompany: 'Company',
+      footerColNav: 'Navigation',
       footerColResources: 'Resources',
       footerColLegal: 'Trust & Legal',
       linkDemo: 'Live Web Demo',
@@ -297,8 +340,9 @@
 
       // Hero Section Matching Sample
       heroTagline: 'ការរំលឹកកាលវិភាគចាក់ថ្នាំឌីជីថល',
-      heroTitle1: 'ថែទាំថ្ងៃនេះ,',
-      heroTitle2: 'រីកចម្រើនថ្ងៃស្អែក។',
+      heroTitle: 'អនាគតកាន់តែមានសុខភាពល្អសម្រាប់កូនរបស់អ្នក',
+      heroTitle1: 'អនាគតកាន់តែមានសុខភាពល្អសម្រាប់កូនរបស់អ្នក',
+      heroTitle2: '',
       heroDescSample: 'KOMA គឺជាកូនសៀវភៅតាមដានសុខភាពកុមារពីរភាសាសម្រាប់មាតាបិតាកម្ពុជា រួមបញ្ចូលទាំងកាលវិភាគចាក់ថ្នាំបង្ការជាតិរបស់ក្រសួងសុខាភិបាល ការវាស់វែងការលូតលាស់តាមខ្សែកោង WHO និងការរំលឹកតាម Telegram មុនកាលបរិច្ឆេទចាក់ថ្នាំនីមួយៗ។',
       btnGetAppHero: 'ទាញយក App',
 
@@ -452,9 +496,49 @@
       tableScrollHint: 'អូសទៅស្តាំដើម្បីមើលព័ត៌មានលម្អិត',
 
       // Core Features
-      pillarsTag: 'មុខងារសំខាន់ៗ',
-      pillarsTitle: 'អ្វីៗដែលឪពុកម្តាយត្រូវការ នៅក្នុងកន្លែងតែមួយ',
-      pillarsDesc: 'បង្កើតឡើងស្របតាមដំណើរជាក់ស្តែងនៃការថែទាំសុខភាពកុមាររបស់គ្រួសារកម្ពុជា។',
+      featuresMainTitle: 'មុខងាររបស់ KOMA',
+      featuresTitle: 'មុខងាររបស់ KOMA',
+      featuresDesc: 'KOMA ផ្តល់នូវឧបករណ៍ងាយស្រួលដើម្បីជួយឪពុកម្តាយក្នុងការថែទាំសុខភាពកូនៗ។ ចាប់ពីការរំលឹកការចាក់ថ្នាំបង្ការ រហូតដល់ការតាមដានការលូតលាស់ និងគន្លឹះអាហារូបត្ថម្ភ KOMA ជួយឪពុកម្តាយទទួលបានព័ត៌មានទាន់ហេតុការណ៍នៅគ្រប់ដំណាក់កាលនៃការលូតលាស់របស់កូន។',
+
+      feature1Badge: 'ការចាក់ថ្នាំបង្ការ និងកាលវិភាគ',
+      feature1Title: '១. ការតាមដានការចាក់ថ្នាំបង្ការ & ការរំលឹក',
+      feature1Lead: 'រក្សាកំណត់ត្រាចាក់ថ្នាំបង្ការរបស់កូនអ្នកឱ្យមានរបៀបរៀបរយ និងមិនដែលខកខានកាលបរិច្ឆេទចាក់ថ្នាំសំខាន់ៗឡើយ។',
+      feature1Bullet1: 'មើលកាលវិភាគចាក់ថ្នាំបង្ការផ្អែកលើអាយុកូនរបស់អ្នក។',
+      feature1Bullet2: 'តាមដានថ្នាំបង្ការដែលបានចាក់រួច ជិតមកដល់ និងហួសកាលកំណត់។',
+      feature1Bullet3: 'ទទួលបានការរំលឹកសម្រាប់ការចាក់ថ្នាំបង្ការដែលជិតមកដល់។',
+      feature1Bullet4: 'រក្សាទុកកំណត់ត្រាចាក់ថ្នាំបង្ការទាំងអស់នៅកន្លែងតែមួយ។',
+
+      feature2Badge: 'ការលូតលាស់ និងការអភិវឌ្ឍ',
+      feature2Title: '២. ការតាមដានការលូតលាស់',
+      feature2Lead: 'តាមដានការលូតលាស់របស់កូនអ្នក និងមើលពីការវិវត្តតាមពេលវេលា។',
+      feature2Bullet1: 'កត់ត្រាកម្ពស់ និងទម្ងន់របស់កូនអ្នក។',
+      feature2Bullet2: 'ពិនិត្យមើលការវិវត្តនៃការលូតលាស់តាមពេលវេលា។',
+      feature2Bullet3: 'តាមដានព័ត៌មានសំខាន់ៗអំពីការលូតលាស់។',
+
+      feature3Badge: 'អាហារូបត្ថម្ភ និងការណែនាំ',
+      feature3Title: '៣. ការណែនាំអំពីអាហារូបត្ថម្ភ',
+      feature3Lead: 'ស្វែងយល់បន្ថែមអំពីតម្រូវការអាហារូបត្ថម្ភរបស់កូនអ្នកតាមវ័យផ្សេងៗគ្នា។',
+      feature3Bullet1: 'ស្វែងយល់ពីគន្លឹះអាហារូបត្ថម្ភផ្អែកលើអាយុកូនរបស់អ្នក។',
+      feature3Bullet2: 'ស្វែងយល់អំពីអាហារដែលសមស្របសម្រាប់ដំណាក់កាលលូតលាស់នីមួយៗ។',
+      feature3Bullet3: 'ទទួលបានព័ត៌មានមានប្រយោជន៍អំពីការទទួលទានអាហារប្រកបដោយសុខភាពល្អ។',
+
+      featuresCtaTitle: 'ថែរក្សាសុខភាពកូនរបស់អ្នកជាមួយ KOMA',
+      featuresCtaDesc: 'ធ្វើឱ្យការថែទាំសុខភាពកូនអ្នកកាន់តែងាយស្រួលជាមួយ KOMA។ រក្សាព័ត៌មានសុខភាពឱ្យមានរបៀប និងតាមដានរាល់តម្រូវការថែទាំសំខាន់ៗ។',
+      featuresCtaBtn: 'ចាប់ផ្តើមជាមួយ KOMA ថ្ងៃនេះ!',
+
+      // Demo Section
+      demoKicker: 'ការបង្ហាញផ្ទាល់',
+      demoTitle: 'ការសាកល្បង KOMA',
+      demoDesc: 'ទស្សនារបៀបដែល KOMA ធ្វើឱ្យការថែទាំសុខភាពកូនៗកាន់តែងាយស្រួល និងមានរបៀបរៀបរយ។ ស្វែងយល់ពីកាលវិភាគ ការតាមដានការលូតលាស់ និងគន្លឹះសុខភាពទាន់ពេលវេលា។',
+      demoBadge1: 'តាមដានការចាក់ថ្នាំបង្ការ',
+      demoBadge2: 'ខ្សែកោងការលូតលាស់',
+      demoBadge3: 'ការណែនាំអាហារូបត្ថម្ភតាមវ័យ',
+      demoTryBtn: 'សាកល្បង Demo',
+      demoTrySubtitle: 'ចូលប្រើភ្លាមៗក្នុងកម្មវិធីអ៊ីនធឺណិត • មិនបាច់ដំឡើង',
+
+      pillarsTag: 'មុខងាររបស់ KOMA',
+      pillarsTitle: 'មុខងាររបស់ KOMA',
+      pillarsDesc: 'KOMA ផ្តល់នូវឧបករណ៍ងាយស្រួលដើម្បីជួយឪពុកម្តាយក្នុងការថែទាំសុខភាពកូនៗ។ ចាប់ពីការរំលឹកការចាក់ថ្នាំបង្ការ រហូតដល់ការតាមដានការលូតលាស់ និងគន្លឹះអាហារូបត្ថម្ភ KOMA ជួយឪពុកម្តាយទទួលបានព័ត៌មានទាន់ហេតុការណ៍នៅគ្រប់ដំណាក់កាលនៃការលូតលាស់របស់កូន។',
 
       pillar1Title: 'កាលវិភាគចាក់ថ្នាំបង្ការជាតិកម្ពុជា',
       pillar1Desc: 'ផ្ទុកនូវរាល់ថ្នាំបង្ការដែលកំណត់ដោយក្រសួងសុខាភិបាល ស្របតាមស្តង់ដារជាតិ។',
@@ -546,6 +630,8 @@
       // Footer
       footerSlogan: 'ជួយឪពុកម្តាយកម្ពុជាក្នុងការតាមដាន ទទួលបានព័ត៌មាន និងថែទាំកូនៗដោយទំនុកចិត្ត។',
       footerColProduct: 'ផលិតផល',
+      footerColCompany: 'ក្រុមហ៊ុន',
+      footerColNav: 'ទំព័ររុករក',
       footerColResources: 'ធនធានសុខភាព',
       footerColLegal: 'ទំនុកចិត្ត & ច្បាប់',
       linkDemo: 'Web Demo ផ្ទាល់',
@@ -1586,13 +1672,7 @@
       });
     }
 
-    // Phone Telegram button
-    const phoneTelegramBtn = document.getElementById('phone-telegram-btn');
-    if (phoneTelegramBtn) {
-      phoneTelegramBtn.addEventListener('click', () => {
-        window.open('https://t.me', '_blank');
-      });
-    }
+    // Phone Telegram button is static mockup UI (non-clickable)
 
     // 2. Mobile Menu Toggle
     const hamburgerBtn = document.getElementById('hamburger-btn');
@@ -1865,7 +1945,7 @@
     }
     if (videoPlayBtn) {
       videoPlayBtn.addEventListener('click', () => {
-        window.open('https://demo.komakh.com', '_blank', 'noopener,noreferrer');
+        window.open('https://app.komakh.com/', '_blank', 'noopener,noreferrer');
       });
     }
 
@@ -1947,6 +2027,38 @@
     });
 
     // Initial Setup
+    // Demo Video Player Interaction
+    const demoVideo = document.getElementById('demo-video-player');
+    const demoPlayBtn = document.getElementById('demo-play-btn');
+
+    if (demoVideo) {
+      if (demoPlayBtn) {
+        const playIcon = demoPlayBtn.querySelector('.play-icon');
+        const pauseIcon = demoPlayBtn.querySelector('.pause-icon');
+
+        const updatePlayState = () => {
+          const isPaused = demoVideo.paused;
+          if (playIcon) playIcon.style.display = isPaused ? 'block' : 'none';
+          if (pauseIcon) pauseIcon.style.display = isPaused ? 'none' : 'block';
+        };
+
+        demoPlayBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          if (demoVideo.paused) {
+            demoVideo.play();
+          } else {
+            demoVideo.pause();
+          }
+          updatePlayState();
+        });
+
+        demoVideo.addEventListener('play', updatePlayState);
+        demoVideo.addEventListener('pause', updatePlayState);
+        updatePlayState();
+      }
+
+    }
+
     setLanguage(currentLanguage);
     updateGrowthMetric('weight');
   });

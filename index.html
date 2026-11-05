@@ -41,7 +41,7 @@
         <a href="#home" class="nav-link active" data-i18n="navHome">Home</a>
         <a href="#about" class="nav-link" data-i18n="navAbout">About</a>
         <a href="#features" class="nav-link" data-i18n="navFeatures">Features</a>
-        <a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer" class="nav-link" data-i18n="navDemo">Demo</a>
+        <a href="#demo" class="nav-link" data-i18n="navDemo">Demo</a>
       </nav>
 
       <!-- Right Controls: Contact Us Pill & Language Switcher -->
@@ -105,7 +105,7 @@
         <a href="#home" class="drawer-link" data-i18n="navHome">Home</a>
         <a href="#about" class="drawer-link" data-i18n="navAbout">About</a>
         <a href="#features" class="drawer-link" data-i18n="navFeatures">Features</a>
-        <a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer" class="drawer-link" data-i18n="navDemo">Demo</a>
+        <a href="#demo" class="drawer-link" data-i18n="navDemo">Demo</a>
       </div>
 
       <!-- Mobile Language Switcher Inside Drawer -->
@@ -124,10 +124,10 @@
       </div>
 
       <div style="margin-top: auto; display: flex; flex-direction: column; gap: 0.85rem;">
-          <button type="button" class="btn-contact-pill btn-trigger-waitlist" style="width: 100%; text-align: center;"
-            data-i18n="btnContactUs">
-            Contact Us
-          </button>
+        <button type="button" class="btn-contact-pill btn-trigger-waitlist" style="width: 100%; text-align: center;"
+          data-i18n="btnContactUs">
+          Contact Us
+        </button>
       </div>
     </div>
   </div>
@@ -137,269 +137,258 @@
     <!-- ========================================================
          2. HERO SECTION (REDESIGNED TO MATCH SAMPLE MOCKUP)
          ======================================================== -->
-            <section class="hero-sample-section" id="hero">
-              <div class="container hero-sample-container">
-                <!-- Left: Text & CTA Content -->
-                <div class="hero-sample-left">
-                  <div class="hero-sample-eyebrow" data-i18n="heroTagline">Digital Vaccination Reminder</div>
-                  <h1 class="hero-sample-title">
-                    <span data-i18n="heroTitle1">Care today,</span><br>
-                    <span data-i18n="heroTitle2">Grow tomorrow.</span>
-                  </h1>
-                  <p class="hero-sample-desc" data-i18n="heroDescSample">
-                    KOMA is a bilingual child health record for Cambodian parents includes the MOH national vaccination
-                    schedule per child, growth measurements according to WHO curves, and Telegram reminders before each
-                    vaccination due date.
-                  </p>
-                  <div class="hero-sample-action">
-                    <button type="button" class="hero-btn-getapp btn-trigger-waitlist" data-i18n="btnGetAppHero">
-                      Get App
-                    </button>
+    <section class="hero-sample-section" id="hero">
+      <div class="container hero-sample-container">
+        <!-- Left: Text & CTA Content -->
+        <div class="hero-sample-left">
+          <div class="hero-sample-eyebrow" data-i18n="heroTagline">Digital Vaccination Reminder</div>
+          <h1 class="hero-sample-title" data-i18n="heroTitle">
+            Healthier future for your child
+          </h1>
+          <p class="hero-sample-desc" data-i18n="heroDescSample">
+            KOMA is a bilingual child health record for Cambodian parents includes the MOH national vaccination
+            schedule per child, growth measurements according to WHO curves, and Telegram reminders before each
+            vaccination due date.
+          </p>
+          <div class="hero-sample-action">
+            <a href="https://app.komakh.com/" target="_blank" rel="noopener noreferrer" class="hero-btn-getapp" data-i18n="btnGetAppHero">
+              Get App
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Phone Mockup & Cheerful Bopha Mascot -->
+        <div class="hero-sample-right">
+          <div class="hero-showcase-stage">
+            <!-- Smartphone Device Frame Mockup -->
+            <div class="hero-phone-mockup">
+              <!-- Top Dynamic Island Notch / Speaker Pill -->
+              <div class="phone-dynamic-island">
+                <div class="phone-camera-lens"></div>
+                <div class="phone-speaker-slit"></div>
+              </div>
+
+              <!-- Phone Inner Screen Content -->
+              <div class="phone-inner-screen">
+                <!-- Phone Top Bar: Secure Badge & Language Switcher -->
+                <div class="phone-top-bar">
+                  <div class="phone-secure-pill">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    </svg>
+                    <span data-i18n="phoneSecureBadge">Secure & Private</span>
                   </div>
+
+                  <button type="button" class="phone-lang-pill" id="phone-lang-pill" aria-label="Toggle language">
+                    <img src="assets/flag-en.png" alt="Language" class="flag-icon" id="phone-flag-img">
+                    <span class="chevron-arrow">▼</span>
+                  </button>
                 </div>
 
-                    <!-- Right: Phone Mockup & Cheerful Bopha Mascot -->
-                    <div class="hero-sample-right">
-                      <div class="hero-showcase-stage">
-                        <!-- Smartphone Device Frame Mockup -->
-                        <div class="hero-phone-mockup">
-                          <!-- Top Dynamic Island Notch / Speaker Pill -->
-                          <div class="phone-dynamic-island">
-                            <div class="phone-camera-lens"></div>
-                            <div class="phone-speaker-slit"></div>
-                          </div>
+                <!-- Mascot Dara Holding WELCOME Sign -->
+                <div class="phone-mascot-dara">
+                  <svg viewBox="0 0 140 140" class="dara-welcome-svg" xmlns="http://www.w3.org/2000/svg"
+                    aria-label="Boy Mascot Dara Holding Welcome Sign">
+                    <!-- Ears -->
+                    <circle cx="36" cy="52" r="7" fill="#FFE5C4" stroke="#18181B" stroke-width="2.2" />
+                    <circle cx="104" cy="52" r="7" fill="#FFE5C4" stroke="#18181B" stroke-width="2.2" />
 
-                          <!-- Phone Inner Screen Content -->
-                          <div class="phone-inner-screen">
-                            <!-- Phone Top Bar: Secure Badge & Language Switcher -->
-                            <div class="phone-top-bar">
-                              <div class="phone-secure-pill">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                                  stroke-linecap="round" stroke-linejoin="round">
-                                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                                </svg>
-                                <span data-i18n="phoneSecureBadge">Secure & Private</span>
-                              </div>
+                    <!-- Head Base -->
+                    <circle cx="70" cy="50" r="34" fill="#FFE5C4" stroke="#18181B" stroke-width="2.8" />
 
-                              <button type="button" class="phone-lang-pill" id="phone-lang-pill"
-                                aria-label="Toggle language">
-                                <img src="assets/flag-en.png" alt="Language" class="flag-icon" id="phone-flag-img">
-                                <span class="chevron-arrow">▼</span>
-                              </button>
-                            </div>
+                    <!-- Hair Back/Top -->
+                    <path
+                      d="M38 48 C32 20, 50 12, 70 12 C90 12, 108 20, 102 48 C94 40, 84 42, 70 43 C56 42, 46 40, 38 48 Z"
+                      fill="#18181B" stroke="#18181B" stroke-width="2.8" />
 
-                            <!-- Mascot Dara Holding WELCOME Sign -->
-                            <div class="phone-mascot-dara">
-                              <svg viewBox="0 0 140 140" class="dara-welcome-svg" xmlns="http://www.w3.org/2000/svg"
-                                aria-label="Boy Mascot Dara Holding Welcome Sign">
-                                <!-- Ears -->
-                                <circle cx="36" cy="52" r="7" fill="#FFE5C4" stroke="#18181B" stroke-width="2.2" />
-                                <circle cx="104" cy="52" r="7" fill="#FFE5C4" stroke="#18181B" stroke-width="2.2" />
+                    <!-- Yellow Headband with Dark Stripe -->
+                    <path d="M36 34 C48 26, 92 26, 104 34 L104 43 C92 36, 48 36, 36 43 Z" fill="#FABE2C"
+                      stroke="#18181B" stroke-width="2.5" stroke-linejoin="round" />
+                    <path d="M38 38 C49 32, 91 32, 102 38" stroke="#18181B" stroke-width="2" stroke-linecap="round" />
 
-                                <!-- Head Base -->
-                                <circle cx="70" cy="50" r="34" fill="#FFE5C4" stroke="#18181B" stroke-width="2.8" />
+                    <!-- Blush Cheeks -->
+                    <circle cx="48" cy="58" r="6" fill="#FFAAA6" opacity="0.85" />
+                    <circle cx="92" cy="58" r="6" fill="#FFAAA6" opacity="0.85" />
 
-                                <!-- Hair Back/Top -->
-                                <path
-                                  d="M38 48 C32 20, 50 12, 70 12 C90 12, 108 20, 102 48 C94 40, 84 42, 70 43 C56 42, 46 40, 38 48 Z"
-                                  fill="#18181B" stroke="#18181B" stroke-width="2.8" />
+                    <!-- Happy Closed Eyes -->
+                    <path d="M48 49 Q55 42, 62 49" stroke="#18181B" stroke-width="3" stroke-linecap="round"
+                      fill="none" />
+                    <path d="M78 49 Q85 42, 92 49" stroke="#18181B" stroke-width="3" stroke-linecap="round"
+                      fill="none" />
 
-                                <!-- Yellow Headband with Dark Stripe -->
-                                <path d="M36 34 C48 26, 92 26, 104 34 L104 43 C92 36, 48 36, 36 43 Z" fill="#FABE2C"
-                                  stroke="#18181B" stroke-width="2.5" stroke-linejoin="round" />
-                                <path d="M38 38 C49 32, 91 32, 102 38" stroke="#18181B" stroke-width="2"
-                                  stroke-linecap="round" />
+                    <!-- Nose -->
+                    <circle cx="70" cy="53" r="2.2" fill="#FABE2C" />
 
-                                <!-- Blush Cheeks -->
-                                <circle cx="48" cy="58" r="6" fill="#FFAAA6" opacity="0.85" />
-                                <circle cx="92" cy="58" r="6" fill="#FFAAA6" opacity="0.85" />
+                    <!-- Joyful Smile -->
+                    <path d="M62 60 Q70 69, 78 60 Z" fill="#D9383A" stroke="#18181B" stroke-width="2.2"
+                      stroke-linejoin="round" />
+                    <path d="M66 65 Q70 63, 74 65" fill="#FFAAA6" />
 
-                                <!-- Happy Closed Eyes -->
-                                <path d="M48 49 Q55 42, 62 49" stroke="#18181B" stroke-width="3" stroke-linecap="round"
-                                  fill="none" />
-                                <path d="M78 49 Q85 42, 92 49" stroke="#18181B" stroke-width="3" stroke-linecap="round"
-                                  fill="none" />
+                    <!-- Yellow Shirt Shoulders behind sign -->
+                    <path d="M42 78 L28 88 L38 98 L52 86 Z" fill="#FABE2C" stroke="#18181B" stroke-width="2.4"
+                      stroke-linejoin="round" />
+                    <path d="M98 78 L112 88 L102 98 L88 86 Z" fill="#FABE2C" stroke="#18181B" stroke-width="2.4"
+                      stroke-linejoin="round" />
 
-                                <!-- Nose -->
-                                <circle cx="70" cy="53" r="2.2" fill="#FABE2C" />
+                    <!-- Green Shorts -->
+                    <path d="M52 108 L88 108 L92 122 L72 123 L70 116 L68 123 L48 122 Z" fill="#22A06B" stroke="#18181B"
+                      stroke-width="2.2" stroke-linejoin="round" />
+                    <!-- Little Shoes -->
+                    <ellipse cx="58" cy="126" rx="7" ry="4" fill="#18181B" />
+                    <ellipse cx="82" cy="126" rx="7" ry="4" fill="#18181B" />
 
-                                <!-- Joyful Smile -->
-                                <path d="M62 60 Q70 69, 78 60 Z" fill="#D9383A" stroke="#18181B" stroke-width="2.2"
-                                  stroke-linejoin="round" />
-                                <path d="M66 65 Q70 63, 74 65" fill="#FFAAA6" />
+                    <!-- WELCOME Sign (Held in Front) -->
+                    <rect x="26" y="74" width="88" height="34" rx="6" fill="#FFFFFF" stroke="#22A06B"
+                      stroke-width="2.8" />
+                    <text x="70" y="96" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif"
+                      font-size="11" font-weight="900" fill="#22A06B" letter-spacing="1.5"
+                      id="dara-sign-text">WELCOME</text>
 
-                                <!-- Yellow Shirt Shoulders behind sign -->
-                                <path d="M42 78 L28 88 L38 98 L52 86 Z" fill="#FABE2C" stroke="#18181B"
-                                  stroke-width="2.4" stroke-linejoin="round" />
-                                <path d="M98 78 L112 88 L102 98 L88 86 Z" fill="#FABE2C" stroke="#18181B"
-                                  stroke-width="2.4" stroke-linejoin="round" />
-
-                                <!-- Green Shorts -->
-                                <path d="M52 108 L88 108 L92 122 L72 123 L70 116 L68 123 L48 122 Z" fill="#22A06B"
-                                  stroke="#18181B" stroke-width="2.2" stroke-linejoin="round" />
-                                <!-- Little Shoes -->
-                                <ellipse cx="58" cy="126" rx="7" ry="4" fill="#18181B" />
-                                <ellipse cx="82" cy="126" rx="7" ry="4" fill="#18181B" />
-
-                            <!-- WELCOME Sign (Held in Front) -->
-                            <rect x="26" y="74" width="88" height="34" rx="6" fill="#FFFFFF" stroke="#22A06B"
-                              stroke-width="2.8" />
-                            <text x="70" y="96" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif"
-                              font-size="11" font-weight="900" fill="#22A06B" letter-spacing="1.5"
-                              id="dara-sign-text">WELCOME</text>
-
-                              <!-- Hands gripping the sides of the sign -->
-                              <path d="M22 84 C22 79, 30 79, 30 84 C30 89, 22 89, 22 84 Z" fill="#FFE5C4"
-                                stroke="#18181B" stroke-width="2" />
-                              <path d="M110 84 C110 79, 118 79, 118 84 C118 89, 110 89, 110 84 Z" fill="#FFE5C4"
-                                stroke="#18181B" stroke-width="2" />
+                    <!-- Hands gripping the sides of the sign -->
+                    <path d="M22 84 C22 79, 30 79, 30 84 C30 89, 22 89, 22 84 Z" fill="#FFE5C4" stroke="#18181B"
+                      stroke-width="2" />
+                    <path d="M110 84 C110 79, 118 79, 118 84 C118 89, 110 89, 110 84 Z" fill="#FFE5C4" stroke="#18181B"
+                      stroke-width="2" />
                   </svg>
                 </div>
 
-                    <!-- Brand Wordmark & Subtitle -->
-                    <div class="phone-brand-group">
-                      <img src="assets/koma-text.svg" alt="KOMA" class="phone-koma-logo">
-                      <div class="phone-tracker-subtitle" data-i18n="phoneSub">CHILD HEALTH & VACCINE TRACKER</div>
-                    </div>
-
-                  <!-- Sign In Prompt -->
-                  <div class="phone-signin-prompt" data-i18n="phoneSignInTelegram">Sign in with your Telegram</div>
-
-                        <!-- Telegram Button -->
-                        <button type="button" class="phone-btn-telegram" id="phone-telegram-btn">
-                          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
-                            <path
-                              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z" />
-                          </svg>
-                          <span data-i18n="phoneBtnTelegram">Log in with Telegram</span>
-                        </button>
-
-                        <!-- Divider -->
-                        <div class="phone-or-divider">
-                          <span data-i18n="phoneOr">OR</span>
-                        </div>
-
-                        <!-- Try Demo Prompt -->
-                        <div class="phone-demo-prompt" data-i18n="phoneTryDemo">Try out our app demo</div>
-
-                        <!-- Demo Button -->
-                        <a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer"
-                          class="phone-btn-demo" data-i18n="phoneBtnDemo">
-                          ✨ KOMA Demo
-                        </a>
-                  </div>
+                <!-- Brand Wordmark & Subtitle -->
+                <div class="phone-brand-group">
+                  <img src="assets/koma-text.svg" alt="KOMA" class="phone-koma-logo">
+                  <div class="phone-tracker-subtitle" data-i18n="phoneSub">CHILD HEALTH & VACCINE TRACKER</div>
                 </div>
 
-                    <!-- Cheerful Bopha Mascot Jumping Beside Phone (Matching Sample Mockup) -->
-                    <div class="hero-mascot-bopha" aria-label="Girl Mascot Bopha Cheering Beside Phone">
-                      <svg viewBox="0 0 240 290" class="bopha-waving-svg" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <!-- Floating Sparkles around Bopha -->
-                        <path d="M192 34 L195 23 L198 34 L209 37 L198 40 L195 51 L192 40 L181 37 Z" fill="#F59E0B" />
-                        <path d="M220 86 L222 78 L224 86 L232 88 L224 90 L222 98 L220 90 L212 88 Z" fill="#F59E0B" />
-                        <path d="M42 56 L44 49 L46 56 L53 58 L46 60 L44 67 L42 60 L35 58 Z" fill="#F59E0B" />
+                <!-- Sign In Prompt -->
+                <div class="phone-signin-prompt" data-i18n="phoneSignInTelegram">Sign in with your Telegram</div>
 
-                        <!-- Legs & Shoes -->
-                        <!-- Left Standing Leg -->
-                        <path d="M92 208 L86 242 L106 244 L112 208 Z" fill="#FFE5C4" stroke="#18181B"
-                          stroke-width="3" />
-                        <rect x="84" y="236" width="22" height="9" rx="2" fill="#FFFFFF" stroke="#18181B"
-                          stroke-width="2" />
-                        <path
-                          d="M75 242 L102 244 C110 246, 112 254, 108 260 C102 268, 72 268, 66 262 C60 254, 65 243, 75 242 Z"
-                          fill="#18181B" stroke="#18181B" stroke-width="2.5" />
-                        <ellipse cx="88" cy="252" rx="4" ry="2" fill="#FFFFFF" />
-
-                        <!-- Right Kicking Leg -->
-                        <g transform="rotate(30 142 220)">
-                          <path d="M136 198 L131 233 L151 236 L157 198 Z" fill="#FFE5C4" stroke="#18181B"
-                            stroke-width="3" />
-                          <rect x="129" y="227" width="22" height="9" rx="2" fill="#FFFFFF" stroke="#18181B"
-                            stroke-width="2" />
-                          <path
-                            d="M123 233 L150 235 C158 237, 160 245, 156 251 C150 259, 120 259, 114 253 C108 245, 113 234, 123 233 Z"
-                            fill="#18181B" stroke="#18181B" stroke-width="2.5" />
-                          <ellipse cx="135" cy="243" rx="4" ry="2" fill="#FFFFFF" />
-                        </g>
-
-                        <!-- Outstretched Right Arm (pointing toward phone) -->
-                        <path d="M76 150 C50 130, 32 144, 26 154 C20 168, 46 176, 74 166 Z" fill="#FFE5C4"
-                          stroke="#18181B" stroke-width="3.2" stroke-linejoin="round" />
-
-                        <!-- Emerald Green Dress Body -->
-                        <path d="M76 142 L152 142 L170 212 L58 212 Z" fill="#22A06B" stroke="#18181B" stroke-width="3.2"
-                          stroke-linejoin="round" />
-
-                        <!-- Dress Sleeves -->
-                        <path d="M78 143 L64 157 L74 169 L88 157 Z" fill="#22A06B" stroke="#18181B" stroke-width="3"
-                          stroke-linejoin="round" />
-                        <path d="M150 143 L164 157 L154 169 L140 157 Z" fill="#22A06B" stroke="#18181B" stroke-width="3"
-                          stroke-linejoin="round" />
-
-                        <!-- Peter Pan White Collar & Red Button -->
-                        <path d="M98 142 C98 152, 114 156, 114 142" fill="#FFFFFF" stroke="#18181B"
-                          stroke-width="2.6" />
-                        <path d="M114 142 C114 156, 130 152, 130 142" fill="#FFFFFF" stroke="#18181B"
-                          stroke-width="2.6" />
-                        <circle cx="114" cy="160" r="3.5" fill="#EF4444" />
-
-                        <!-- Crossbody Yellow Messenger Bag -->
-                        <!-- Black Strap from right shoulder to left hip -->
-                        <path d="M86 144 L154 186" stroke="#18181B" stroke-width="4.8" stroke-linecap="round" />
-                        <!-- Yellow Bag Body on hip -->
-                        <rect x="136" y="174" width="38" height="30" rx="6" fill="#FABE2C" stroke="#18181B"
-                          stroke-width="2.8" />
-                        <!-- Bag Flap -->
-                        <path d="M136 174 L174 174 L171 190 C171 195, 139 195, 139 190 Z" fill="#F59E0B"
-                          stroke="#18181B" stroke-width="2.4" stroke-linejoin="round" />
-                        <circle cx="155" cy="188" r="3.2" fill="#18181B" />
-
-                        <!-- Left Arm Raised High (Waving happily) -->
-                        <path d="M150 148 C176 122, 198 98, 208 108 C216 122, 192 148, 160 168 Z" fill="#FFE5C4"
-                          stroke="#18181B" stroke-width="3.2" stroke-linejoin="round" />
-
-                        <!-- Hair Buns with Red Ribbons -->
-                        <circle cx="64" cy="65" r="23" fill="#18181B" stroke="#18181B" stroke-width="3" />
-                        <circle cx="70" cy="71" r="9" fill="#EF4444" />
-                        <circle cx="164" cy="65" r="23" fill="#18181B" stroke="#18181B" stroke-width="3" />
-                        <circle cx="158" cy="71" r="9" fill="#EF4444" />
-
-                        <!-- Head Base -->
-                        <circle cx="114" cy="95" r="44" fill="#FFE5C4" stroke="#18181B" stroke-width="3.2" />
-                        <!-- Ears -->
-                        <circle cx="72" cy="97" r="8" fill="#FFE5C4" stroke="#18181B" stroke-width="3" />
-                        <circle cx="156" cy="97" r="8" fill="#FFE5C4" stroke="#18181B" stroke-width="3" />
-
-                        <!-- Hair Back & Fringe -->
-                        <path
-                          d="M72 91 C66 57, 89 45, 114 45 C139 45, 162 57, 156 91 C146 81, 132 83, 114 85 C96 83, 82 81, 72 91 Z"
-                          fill="#18181B" stroke="#18181B" stroke-width="3.2" />
-                        <path d="M80 83 Q97 75, 114 83 Q130 75, 148 83" stroke="#18181B" stroke-width="3" fill="none" />
-
-                        <!-- Rosy Cheeks -->
-                        <circle cx="86" cy="105" r="9.5" fill="#FFAAA6" opacity="0.85" />
-                        <circle cx="142" cy="105" r="9.5" fill="#FFAAA6" opacity="0.85" />
-
-                        <!-- Sparkling Big Eyes -->
-                        <ellipse cx="96" cy="93" rx="8" ry="9.5" fill="#18181B" />
-                        <ellipse cx="132" cy="93" rx="8" ry="9.5" fill="#18181B" />
-                        <circle cx="98" cy="90" r="3.5" fill="#FFFFFF" />
-                        <circle cx="134" cy="90" r="3.5" fill="#FFFFFF" />
-                        <circle cx="93" cy="97" r="1.5" fill="#FFFFFF" />
-                        <circle cx="129" cy="97" r="1.5" fill="#FFFFFF" />
-
-                        <!-- Nose -->
-                        <circle cx="114" cy="99" r="3" fill="#FABE2C" />
-
-                        <!-- Open Smiling Mouth -->
-                        <path d="M100 107 Q114 125, 128 107 Z" fill="#D9383A" stroke="#18181B" stroke-width="3"
-                          stroke-linejoin="round" />
-                        <path d="M106 115 Q114 111, 122 115" fill="#FFAAA6" />
-                      </svg>
-                    </div>
+                <!-- Telegram Button (Visual Mockup - Non-clickable) -->
+                <div class="phone-btn-telegram" id="phone-telegram-btn" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z" />
+                  </svg>
+                  <span data-i18n="phoneBtnTelegram">Log in with Telegram</span>
                 </div>
+
+                <!-- Divider -->
+                <div class="phone-or-divider">
+                  <span data-i18n="phoneOr">OR</span>
+                </div>
+
+                <!-- Try Demo Prompt -->
+                <div class="phone-demo-prompt" data-i18n="phoneTryDemo">Try out our app demo</div>
+
+                <!-- Demo Button -->
+                <a href="https://app.komakh.com/" target="_blank" rel="noopener noreferrer" class="phone-btn-demo"
+                  data-i18n="phoneBtnDemo">
+                  ✨ KOMA Demo
+                </a>
               </div>
+            </div>
+
+            <!-- Cheerful Bopha Mascot Jumping Beside Phone (Matching Sample Mockup) -->
+            <div class="hero-mascot-bopha" aria-label="Girl Mascot Bopha Cheering Beside Phone">
+              <svg viewBox="0 0 240 290" class="bopha-waving-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Floating Sparkles around Bopha -->
+                <path d="M192 34 L195 23 L198 34 L209 37 L198 40 L195 51 L192 40 L181 37 Z" fill="#F59E0B" />
+                <path d="M220 86 L222 78 L224 86 L232 88 L224 90 L222 98 L220 90 L212 88 Z" fill="#F59E0B" />
+                <path d="M42 56 L44 49 L46 56 L53 58 L46 60 L44 67 L42 60 L35 58 Z" fill="#F59E0B" />
+
+                <!-- Legs & Shoes -->
+                <!-- Left Standing Leg -->
+                <path d="M92 208 L86 242 L106 244 L112 208 Z" fill="#FFE5C4" stroke="#18181B" stroke-width="3" />
+                <rect x="84" y="236" width="22" height="9" rx="2" fill="#FFFFFF" stroke="#18181B" stroke-width="2" />
+                <path d="M75 242 L102 244 C110 246, 112 254, 108 260 C102 268, 72 268, 66 262 C60 254, 65 243, 75 242 Z"
+                  fill="#18181B" stroke="#18181B" stroke-width="2.5" />
+                <ellipse cx="88" cy="252" rx="4" ry="2" fill="#FFFFFF" />
+
+                <!-- Right Kicking Leg -->
+                <g transform="rotate(30 142 220)">
+                  <path d="M136 198 L131 233 L151 236 L157 198 Z" fill="#FFE5C4" stroke="#18181B" stroke-width="3" />
+                  <rect x="129" y="227" width="22" height="9" rx="2" fill="#FFFFFF" stroke="#18181B" stroke-width="2" />
+                  <path
+                    d="M123 233 L150 235 C158 237, 160 245, 156 251 C150 259, 120 259, 114 253 C108 245, 113 234, 123 233 Z"
+                    fill="#18181B" stroke="#18181B" stroke-width="2.5" />
+                  <ellipse cx="135" cy="243" rx="4" ry="2" fill="#FFFFFF" />
+                </g>
+
+                <!-- Outstretched Right Arm (pointing toward phone) -->
+                <path d="M76 150 C50 130, 32 144, 26 154 C20 168, 46 176, 74 166 Z" fill="#FFE5C4" stroke="#18181B"
+                  stroke-width="3.2" stroke-linejoin="round" />
+
+                <!-- Emerald Green Dress Body -->
+                <path d="M76 142 L152 142 L170 212 L58 212 Z" fill="#22A06B" stroke="#18181B" stroke-width="3.2"
+                  stroke-linejoin="round" />
+
+                <!-- Dress Sleeves -->
+                <path d="M78 143 L64 157 L74 169 L88 157 Z" fill="#22A06B" stroke="#18181B" stroke-width="3"
+                  stroke-linejoin="round" />
+                <path d="M150 143 L164 157 L154 169 L140 157 Z" fill="#22A06B" stroke="#18181B" stroke-width="3"
+                  stroke-linejoin="round" />
+
+                <!-- Peter Pan White Collar & Red Button -->
+                <path d="M98 142 C98 152, 114 156, 114 142" fill="#FFFFFF" stroke="#18181B" stroke-width="2.6" />
+                <path d="M114 142 C114 156, 130 152, 130 142" fill="#FFFFFF" stroke="#18181B" stroke-width="2.6" />
+                <circle cx="114" cy="160" r="3.5" fill="#EF4444" />
+
+                <!-- Crossbody Yellow Messenger Bag -->
+                <!-- Black Strap from right shoulder to left hip -->
+                <path d="M86 144 L154 186" stroke="#18181B" stroke-width="4.8" stroke-linecap="round" />
+                <!-- Yellow Bag Body on hip -->
+                <rect x="136" y="174" width="38" height="30" rx="6" fill="#FABE2C" stroke="#18181B"
+                  stroke-width="2.8" />
+                <!-- Bag Flap -->
+                <path d="M136 174 L174 174 L171 190 C171 195, 139 195, 139 190 Z" fill="#F59E0B" stroke="#18181B"
+                  stroke-width="2.4" stroke-linejoin="round" />
+                <circle cx="155" cy="188" r="3.2" fill="#18181B" />
+
+                <!-- Left Arm Raised High (Waving happily) -->
+                <path d="M150 148 C176 122, 198 98, 208 108 C216 122, 192 148, 160 168 Z" fill="#FFE5C4"
+                  stroke="#18181B" stroke-width="3.2" stroke-linejoin="round" />
+
+                <!-- Hair Buns with Red Ribbons -->
+                <circle cx="64" cy="65" r="23" fill="#18181B" stroke="#18181B" stroke-width="3" />
+                <circle cx="70" cy="71" r="9" fill="#EF4444" />
+                <circle cx="164" cy="65" r="23" fill="#18181B" stroke="#18181B" stroke-width="3" />
+                <circle cx="158" cy="71" r="9" fill="#EF4444" />
+
+                <!-- Head Base -->
+                <circle cx="114" cy="95" r="44" fill="#FFE5C4" stroke="#18181B" stroke-width="3.2" />
+                <!-- Ears -->
+                <circle cx="72" cy="97" r="8" fill="#FFE5C4" stroke="#18181B" stroke-width="3" />
+                <circle cx="156" cy="97" r="8" fill="#FFE5C4" stroke="#18181B" stroke-width="3" />
+
+                <!-- Hair Back & Fringe -->
+                <path
+                  d="M72 91 C66 57, 89 45, 114 45 C139 45, 162 57, 156 91 C146 81, 132 83, 114 85 C96 83, 82 81, 72 91 Z"
+                  fill="#18181B" stroke="#18181B" stroke-width="3.2" />
+                <path d="M80 83 Q97 75, 114 83 Q130 75, 148 83" stroke="#18181B" stroke-width="3" fill="none" />
+
+                <!-- Rosy Cheeks -->
+                <circle cx="86" cy="105" r="9.5" fill="#FFAAA6" opacity="0.85" />
+                <circle cx="142" cy="105" r="9.5" fill="#FFAAA6" opacity="0.85" />
+
+                <!-- Sparkling Big Eyes -->
+                <ellipse cx="96" cy="93" rx="8" ry="9.5" fill="#18181B" />
+                <ellipse cx="132" cy="93" rx="8" ry="9.5" fill="#18181B" />
+                <circle cx="98" cy="90" r="3.5" fill="#FFFFFF" />
+                <circle cx="134" cy="90" r="3.5" fill="#FFFFFF" />
+                <circle cx="93" cy="97" r="1.5" fill="#FFFFFF" />
+                <circle cx="129" cy="97" r="1.5" fill="#FFFFFF" />
+
+                <!-- Nose -->
+                <circle cx="114" cy="99" r="3" fill="#FABE2C" />
+
+                <!-- Open Smiling Mouth -->
+                <path d="M100 107 Q114 125, 128 107 Z" fill="#D9383A" stroke="#18181B" stroke-width="3"
+                  stroke-linejoin="round" />
+                <path d="M106 115 Q114 111, 122 115" fill="#FFAAA6" />
+              </svg>
+            </div>
           </div>
+        </div>
+      </div>
     </section>
 
     <!-- ========================================================
@@ -416,7 +405,11 @@
             <span class="about-story-tag" data-i18n="problemSolveTag">THE PROBLEM WE SOLVE</span>
             <h3 class="about-block-title" data-i18n="problemSolveTitle">The Problem We Solve</h3>
             <p class="about-story-paragraph" data-i18n="problemSolveText">
-              Many parents face challenges in keeping track of their children's healthcare needs. Some may forget important vaccination dates, lose paper-based health records, or lack access to reliable information about child health, nutrition, and development. These challenges can make it difficult for parents to stay informed and ensure their children receive proper care. KOMA aims to address these problems through a simple and accessible digital solution.
+              Many parents face challenges in keeping track of their children's healthcare needs. Some may forget
+              important vaccination dates, lose paper-based health records, or lack access to reliable information about
+              child health, nutrition, and development. These challenges can make it difficult for parents to stay
+              informed and ensure their children receive proper care. KOMA aims to address these problems through a
+              simple and accessible digital solution.
             </p>
           </div>
           <div class="about-photo-frame">
@@ -429,7 +422,11 @@
           <span class="solution-tag" data-i18n="ourSolutionTag">OUR SOLUTION</span>
           <h3 class="solution-title" data-i18n="ourSolutionTitle">Our Solution</h3>
           <p class="solution-desc" data-i18n="ourSolutionText">
-            KOMA provides a range of digital tools to help parents take better care of their children's health. Parents can keep vaccination records organized, track upcoming vaccines, and receive smart reminders so they don't miss important vaccination dates. KOMA also offers growth tracking, age-based nutrition recommendations, and useful child healthcare information to help parents make informed decisions throughout their children's growth journey.
+            KOMA provides a range of digital tools to help parents take better care of their children's health. Parents
+            can keep vaccination records organized, track upcoming vaccines, and receive smart reminders so they don't
+            miss important vaccination dates. KOMA also offers growth tracking, age-based nutrition recommendations, and
+            useful child healthcare information to help parents make informed decisions throughout their children's
+            growth journey.
           </p>
           <div class="solution-pills-row">
             <span class="sol-pill">📋 Organized Vaccination Records</span>
@@ -444,7 +441,9 @@
             <span class="mission-tag" data-i18n="missionTag">OUR MISSION</span>
             <h3 class="mission-title" data-i18n="missionTitle">Our Mission</h3>
             <p class="mission-text" data-i18n="missionText">
-              Our mission is to make child healthcare easier, more accessible, and more reliable for every Cambodian family through technology. We aim to help parents manage their children's health records, stay on track with vaccinations, and make informed healthcare decisions.
+              Our mission is to make child healthcare easier, more accessible, and more reliable for every Cambodian
+              family through technology. We aim to help parents manage their children's health records, stay on track
+              with vaccinations, and make informed healthcare decisions.
             </p>
           </div>
 
@@ -452,7 +451,9 @@
             <span class="vision-tag" data-i18n="visionTag">OUR VISION</span>
             <h3 class="vision-title" data-i18n="visionTitle">Our Vision</h3>
             <p class="vision-text" data-i18n="visionText">
-              We envision a Cambodia where every parent has access to reliable health information and every child has the opportunity to grow up healthy. We hope to contribute to a more connected and digitally supported child healthcare system across the country.
+              We envision a Cambodia where every parent has access to reliable health information and every child has
+              the opportunity to grow up healthy. We hope to contribute to a more connected and digitally supported
+              child healthcare system across the country.
             </p>
           </div>
         </div>
@@ -461,13 +462,18 @@
         <div class="who-serve-box">
           <div class="who-serve-grid">
             <div class="who-serve-photo-frame">
-              <img src="assets/who-we-serve.jpg" alt="Cambodian healthcare worker providing child healthcare guidance to mother" loading="lazy">
+              <img src="assets/who-we-serve.jpg"
+                alt="Cambodian healthcare worker providing child healthcare guidance to mother" loading="lazy">
             </div>
             <div class="who-serve-content">
               <span class="who-serve-tag" data-i18n="whoServeTag">WHO WE SERVE</span>
               <h3 class="who-serve-green-title" data-i18n="whoServeTitle">Who We Serve</h3>
               <p class="who-serve-desc" data-i18n="whoServeText">
-                KOMA is designed to support parents, healthcare workers, and healthcare organizations across Cambodia. It helps parents manage their children's health records, keep track of vaccination schedules, and stay informed about important healthcare needs. It also supports healthcare workers in guiding parents and improving health awareness, while helping healthcare organizations strengthen communication and promote better child healthcare services.
+                KOMA is designed to support parents, healthcare workers, and healthcare organizations across Cambodia.
+                It helps parents manage their children's health records, keep track of vaccination schedules, and stay
+                informed about important healthcare needs. It also supports healthcare workers in guiding parents and
+                improving health awareness, while helping healthcare organizations strengthen communication and promote
+                better child healthcare services.
               </p>
             </div>
           </div>
@@ -477,7 +483,10 @@
         <div class="team-detail-box">
           <h3 class="team-detail-yellow-title" data-i18n="teamTitle">Meet Our Team</h3>
           <p class="team-intro-desc" data-i18n="teamDesc">
-            We are a team of passionate students who believe technology can make a positive difference in people's lives. With a shared interest in innovation and child healthcare, we created KOMA to address real challenges faced by Cambodian families. Our goal is to continue improving our platform and making child healthcare easier and more accessible through technology.
+            We are a team of passionate students who believe technology can make a positive difference in people's
+            lives. With a shared interest in innovation and child healthcare, we created KOMA to address real challenges
+            faced by Cambodian families. Our goal is to continue improving our platform and making child healthcare
+            easier and more accessible through technology.
           </p>
 
           <!-- 5 Team Member Cards Grid (Matching Image 4) -->
@@ -532,93 +541,367 @@
     </section>
 
     <!-- ========================================================
-         4. FEATURES SECTION (MATCHING IMAGE 5)
+         4. FEATURES SECTION
          ======================================================== -->
     <section id="features" class="features-yellow-wrapper">
       <div class="container">
-        <!-- Section Header (Matching Image 5) -->
+        <!-- Section Header -->
         <div class="features-top-header">
-          <h2 class="features-big-green-title" data-i18n="featuresMainTitle">FEATURES</h2>
-          <h3 class="features-subheading-black" data-i18n="pillarsTitle">Everything Parents Need, In One Place</h3>
-          <p class="features-tagline-gray" data-i18n="pillarsDesc">
-            Built around the real everyday healthcare journey of Cambodian mothers and fathers.
+          <div class="features-header-badge">
+            <span class="features-badge-icon">✨</span>
+            <span class="features-badge-text" data-i18n="featuresMainTitle">KOMA FEATURES</span>
+          </div>
+          <h2 class="features-subheading-black" data-i18n="featuresTitle">KOMA Features</h2>
+          <p class="features-tagline-gray" data-i18n="featuresDesc">
+            KOMA offers simple tools to help parents take care of their children's health. From vaccination reminders to
+            growth tracking and food tips, KOMA helps parents stay informed at every stage of their child's growth.
           </p>
         </div>
 
-        <!-- 3 Feature Summary Cards Row (Matching Image 5) -->
-        <div class="features-outline-cards-row">
-          <!-- Card 01: National Immunization Schedule -->
-          <div class="features-card-outline">
-            <div class="features-card-outline-top">
-              <div class="feature-square-icon mint">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"
-                  stroke-linejoin="round">
-                  <path d="m18 2 4 4" />
-                  <path d="m17 7 3-3" />
-                  <path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5" />
-                  <path d="m9 11 4 4" />
-                  <path d="m5 19-3 3" />
-                  <path d="m14 4 6 6" />
-                </svg>
+        <!-- 3 Features List -->
+        <div class="features-list">
+
+          <!-- 1. Vaccination Tracking & Reminders -->
+          <div class="feature-box feature-box-vaccine">
+            <div class="feature-grid">
+              <!-- Picture Side -->
+              <div class="feature-img-col">
+                <div class="feature-phone-podium podium-green">
+                  <div class="feature-podium-glow"></div>
+                  <img src="assets/feature-vaccination.png" alt="Vaccination Tracking & Reminders" class="feature-img"
+                    loading="lazy">
+                </div>
               </div>
-              <span class="feature-outline-digit">01</span>
+              <!-- Content Side -->
+              <div class="feature-text-col">
+                <div class="feature-tag feature-tag-green">
+                  <svg class="feature-tag-svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  <span data-i18n="feature1Badge">Vaccination & Schedule</span>
+                </div>
+                <h3 class="feature-item-title" data-i18n="feature1Title">1. Vaccination Tracking & Reminders</h3>
+                <p class="feature-item-lead" data-i18n="feature1Lead">
+                  Keep your child's vaccination records organized and never miss an important vaccination date.
+                </p>
+                <ul class="feature-bullet-list">
+                  <li class="feature-bullet-card">
+                    <div class="feature-bullet-icon-box icon-box-green">
+                      <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                    <span class="feature-bullet-text" data-i18n="feature1Bullet1">View vaccination schedules based on
+                      your child's age.</span>
+                  </li>
+                  <li class="feature-bullet-card">
+                    <div class="feature-bullet-icon-box icon-box-green">
+                      <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                    <span class="feature-bullet-text" data-i18n="feature1Bullet2">Track completed, upcoming, and due
+                      vaccines.</span>
+                  </li>
+                  <li class="feature-bullet-card">
+                    <div class="feature-bullet-icon-box icon-box-green">
+                      <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                    <span class="feature-bullet-text" data-i18n="feature1Bullet3">Get reminders for upcoming
+                      vaccinations.</span>
+                  </li>
+                  <li class="feature-bullet-card">
+                    <div class="feature-bullet-icon-box icon-box-green">
+                      <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                    <span class="feature-bullet-text" data-i18n="feature1Bullet4">Keep all vaccination records in one
+                      place.</span>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <h4 class="feature-outline-title" data-i18n="pillar1Title">National Immunization Schedule</h4>
-            <p class="feature-outline-desc" data-i18n="pillar1Desc">
-              Pre-loaded with Cambodia's complete NIP protocol aligned with the Ministry of Health.
-            </p>
           </div>
 
-          <!-- Card 02: Smart Reminders & Due Dates -->
-          <div class="features-card-outline">
-            <div class="features-card-outline-top">
-              <div class="feature-square-icon peach">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"
-                  stroke-linejoin="round">
-                  <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
-                  <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
-                </svg>
+          <!-- 2. Growth Tracking -->
+          <div class="feature-box feature-box-growth">
+            <div class="feature-grid">
+              <!-- Picture Side -->
+              <div class="feature-img-col">
+                <div class="feature-phone-podium podium-amber">
+                  <div class="feature-podium-glow"></div>
+                  <img src="assets/feature-growth.png" alt="Growth Tracking" class="feature-img" loading="lazy">
+                </div>
               </div>
-              <span class="feature-outline-digit">02</span>
+              <!-- Content Side -->
+              <div class="feature-text-col">
+                <div class="feature-tag feature-tag-amber">
+                  <svg class="feature-tag-svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                      d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" />
+                  </svg>
+                  <span data-i18n="feature2Badge">Growth & Development</span>
+                </div>
+                <h3 class="feature-item-title" data-i18n="feature2Title">2. Growth Tracking</h3>
+                <p class="feature-item-lead" data-i18n="feature2Lead">
+                  Follow your child's growth and see how they develop over time.
+                </p>
+                <ul class="feature-bullet-list">
+                  <li class="feature-bullet-card">
+                    <div class="feature-bullet-icon-box icon-box-amber">
+                      <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                    <span class="feature-bullet-text" data-i18n="feature2Bullet1">Record your child's height and
+                      weight.</span>
+                  </li>
+                  <li class="feature-bullet-card">
+                    <div class="feature-bullet-icon-box icon-box-amber">
+                      <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                    <span class="feature-bullet-text" data-i18n="feature2Bullet2">Check growth progress over
+                      time.</span>
+                  </li>
+                  <li class="feature-bullet-card">
+                    <div class="feature-bullet-icon-box icon-box-amber">
+                      <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                    <span class="feature-bullet-text" data-i18n="feature2Bullet3">Keep track of important growth
+                      information.</span>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <h4 class="feature-outline-title" data-i18n="pillar2Title">Smart Reminders & Due Dates</h4>
-            <p class="feature-outline-desc" data-i18n="pillar2Desc">
-              Automated countdowns calculated from your baby's birth date so booster shots are never forgotten.
-            </p>
           </div>
 
-          <!-- Card 03: WHO Growth Monitoring -->
-          <div class="features-card-outline">
-            <div class="features-card-outline-top">
-              <div class="feature-square-icon blue">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"
-                  stroke-linejoin="round">
-                  <line x1="18" y1="20" x2="18" y2="10" />
-                  <line x1="12" y1="20" x2="12" y2="4" />
-                  <line x1="6" y1="20" x2="6" y2="14" />
-                  <line x1="3" y1="20" x2="21" y2="20" />
-                </svg>
+          <!-- 3. Nutrition Guidance -->
+          <div class="feature-box feature-box-nutrition">
+            <div class="feature-grid">
+              <!-- Picture Side -->
+              <div class="feature-img-col">
+                <div class="feature-phone-podium podium-teal">
+                  <div class="feature-podium-glow"></div>
+                  <img src="assets/feature-nutrition.png" alt="Nutrition Guidance" class="feature-img" loading="lazy">
+                </div>
               </div>
-              <span class="feature-outline-digit">03</span>
+              <!-- Content Side -->
+              <div class="feature-text-col">
+                <div class="feature-tag feature-tag-teal">
+                  <svg class="feature-tag-svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                      d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  <span data-i18n="feature3Badge">Nutrition & Food Guide</span>
+                </div>
+                <h3 class="feature-item-title" data-i18n="feature3Title">3. Nutrition Guidance</h3>
+                <p class="feature-item-lead" data-i18n="feature3Lead">
+                  Learn more about your child's food needs at different ages.
+                </p>
+                <ul class="feature-bullet-list">
+                  <li class="feature-bullet-card">
+                    <div class="feature-bullet-icon-box icon-box-teal">
+                      <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                    <span class="feature-bullet-text" data-i18n="feature3Bullet1">Explore food tips based on your
+                      child's age.</span>
+                  </li>
+                  <li class="feature-bullet-card">
+                    <div class="feature-bullet-icon-box icon-box-teal">
+                      <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                    <span class="feature-bullet-text" data-i18n="feature3Bullet2">Learn about suitable foods for each
+                      growth stage.</span>
+                  </li>
+                  <li class="feature-bullet-card">
+                    <div class="feature-bullet-icon-box icon-box-teal">
+                      <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                    <span class="feature-bullet-text" data-i18n="feature3Bullet3">Get helpful information about healthy
+                      eating.</span>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <h4 class="feature-outline-title" data-i18n="pillar3Title">WHO Growth Monitoring</h4>
-            <p class="feature-outline-desc" data-i18n="pillar3Desc">
-              Track height & weight plotted against official World Health Organization percentiles (P3 to P97).
-            </p>
+          </div>
+
+        </div>
+
+        <!-- Take Care of Your Child's Health with KOMA (CTA Banner) -->
+        <div class="features-cta-box">
+          <div class="features-cta-sparkle">👶</div>
+          <h3 class="features-cta-title" data-i18n="featuresCtaTitle">Take Care of Your Child's Health with KOMA</h3>
+          <p class="features-cta-desc" data-i18n="featuresCtaDesc">
+            Make your child's healthcare easier with KOMA. Keep health information organized and stay on track with
+            important care needs.
+          </p>
+          <a href="https://app.komakh.com/" target="_blank" rel="noopener noreferrer" class="features-cta-btn"
+            data-i18n="featuresCtaBtn">
+            Get Started with KOMA Today!
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         5. DEMO SECTION (Matching Hand-Drawn Sketch)
+         ======================================================== -->
+    <section id="demo" class="demo-section-wrapper">
+      <div class="container">
+        <!-- Main Demo Card (Matching Sketch) -->
+        <div class="demo-main-card">
+          <div class="demo-grid">
+
+            <!-- Left: Smartphone Video Frame (Matching Sketch "Video") -->
+            <div class="demo-video-col">
+              <div class="demo-phone-frame">
+                <!-- Phone Dynamic Island -->
+                <div class="demo-phone-island">
+                  <div class="demo-island-camera"></div>
+                  <div class="demo-island-speaker"></div>
+                </div>
+
+                <!-- Video Screen -->
+                <div class="demo-screen-wrapper">
+                  <video id="demo-video-player" class="demo-video-element" autoplay loop muted playsinline
+                    preload="auto">
+                    <source src="assets/koma-demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+
+                  <!-- Video Controls Overlay -->
+                  <div class="demo-video-overlay">
+                    <button id="demo-play-btn" class="demo-control-btn" type="button" aria-label="Toggle Playback">
+                      <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                      <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Phone Bottom Bar -->
+                <div class="demo-phone-bar"></div>
+              </div>
+            </div>
+
+            <!-- Right: Content & Try Button (Matching Sketch "Demo" and "Try") -->
+            <div class="demo-content-col">
+              <div class="demo-header-group">
+                <div class="demo-tag-pill">
+                  <span class="demo-tag-dot"></span>
+                  <span data-i18n="demoKicker">LIVE DEMO</span>
+                </div>
+                <h2 class="demo-main-title" data-i18n="demoTitle">Demo</h2>
+                <p class="demo-description" data-i18n="demoDesc">
+                  Watch how KOMA makes child healthcare simple, organized, and stress-free for parents. Explore
+                  schedules, growth tracking, and health tips in real-time.
+                </p>
+              </div>
+
+              <!-- Feature Highlights -->
+              <div class="demo-highlights">
+                <div class="demo-highlight-item">
+                  <div class="demo-hl-icon icon-green">
+                    <svg viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <span class="demo-hl-text" data-i18n="demoBadge1">Vaccine Tracking & Reminders</span>
+                </div>
+                <div class="demo-highlight-item">
+                  <div class="demo-hl-icon icon-amber">
+                    <svg viewBox="0 0 20 20" fill="currentColor">
+                      <path
+                        d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" />
+                    </svg>
+                  </div>
+                  <span class="demo-hl-text" data-i18n="demoBadge2">WHO Growth Curves</span>
+                </div>
+                <div class="demo-highlight-item">
+                  <div class="demo-hl-icon icon-teal">
+                    <svg viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd"
+                        d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <span class="demo-hl-text" data-i18n="demoBadge3">Age-Based Nutrition Advice</span>
+                </div>
+              </div>
+
+              <!-- "Try" Button Box (Matching Sketch "Try") -->
+              <div class="demo-try-box">
+                <a href="https://app.komakh.com/" target="_blank" rel="noopener noreferrer" class="demo-try-btn">
+                  <span class="demo-try-text" data-i18n="demoTryBtn">Try Demo</span>
+                  <svg class="demo-try-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+                <p class="demo-try-caption" data-i18n="demoTrySubtitle">
+                  Instant access in your browser • No install required
+                </p>
+              </div>
+
+            </div>
+
           </div>
         </div>
       </div>
     </section>
 
-    </main>
+  </main>
 
   <!-- ========================================================
        8. FOOTER
        ======================================================== -->
   <footer class="site-footer">
-    <div class="container">
+    <div class="footer-container">
       <div class="footer-top-grid">
-        <!-- Brand Info -->
+        <!-- Brand Info (Left Side) -->
         <div class="footer-brand-col">
           <div class="logo-brand">
             <img src="assets/logo.png" alt="KOMA Logo" class="logo-icon-img">
@@ -629,37 +912,26 @@
           </p>
         </div>
 
-        <!-- Links Col 1: Product -->
-        <div class="footer-col">
-          <h5 data-i18n="footerColProduct">Product</h5>
-          <ul>
-            <li><a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer" data-i18n="linkDemo">Live
-                Web Demo</a></li>
-            <li><a href="#about" data-i18n="navAbout">About Us</a></li>
-            <li><a href="#features" data-i18n="navFeatures">Features</a></li>
-          </ul>
-        </div>
+        <!-- Links Wrap: Separated into 2 Groups -->
+        <div class="footer-links-wrap">
+          <!-- Group 1: Product -->
+          <div class="footer-col">
+            <h5 data-i18n="footerColProduct">Product</h5>
+            <ul>
+              <li><a href="#home" data-i18n="navHome">Home</a></li>
+              <li><a href="#features" data-i18n="navFeatures">Features</a></li>
+              <li><a href="#demo" data-i18n="navDemo">Demo</a></li>
+            </ul>
+          </div>
 
-        <!-- Links Col 2: Health Resources -->
-        <div class="footer-col">
-          <h5 data-i18n="footerColResources">Resources</h5>
-          <ul>
-            <li><a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer" data-i18n="linkMOH">MOH
-                Cambodia NIP</a></li>
-            <li><a href="https://t.me" target="_blank" rel="noopener noreferrer" data-i18n="linkTelegram">Telegram
-                Parent Community</a></li>
-            <li><a href="#playground" data-i18n="linkFAQ">Vaccine FAQs</a></li>
-          </ul>
-        </div>
-
-        <!-- Links Col 3: Legal & Trust -->
-        <div class="footer-col">
-          <h5 data-i18n="footerColLegal">Trust & Legal</h5>
-          <ul>
-            <li><a href="#home" data-i18n="linkPrivacy">Privacy Policy</a></li>
-            <li><a href="#home" data-i18n="linkTerms">Terms of Use</a></li>
-            <li><a href="#home" data-i18n="linkSecurity">Offline Security</a></li>
-          </ul>
+          <!-- Group 2: Company -->
+          <div class="footer-col">
+            <h5 data-i18n="footerColCompany">Company</h5>
+            <ul>
+              <li><a href="#about" data-i18n="navAbout">About</a></li>
+              <li><a href="javascript:void(0)" class="btn-trigger-waitlist" data-i18n="btnContactUs">Contact Us</a></li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -734,7 +1006,7 @@
             Experience KOMA in Action
           </h2>
         </div>
-        <a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer"
+        <a href="https://app.komakh.com/" target="_blank" rel="noopener noreferrer"
           class="neo-btn neo-btn-sm neo-btn-primary">
           🚀 Open Full Web App
         </a>
@@ -775,7 +1047,7 @@
       </div>
 
       <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-        <a href="https://demo.komakh.com" target="_blank" rel="noopener noreferrer" class="neo-btn neo-btn-primary"
+        <a href="https://app.komakh.com/" target="_blank" rel="noopener noreferrer" class="neo-btn neo-btn-primary"
           style="padding: 0.8rem 1.6rem;">
           🚀 Try Live Web App (No Install)
         </a>
